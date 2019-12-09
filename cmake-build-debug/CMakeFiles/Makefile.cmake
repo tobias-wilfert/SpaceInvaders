@@ -37,6 +37,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Users/tobiaswilfert/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/CLion.app/Contents/bin/cmake/mac/share/cmake-3.15/Modules/Platform/Darwin.cmake"
   "/Users/tobiaswilfert/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/CLion.app/Contents/bin/cmake/mac/share/cmake-3.15/Modules/Platform/UnixPaths.cmake"
   "/Users/tobiaswilfert/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/192.6817.32/CLion.app/Contents/bin/cmake/mac/share/cmake-3.15/Modules/ProcessorCount.cmake"
+  "/usr/local/lib/cmake/SFML/SFMLConfig.cmake"
+  "/usr/local/lib/cmake/SFML/SFMLConfigDependencies.cmake"
+  "/usr/local/lib/cmake/SFML/SFMLConfigVersion.cmake"
+  "/usr/local/lib/cmake/SFML/SFMLSharedTargets-release.cmake"
+  "/usr/local/lib/cmake/SFML/SFMLSharedTargets.cmake"
   )
 
 # The corresponding makefile is:
