@@ -2,19 +2,22 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 
-Stopwatch* Stopwatch::instance = nullptr;
+#include <memory>
+
+std::shared_ptr<Stopwatch> Stopwatch::instance = nullptr;
 
 int main()
 {
-        Stopwatch* s = Stopwatch::getInstance();
+        std::shared_ptr<Stopwatch> s = Stopwatch::getInstance();
         int i = 1;
+
 
         sf::RenderWindow window( sf::VideoMode(640,480), "Test Version");
 
         sf::CircleShape circle(65);
 
         while (window.isOpen()) {
-                sf::Event event;
+                sf::Event event{};
 
                 // handle all events
                 while (window.pollEvent(event)) {

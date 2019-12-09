@@ -8,6 +8,8 @@
 #define SPACEINVADERS_STOPWATCH_H
 
 #include <ctime>
+#include <memory>
+#include <iostream>
 
 // TODO: Add Destructor
 // TODO: Add description
@@ -25,14 +27,18 @@
 class Stopwatch
 {
 public:
-        static Stopwatch* getInstance();
+        static std::shared_ptr<Stopwatch> getInstance();
 
         void restart();
 
         float getElapsedTime() const;
 
+        // TODO Check with Valgrind if we lose memory
+        ~Stopwatch();
+
 private:
-        static Stopwatch* instance;
+
+        static std::shared_ptr<Stopwatch> instance;
 
         clock_t start;
 
