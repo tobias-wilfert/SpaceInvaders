@@ -1,5 +1,5 @@
-sudo: false
-dist: trusty
+os: linux
+dist: xenial
 language: cpp
 compiler:
   - gcc
