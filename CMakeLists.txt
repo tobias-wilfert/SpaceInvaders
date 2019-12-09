@@ -19,7 +19,7 @@ include_directories(/usr/local/include)
 SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/cmake/Modules/")
 
 # Look for SFML >= 2.0, with the specific subcomponents listed below
-FIND_PACKAGE(SFML 2.5 COMPONENTS system window graphics)
+FIND_PACKAGE(SFML 2.0 COMPONENTS system window graphics)
 
 # The source files to compile
 #SET(SRC main.cpp)
