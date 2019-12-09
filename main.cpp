@@ -13,15 +13,12 @@ int main(){
     std::cout << s->getElapsedTime() << std::endl;
 
     int i = 1;
-    while (i < 20)
-    {
+    while (i < 20){
         if (s->getElapsedTime() > i){
             std::cout << i << std::endl;
             std::cout << s->getElapsedTime() << std::endl;
             ++i;
-        }
-        if (i == 5)
-        {
+        }if (i == 5){
             s->restart();
             i++;
         }
