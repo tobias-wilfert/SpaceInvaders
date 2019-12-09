@@ -8,18 +8,12 @@
 
 Stopwatch* Stopwatch::getInstance()
 {
-    if(!instance){
-        instance = new Stopwatch{};
-    }
-    return instance;
+        if (!instance) {
+                instance = new Stopwatch{};
+        }
+        return instance;
 }
 
-void Stopwatch::restart()
-{
-    start = clock();
-}
+void Stopwatch::restart() { start = clock(); }
 
-float Stopwatch::getElapsedTime() const
-{
-    return static_cast<float>(clock() - start)/CLOCKS_PER_SEC;
-}
+float Stopwatch::getElapsedTime() const { return static_cast<float>(clock() - start) / CLOCKS_PER_SEC; }

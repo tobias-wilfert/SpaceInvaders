@@ -22,24 +22,22 @@
  \n Stopwatch* s = Stopwatch::getInstance();
  \n Cleaner than: Stopwatch *s = s->getInstance();
  */
-class Stopwatch{
+class Stopwatch
+{
 public:
+        static Stopwatch* getInstance();
 
-    static Stopwatch* getInstance();
+        void restart();
 
-    void restart();
-
-    float getElapsedTime() const;
+        float getElapsedTime() const;
 
 private:
+        static Stopwatch* instance;
 
-    static Stopwatch* instance;
+        clock_t start;
 
-    clock_t start;
-
-    // Private constructor -> allows only 1 instance ot Stopwatch
-    Stopwatch():start{clock()}{};
-
+        // Private constructor -> allows only 1 instance ot Stopwatch
+        Stopwatch() : start{clock()} {};
 };
 
-#endif //SPACEINVADERS_STOPWATCH_H
+#endif // SPACEINVADERS_STOPWATCH_H
