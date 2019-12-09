@@ -8,8 +8,7 @@
 
 Stopwatch* Stopwatch::getInstance()
 {
-    if(!instance)
-    {
+    if(!instance){
         instance = new Stopwatch{};
     }
     return instance;
