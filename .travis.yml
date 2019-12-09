@@ -1,5 +1,5 @@
 sudo: false
-dist: xenial
+dist: trusty
 language: cpp
 compiler:
   - gcc
@@ -10,7 +10,15 @@ addons:
     - ubuntu-toolchain-r-test
     packages:
     - g++-7
-    - cmake
+
+# credits to Sam Legrand
+before_install:
+- mkdir cmake-dist
+- travis_retry wget -qO- https://cmake.org/files/v3.12/cmake-3.12.1-Linux-x86_64.tar.gz | sudo tar --strip-components=1 -C cmake-dist -xz 
+- export PATH=$PWD/cmake-dist/bin:$PATH;
+- wget https://www.sfml-dev.org/files/SFML-2.4.2-linux-gcc-64-bit.tar.gz -O /tmp/sfml.tar.gz
+- tar -xvf /tmp/sfml.tar.gz
+- sudo cp -r SFML-2.4.2/* /usr/
 
 install:
 - if [ "$CXX" = "g++" ]; then export CXX="g++-7" CC="gcc-7"; fi
