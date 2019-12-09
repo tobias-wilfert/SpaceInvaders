@@ -2,12 +2,16 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 
-
 Stopwatch* Stopwatch::instance = nullptr;
 
 int main()
 {
+        Stopwatch* s = Stopwatch::getInstance();
+        int i = 1;
+
         sf::RenderWindow window( sf::VideoMode(640,480), "Test Version");
+
+        sf::CircleShape circle(65);
 
         while (window.isOpen()) {
                 sf::Event event;
@@ -23,29 +27,18 @@ int main()
                 // update the game
                 window.clear();
 
+                window.draw(circle);
                 // draw objects here
                 window.display();
-        }
 
-        std::cout << CLOCKS_PER_SEC << std::endl;
 
-        // Stopwatch *s = s->getInstance();
-        // Superior
-        Stopwatch* s = Stopwatch::getInstance();
-
-        std::cout << s->getElapsedTime() << std::endl;
-
-        int i = 1;
-        while (i < 5) {
                 if (s->getElapsedTime() > i) {
                         std::cout << i << std::endl;
                         std::cout << s->getElapsedTime() << std::endl;
                         ++i;
+                        circle.move(sf::Vector2f(10,10));
                 }
-                if (i == 4) {
-                        s->restart();
-                        i++;
-                }
+
         }
 
         return 0;

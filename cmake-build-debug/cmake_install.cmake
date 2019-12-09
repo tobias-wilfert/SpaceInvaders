@@ -44,6 +44,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 file(INSTALL DESTINATION "/Users/tobiaswilfert/Desktop/SpaceInvaders/bin" TYPE EXECUTABLE FILES "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/SpaceInvaders")
   if(EXISTS "$ENV{DESTDIR}/Users/tobiaswilfert/Desktop/SpaceInvaders/bin/SpaceInvaders" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/Users/tobiaswilfert/Desktop/SpaceInvaders/bin/SpaceInvaders")
+    execute_process(COMMAND /usr/bin/install_name_tool
+      -delete_rpath "/Library/Frameworks"
+      "$ENV{DESTDIR}/Users/tobiaswilfert/Desktop/SpaceInvaders/bin/SpaceInvaders")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -u -r "$ENV{DESTDIR}/Users/tobiaswilfert/Desktop/SpaceInvaders/bin/SpaceInvaders")
     endif()
