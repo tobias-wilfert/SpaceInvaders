@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.cpp
+Stopwatch.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.h
+
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.h
+ctime
+-
+
+/Users/tobiaswilfert/Desktop/SpaceInvaders/main.cpp
+iostream
+-
+Stopwatch.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.h
+
