@@ -51,7 +51,8 @@ private:
         clock_t start;
 
         // Private constructor causing only 1 instance ot Stopwatch to be allowed
-        Stopwatch() : start{clock()} {};
+        Stopwatch();
+
 };
 
 #endif // SPACEINVADERS_STOPWATCH_H

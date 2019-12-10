@@ -4,7 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Game.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Game.cpp.o"
   "/Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Stopwatch.cpp.o"
+  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Transformation.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Transformation.cpp.o"
   "/Users/tobiaswilfert/Desktop/SpaceInvaders/main.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

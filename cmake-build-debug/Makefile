@@ -169,6 +169,33 @@ SpaceInvaders/fast:
 	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/build
 .PHONY : SpaceInvaders/fast
 
+Game.o: Game.cpp.o
+
+.PHONY : Game.o
+
+# target to build an object file
+Game.cpp.o:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Game.cpp.o
+.PHONY : Game.cpp.o
+
+Game.i: Game.cpp.i
+
+.PHONY : Game.i
+
+# target to preprocess a source file
+Game.cpp.i:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Game.cpp.i
+.PHONY : Game.cpp.i
+
+Game.s: Game.cpp.s
+
+.PHONY : Game.s
+
+# target to generate assembly for a file
+Game.cpp.s:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Game.cpp.s
+.PHONY : Game.cpp.s
+
 Stopwatch.o: Stopwatch.cpp.o
 
 .PHONY : Stopwatch.o
@@ -195,6 +222,33 @@ Stopwatch.s: Stopwatch.cpp.s
 Stopwatch.cpp.s:
 	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Stopwatch.cpp.s
 .PHONY : Stopwatch.cpp.s
+
+Transformation.o: Transformation.cpp.o
+
+.PHONY : Transformation.o
+
+# target to build an object file
+Transformation.cpp.o:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Transformation.cpp.o
+.PHONY : Transformation.cpp.o
+
+Transformation.i: Transformation.cpp.i
+
+.PHONY : Transformation.i
+
+# target to preprocess a source file
+Transformation.cpp.i:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Transformation.cpp.i
+.PHONY : Transformation.cpp.i
+
+Transformation.s: Transformation.cpp.s
+
+.PHONY : Transformation.s
+
+# target to generate assembly for a file
+Transformation.cpp.s:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Transformation.cpp.s
+.PHONY : Transformation.cpp.s
 
 main.o: main.cpp.o
 
@@ -236,9 +290,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... SpaceInvaders"
+	@echo "... Game.o"
+	@echo "... Game.i"
+	@echo "... Game.s"
 	@echo "... Stopwatch.o"
 	@echo "... Stopwatch.i"
 	@echo "... Stopwatch.s"
+	@echo "... Transformation.o"
+	@echo "... Transformation.i"
+	@echo "... Transformation.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

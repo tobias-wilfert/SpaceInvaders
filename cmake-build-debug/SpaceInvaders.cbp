@@ -122,10 +122,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Game.cpp">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Game.h">
+			<Option target="SpaceInvaders"/>
+		</Unit>
 		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.cpp">
 			<Option target="SpaceInvaders"/>
 		</Unit>
 		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.h">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Transformation.cpp">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Transformation.h">
 			<Option target="SpaceInvaders"/>
 		</Unit>
 		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/main.cpp">

@@ -17,3 +17,6 @@ std::shared_ptr<Stopwatch> Stopwatch::getInstance()
 void Stopwatch::restart() { start = clock(); }
 
 float Stopwatch::getElapsedTime() const { return static_cast<float>(clock() - start) / CLOCKS_PER_SEC; }
+
+Stopwatch::Stopwatch() : start(clock()) {}
+
