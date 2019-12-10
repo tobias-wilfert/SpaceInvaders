@@ -10,8 +10,7 @@ addons:
     - ubuntu-toolchain-r-test
     packages:
     - g++-7
-    - cmake
-    - smfl
+
 
 # credits to Sam Legrand
 before_install:
