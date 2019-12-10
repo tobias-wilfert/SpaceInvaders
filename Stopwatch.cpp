@@ -6,25 +6,16 @@
 
 #include "Stopwatch.h"
 
-
-
 std::shared_ptr<Stopwatch> Stopwatch::getInstance()
 {
-        auto deleter = [](Stopwatch*p){
-          std::cout << "[deleter called]\n"; delete p;
-        };
-
         if (!instance) {
-                //instance = std::make_shared<Stopwatch>(Stopwatch{});
-                instance = std::shared_ptr<Stopwatch>(new Stopwatch,deleter);
+                instance = std::make_shared<Stopwatch>(Stopwatch{});
         }
         return instance;
 }
 
 void Stopwatch::restart() { start = clock(); }
 
-float Stopwatch::getElapsedTime() const { return static_cast<float>(clock() - start) / CLOCKS_PER_SEC; }
 
-Stopwatch::~Stopwatch(){
-        std::cout << "~Stopwatch" << std::endl;
-}
+// TODO: Ask the prof about this not working correctly
+float Stopwatch::getElapsedTime() const { return static_cast<float>(clock() - start) / CLOCKS_PER_SEC; }

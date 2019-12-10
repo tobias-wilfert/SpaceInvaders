@@ -6,12 +6,16 @@
 
 #IncludeRegexTransform: 
 
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.cpp
-Stopwatch.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.h
-
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.h
 ctime
+-
+memory
+-
+
+/Users/tobiaswilfert/Desktop/SpaceInvaders/main.cpp
+Stopwatch.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.h
+SFML/Graphics.hpp
 -
 memory
 -

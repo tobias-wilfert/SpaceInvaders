@@ -1,8 +1,11 @@
 #include "Stopwatch.h"
-#include <iostream>
 #include <SFML/Graphics.hpp>
 
 #include <memory>
+#include <iostream>
+
+//TODO: Add Gtest?
+// TODO Fix the Stop Watch
 
 std::shared_ptr<Stopwatch> Stopwatch::instance = nullptr;
 

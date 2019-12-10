@@ -9,20 +9,16 @@
 
 #include <ctime>
 #include <memory>
-#include <iostream>
 
-// TODO: Add Destructor
 // TODO: Add description
-// TODO: Make pointer shared pointer
 
 /**
  \n Inspiration: https://www.tutorialspoint.com/Explain-Cplusplus-Singleton-design-pattern
  \n A Singleton implementation of a Stopwatch
  \n Usage:
- \n Stopwatch* Stopwatch::instance = nullptr;
+ \n std::shared_ptr<Stopwatch> Stopwatch::instance = nullptr;
  \n As Non-const static member must be initialized out of line
- \n Stopwatch* s = Stopwatch::getInstance();
- \n Cleaner than: Stopwatch *s = s->getInstance();
+ \n std::shared_ptr<Stopwatch> s = Stopwatch::getInstance();
  */
 class Stopwatch
 {
@@ -32,9 +28,6 @@ public:
         void restart();
 
         float getElapsedTime() const;
-
-        // TODO Check with Valgrind if we lose memory
-        ~Stopwatch();
 
 private:
 
