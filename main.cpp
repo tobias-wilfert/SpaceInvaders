@@ -1,11 +1,17 @@
+//============================================================================
+// Name        : main.cpp
+// Author      : Tobias Wilfert
+// Copyright   : Tobias Wilfert - University of Antwerp
+//============================================================================
+
 #include "Stopwatch.h"
-#include <SFML/Graphics.hpp>
 
 #include <memory>
 #include <iostream>
+#include <SFML/Graphics.hpp>
 
-//TODO: Add Gtest?
-// TODO Fix the Stop Watch
+// TODO: Think about if Google tests are worth it
+// TODO: Fix the Stop Watch
 
 std::shared_ptr<Stopwatch> Stopwatch::instance = nullptr;
 
@@ -38,7 +44,7 @@ int main()
                 s->restart();
                 accumulatedTimeSinceLastUpdate += timeSinceLastFrame;
 
-
+                // Update every Second
                 if (accumulatedTimeSinceLastUpdate >= 1) {
                         std::cout << accumulatedTimeSinceLastUpdate << std::endl;
                         accumulatedTimeSinceLastUpdate -= 1;
@@ -47,12 +53,10 @@ int main()
                         circle.move(sf::Vector2f(10,10));
                 }
 
+                // Draw consitently
                 window.draw(circle);
                 // draw objects here
                 window.display();
-
-
-
 
         }
 

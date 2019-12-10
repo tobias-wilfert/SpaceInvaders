@@ -13,6 +13,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0e5097d6-8f54-4856-a7d8-629138d3e85b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stopwatch.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Stopwatch.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stopwatch.h" beforeDir="false" afterPath="$PROJECT_DIR$/Stopwatch.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/SpaceInvaders" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SpaceInvaders" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
@@ -70,7 +72,7 @@
       <workItem from="1575913419593" duration="943000" />
       <workItem from="1575915696806" duration="1843000" />
       <workItem from="1575925911013" duration="1964000" />
-      <workItem from="1575970842892" duration="2192000" />
+      <workItem from="1575970842892" duration="4144000" />
     </task>
     <servers />
   </component>
@@ -95,7 +97,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>13</line>
+          <line>19</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

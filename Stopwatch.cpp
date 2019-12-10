@@ -8,7 +8,7 @@
 
 std::shared_ptr<Stopwatch> Stopwatch::getInstance()
 {
-        if (!instance) {
+        if (!instance) { // The first time getInstance() is called
                 instance = std::make_shared<Stopwatch>(Stopwatch{});
         }
         return instance;
@@ -16,6 +16,4 @@ std::shared_ptr<Stopwatch> Stopwatch::getInstance()
 
 void Stopwatch::restart() { start = clock(); }
 
-
-// TODO: Ask the prof about this not working correctly
 float Stopwatch::getElapsedTime() const { return static_cast<float>(clock() - start) / CLOCKS_PER_SEC; }
