@@ -12,7 +12,7 @@ std::shared_ptr<Stopwatch> Stopwatch::instance = nullptr;
 int main()
 {
         std::shared_ptr<Stopwatch> s = Stopwatch::getInstance();
-        int i = 1;
+        float accumulatedTimeSinceLastUpdate = 0;
 
 
         sf::RenderWindow window( sf::VideoMode(640,480), "Test Version");
@@ -33,17 +33,26 @@ int main()
                 // update the game
                 window.clear();
 
+                // Calculate the delta
+                float timeSinceLastFrame = s->getElapsedTime();
+                s->restart();
+                accumulatedTimeSinceLastUpdate += timeSinceLastFrame;
+
+
+                if (accumulatedTimeSinceLastUpdate >= 1) {
+                        std::cout << accumulatedTimeSinceLastUpdate << std::endl;
+                        accumulatedTimeSinceLastUpdate -= 1;
+
+                        // Update
+                        circle.move(sf::Vector2f(10,10));
+                }
+
                 window.draw(circle);
                 // draw objects here
                 window.display();
 
 
-                if (s->getElapsedTime() > i) {
-                        std::cout << i << std::endl;
-                        std::cout << s->getElapsedTime() << std::endl;
-                        ++i;
-                        circle.move(sf::Vector2f(10,10));
-                }
+
 
         }
 
