@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Game.cpp
+Game.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Game.h
+
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Game.h
+SFML/Graphics.hpp
+-
+memory
+-
+iostream
+-
+Stopwatch.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.h
+Transformation.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Transformation.h
+
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.h
 ctime
 -
@@ -14,17 +30,5 @@ memory
 
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Transformation.h
 memory
--
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/main.cpp
-Stopwatch.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.h
-Transformation.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Transformation.h
-memory
--
-iostream
--
-SFML/Graphics.hpp
 -
 

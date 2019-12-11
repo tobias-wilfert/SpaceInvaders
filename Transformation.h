@@ -9,7 +9,7 @@
 
 #include <memory>
 
-// TODO ask teacher about dimension specification
+// TODO: Ask teacher about dimension specification
 
 /**
  \n Inspiration: https://www.tutorialspoint.com/Explain-Cplusplus-Singleton-design-pattern
@@ -61,25 +61,37 @@ public:
         void set_height(int height);
 
         /**
-         \n Converts widthCoordinate to 2D game pixel
-         \n @param widthCoordinate coordinate in [-3,3]
+         \n Converts xCoordinate to 2D game pixel
+         \n @param xCoordinate coordinate in [-3,3]
          \n @return coordinate in [0,windowWidth]
          */
-        int convertWidthCoordinate(float widthCoordinate) const;
+        float convertXCoordinate(float xCoordinate) const;
 
         /**
-         \n Converts heightCoordinate to 2D game pixel
-         \n @param heightCoordinate coordinate in [-4,4]
+         \n Converts yCoordinate to 2D game pixel
+         \n @param yCoordinate coordinate in [-4,4]
          \n @return coordinate in [0,windowHeight]
          */
-        int convertHeightCoordinate(float heightCoordinate) const;
+        float convertYCoordinate(float yCoordinate) const;
+
+        /**
+         * Scales the width to 2D game pixel
+         * @param width size relative to [-3,3]
+         * @return width scaled relative to [0,windowWidth]
+         */
+        float convertWidth(float width) const;
+
+        /**
+         * Scales the height to 2D game pixel
+         * @param height size relative to [-4,4]
+         * @return height scaled relative to [0,windowHeight]
+         */
+        float convertHeight(float height) const;
 
 private:
 
-
         //The width of the Application Window
         int windowWidth;
-
 
         //The height of the Application Window
         int windowHeight;

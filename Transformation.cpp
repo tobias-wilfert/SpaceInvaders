@@ -46,18 +46,22 @@ void Transformation::set_height(int height)
 Transformation::Transformation(int window_width, int window_height)
     : windowWidth(window_width), windowHeight(window_height){}
 
-int Transformation::convertWidthCoordinate(float widthCoordinate) const
+float Transformation::convertXCoordinate(float xCoordinate) const
 {
-        if (widthCoordinate < -3 or 3 < widthCoordinate){
-                throw std::invalid_argument("widthCoordinate needs to be in [-3,3]");
+        if (xCoordinate < -3 or 3 < xCoordinate){
+                throw std::invalid_argument("xCoordinate needs to be in [-3,3]");
         }
-        return (widthCoordinate+3)/6*windowWidth;
+        return (xCoordinate+3.f)/6.f*static_cast<float>(windowWidth);
 }
 
-int Transformation::convertHeightCoordinate(float heightCoordinate) const
+float Transformation::convertYCoordinate(float yCoordinate) const
 {
-        if (heightCoordinate < -4 or 4 < heightCoordinate){
-                throw std::invalid_argument("heightCoordinate needs to be in [-4,4]");
+        if (yCoordinate < -4 or 4 < yCoordinate){
+                throw std::invalid_argument("yCoordinate needs to be in [-4,4]");
         }
-        return (heightCoordinate+4)/8*windowHeight;
+        return (yCoordinate+4.f)/8.f*static_cast<float>(windowHeight);
 }
+
+float Transformation::convertWidth(float width) const { return width/6.f* static_cast<float>(windowWidth); }
+
+float Transformation::convertHeight(float height) const { return height/8.f*static_cast<float>(windowHeight); }

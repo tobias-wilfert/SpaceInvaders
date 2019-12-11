@@ -196,6 +196,33 @@ Game.cpp.s:
 	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Game.cpp.s
 .PHONY : Game.cpp.s
 
+Level.o: Level.cpp.o
+
+.PHONY : Level.o
+
+# target to build an object file
+Level.cpp.o:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Level.cpp.o
+.PHONY : Level.cpp.o
+
+Level.i: Level.cpp.i
+
+.PHONY : Level.i
+
+# target to preprocess a source file
+Level.cpp.i:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Level.cpp.i
+.PHONY : Level.cpp.i
+
+Level.s: Level.cpp.s
+
+.PHONY : Level.s
+
+# target to generate assembly for a file
+Level.cpp.s:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Level.cpp.s
+.PHONY : Level.cpp.s
+
 Stopwatch.o: Stopwatch.cpp.o
 
 .PHONY : Stopwatch.o
@@ -293,6 +320,9 @@ help:
 	@echo "... Game.o"
 	@echo "... Game.i"
 	@echo "... Game.s"
+	@echo "... Level.o"
+	@echo "... Level.i"
+	@echo "... Level.s"
 	@echo "... Stopwatch.o"
 	@echo "... Stopwatch.i"
 	@echo "... Stopwatch.s"
