@@ -1,30 +1,46 @@
-//
-// Created by Tobias Wilfert on 12/12/2019.
-//
+//============================================================================
+// Name        : Counter.h
+// Author      : Tobias Wilfert
+// Copyright   : Tobias Wilfert - University of Antwerp
+//============================================================================
 
 #ifndef SPACEINVADERS_COUNTER_H
 #define SPACEINVADERS_COUNTER_H
 
 #include "Entity.h"
 
+/**
+ * Namespace of SpaceInvaders
+ */
 namespace si{
 
 /**
- * Counter for both life and Score
+ * Counter Class used for both Score and Life of the Player. This is possible
+ * because the Model doesn't care about looks.
+ * Derived from Entity as a counter has a position and size
  */
 class Counter: private Entity
 {
 public:
 
-        // Getters and setters to acces should not be able to acces directly?
-        // Just cleaner qua code
+        Counter(const Size& size, const Position& position, int value);
+
+        /**
+         * Returns the value the counter is keeping track of
+         * @return The value the counter is keeping track of
+         */
+        int get_value() const;
+
+        /**
+         * Adjust the value the counter is keeping track of
+         * @param value The new value the counter is keeping track of
+         */
+        void set_value(int value);
 
 private:
 
-
-        // Intitize to 0 and then to 3/4 or life
-        int value;
-
+        // Value the counter tracks
+        int value{0};
 };
 
 }

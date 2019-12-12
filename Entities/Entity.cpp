@@ -6,13 +6,4 @@
 
 #include "Entity.h"
 
-// Helper Structs
-
-si::Size::Size(float width, float height) : width(width), height(height) {}
-
-si::Position::Position(float x, float y) : x(x), y(y) {}
-
-si::Rectangle::Rectangle(const si::Position& top_left, const si::Position& bottom_right)
-    : topLeft(top_left), bottomRight(bottom_right)
-{
-}
+si::Entity::Entity(const si::Size& size, const si::Position& position) : size(size), position(position) {}

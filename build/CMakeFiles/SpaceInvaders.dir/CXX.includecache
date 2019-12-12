@@ -6,36 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/CollideObject.cpp
-CollideObject.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/CollideObject.h
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/CollideObject.h
-Entity.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Entity.h
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Counter.cpp
-Counter.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Counter.h
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Counter.h
-Entity.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Entity.h
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Entity.cpp
-Entity.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Entity.h
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Entity.h
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Player.cpp
-Player.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Player.h
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Player.h
-CollideObject.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/CollideObject.h
-
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Game.cpp
 Game.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Game.h
@@ -52,25 +22,15 @@ Stopwatch.h
 Transformation.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Transformation.h
 
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Level.cpp
-Level.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Level.h
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Level.h
-
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.cpp
 Stopwatch.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.h
 
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.h
-ctime
+chrono
 -
 memory
 -
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Transformation.cpp
-Transformation.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Transformation.h
 
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Transformation.h
 memory

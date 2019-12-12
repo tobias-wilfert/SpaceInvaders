@@ -7,7 +7,6 @@
 #ifndef SPACEINVADERS_STOPWATCH_H
 #define SPACEINVADERS_STOPWATCH_H
 
-//#include <ctime>
 #include <chrono>
 #include <memory>
 
@@ -38,7 +37,7 @@ public:
         // TODO: Ask the prof about this not working correctly
         /**
          \n Calculates the time(in Seconds) that elapsed since the last restart/construction,
-         \n using the following formula: (current - start) / clocks_per_second
+         \n using the following formula: (current - start)
          \n @return Float representation of the number of Seconds that passed since the last restart/construction
          */
         float getElapsedTime() const;

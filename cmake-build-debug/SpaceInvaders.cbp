@@ -140,6 +140,12 @@
 		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Entity.h">
 			<Option target="SpaceInvaders"/>
 		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/HelperDatatypes.cpp">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/HelperDatatypes.h">
+			<Option target="SpaceInvaders"/>
+		</Unit>
 		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Player.cpp">
 			<Option target="SpaceInvaders"/>
 		</Unit>

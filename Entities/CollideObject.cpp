@@ -1,8 +1,15 @@
-//
-// Created by Tobias Wilfert on 12/12/2019.
-//
+//============================================================================
+// Name        : CollideObject.cpp
+// Author      : Tobias Wilfert
+// Copyright   : Tobias Wilfert - University of Antwerp
+//============================================================================
 
 #include "CollideObject.h"
+
+si::CollideObject::CollideObject(const si::Size& size, const si::Position& position, si::Type type)
+    : Entity(size, position), type(type)
+{
+}
 
 si::Rectangle si::CollideObject::getBound() const
 {
@@ -12,7 +19,6 @@ si::Rectangle si::CollideObject::getBound() const
         float bottomRightY = topLeftY + size.height;
         return si::Rectangle{si::Position(topLeftX,topLeftY),si::Position(bottomRightX,bottomRightY)};
 }
-
 
 bool si::collided(const si::CollideObject& co1, const si::CollideObject& co2)
 {

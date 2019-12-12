@@ -250,6 +250,33 @@ Entities/Entity.cpp.s:
 	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Entities/Entity.cpp.s
 .PHONY : Entities/Entity.cpp.s
 
+Entities/HelperDatatypes.o: Entities/HelperDatatypes.cpp.o
+
+.PHONY : Entities/HelperDatatypes.o
+
+# target to build an object file
+Entities/HelperDatatypes.cpp.o:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Entities/HelperDatatypes.cpp.o
+.PHONY : Entities/HelperDatatypes.cpp.o
+
+Entities/HelperDatatypes.i: Entities/HelperDatatypes.cpp.i
+
+.PHONY : Entities/HelperDatatypes.i
+
+# target to preprocess a source file
+Entities/HelperDatatypes.cpp.i:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Entities/HelperDatatypes.cpp.i
+.PHONY : Entities/HelperDatatypes.cpp.i
+
+Entities/HelperDatatypes.s: Entities/HelperDatatypes.cpp.s
+
+.PHONY : Entities/HelperDatatypes.s
+
+# target to generate assembly for a file
+Entities/HelperDatatypes.cpp.s:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Entities/HelperDatatypes.cpp.s
+.PHONY : Entities/HelperDatatypes.cpp.s
+
 Entities/Player.o: Entities/Player.cpp.o
 
 .PHONY : Entities/Player.o
@@ -434,6 +461,9 @@ help:
 	@echo "... Entities/Entity.o"
 	@echo "... Entities/Entity.i"
 	@echo "... Entities/Entity.s"
+	@echo "... Entities/HelperDatatypes.o"
+	@echo "... Entities/HelperDatatypes.i"
+	@echo "... Entities/HelperDatatypes.s"
 	@echo "... Entities/Player.o"
 	@echo "... Entities/Player.i"
 	@echo "... Entities/Player.s"

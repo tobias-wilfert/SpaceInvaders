@@ -7,48 +7,27 @@
 #ifndef SPACEINVADERS_ENTITY_H
 #define SPACEINVADERS_ENTITY_H
 
-
-// Namespace to avoid name collision
-namespace si{
-
-// As all inherit from Entity why  not declare it here?
-struct Size{
-
-        Size(float width, float height);
-
-        float width;
-        float height;
-};
-
-struct Position{
-
-        Position(float x, float y);
-
-        float x;
-        float y;
-};
-
-
-struct Rectangle{
-
-        Rectangle(const Position& top_left, const Position& bottom_right);
-
-        // Top left corner
-        Position topLeft;
-        // Bottom right corner
-        Position bottomRight;
-};
+#include "HelperDatatypes.h"
 
 /**
- * Abstract base class for all entities
- * -> Should entity have all virtual function members?
+ * Namespace of SpaceInvaders
+ */
+namespace si{
+
+/**
+ * Base class of all items in the game
+ * As all have a Position and Size
  */
 class Entity
 {
 public:
 
+        Entity(const Size& size, const Position& position);
+
+        // The size of the entity
         Size size;
 
+        // The position of the entity
         Position position;
 
 private:
