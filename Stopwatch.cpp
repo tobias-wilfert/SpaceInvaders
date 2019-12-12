@@ -14,9 +14,13 @@ std::shared_ptr<Stopwatch> Stopwatch::getInstance()
         return instance;
 }
 
-void Stopwatch::restart() { start = clock(); }
+void Stopwatch::restart() { start = std::chrono::high_resolution_clock::now(); }
 
-float Stopwatch::getElapsedTime() const { return static_cast<float>(clock() - start) / CLOCKS_PER_SEC; }
+float Stopwatch::getElapsedTime() const
+{
+        std::chrono::duration<float> diff = std::chrono::high_resolution_clock::now() - start;
+        return diff.count();
+}
 
-Stopwatch::Stopwatch() : start(clock()) {}
+Stopwatch::Stopwatch() : start(std::chrono::high_resolution_clock::now()) {}
 

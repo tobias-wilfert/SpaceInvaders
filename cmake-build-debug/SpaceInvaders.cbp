@@ -122,6 +122,30 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/CollideObject.cpp">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/CollideObject.h">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Counter.cpp">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Counter.h">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Entity.cpp">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Entity.h">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Player.cpp">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Player.h">
+			<Option target="SpaceInvaders"/>
+		</Unit>
 		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Game.cpp">
 			<Option target="SpaceInvaders"/>
 		</Unit>

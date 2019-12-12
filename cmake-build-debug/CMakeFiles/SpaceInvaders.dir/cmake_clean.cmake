@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/SpaceInvaders.dir/Entities/CollideObject.cpp.o"
+  "CMakeFiles/SpaceInvaders.dir/Entities/Counter.cpp.o"
+  "CMakeFiles/SpaceInvaders.dir/Entities/Entity.cpp.o"
+  "CMakeFiles/SpaceInvaders.dir/Entities/Player.cpp.o"
   "CMakeFiles/SpaceInvaders.dir/Game.cpp.o"
   "CMakeFiles/SpaceInvaders.dir/Level.cpp.o"
   "CMakeFiles/SpaceInvaders.dir/Stopwatch.cpp.o"

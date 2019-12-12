@@ -22,8 +22,12 @@ Stopwatch.h
 Transformation.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Transformation.h
 
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.cpp
+Stopwatch.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.h
-ctime
+
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.h
+chrono
 -
 memory
 -
@@ -31,4 +35,8 @@ memory
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Transformation.h
 memory
 -
+
+/Users/tobiaswilfert/Desktop/SpaceInvaders/main.cpp
+Game.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Game.h
 

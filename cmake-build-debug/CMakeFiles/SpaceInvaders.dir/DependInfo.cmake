@@ -4,6 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/CollideObject.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Entities/CollideObject.cpp.o"
+  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Counter.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Entities/Counter.cpp.o"
+  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Entity.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Entities/Entity.cpp.o"
+  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Player.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Entities/Player.cpp.o"
   "/Users/tobiaswilfert/Desktop/SpaceInvaders/Game.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Game.cpp.o"
   "/Users/tobiaswilfert/Desktop/SpaceInvaders/Level.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Level.cpp.o"
   "/Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Stopwatch.cpp.o"

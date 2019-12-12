@@ -7,7 +7,8 @@
 #ifndef SPACEINVADERS_STOPWATCH_H
 #define SPACEINVADERS_STOPWATCH_H
 
-#include <ctime>
+//#include <ctime>
+#include <chrono>
 #include <memory>
 
 /**
@@ -48,7 +49,7 @@ private:
         static std::shared_ptr<Stopwatch> instance;
 
         // The number of Clock ticks the program was at during the last restart/construction
-        clock_t start;
+        std::chrono::time_point<std::chrono::high_resolution_clock> start;
 
         // Private constructor causing only 1 instance ot Stopwatch to be allowed
         Stopwatch();

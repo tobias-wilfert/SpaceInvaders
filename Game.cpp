@@ -6,6 +6,7 @@
 
 #include "Game.h"
 
+
 std::shared_ptr<Stopwatch> Stopwatch::instance = nullptr;
 std::shared_ptr<Transformation> Transformation::instance = nullptr;
 
@@ -16,6 +17,8 @@ void Game::execute()
         // Initialize the game
         initialize();
 
+
+        // TODO: Figure out how to get the loadFromFile work with SFML
 
         sf::RenderWindow window( sf::VideoMode(transformation->get_width(),transformation->get_height()), "SpaceInvaders");
 
@@ -38,11 +41,12 @@ void Game::execute()
         text.setPosition(window.getSize().x/2.f-size.width/2.f,window.getSize().y/2.f-size.height/2.f);
 
 
+        std::cout << CLOCKS_PER_SEC << std::endl;
+
         float xw = 0.52, yh = 0.32;
         float x=0-xw/2.f, y=3.5;
         float accumulatedTimeSinceLastUpdate = 0;
         sf::RectangleShape rect(sf::Vector2f(transformation->convertWidth(xw),transformation->convertHeight(yh)));
-
 
         // Load the texture -> View
         // TODO: Adjust the Working director of the project for the resources to work
@@ -89,8 +93,12 @@ void Game::execute()
                 // Update every Second -> Clock
                 if (accumulatedTimeSinceLastUpdate >= 1) {
 
+                        // DO somthing
+
+                        std::cout << "timeSinceLastFrame" << timeSinceLastFrame << std::endl;
+                        std::cout << "accumulatedTimeSinceLastUpdate" << accumulatedTimeSinceLastUpdate << std::endl;
                         accumulatedTimeSinceLastUpdate -= 1;
-                        std::cout <<transformation->convertYCoordinate(y) <<":"<< y << std::endl;
+                        //std::cout <<transformation->convertYCoordinate(y) <<":"<< y << std::endl;
                 }
 
                 // Draw Objects here -> View
@@ -109,7 +117,6 @@ void Game::initialize()
 {
         // Get the size of the monitor
         unsigned int width{0}, height{0};
-        // TODO: Fine tune with the school PC
         height  = sf::VideoMode::getDesktopMode().height*0.75;
         width = height/8.f*6.f;
 
