@@ -21,11 +21,15 @@ void Game::execute()
 
 
         sf::Font font;
+        // This here
+
         if (!font.loadFromFile("../resources/fonts/KenPixel.ttf"))
         {
                 std::cout << "Error loading file" << std::endl;
-                //system("pause");
+                system("pause");
         }
+
+
         sf::Text text;
         text.setFont(font);
         text.setCharacterSize(50);
@@ -46,7 +50,7 @@ void Game::execute()
         if(!texture.loadFromFile("../resources/img/player.png"))
         {
                 std::cout << "Load failed" << std::endl;
-                //system("pause");
+                system("pause");
         }
         rect.setTexture(&texture);
 
