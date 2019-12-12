@@ -5,7 +5,6 @@ CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Game.cpp
 CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Game.h
 CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Stopwatch.h
 CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Transformation.h
-CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../resources.h
 
 CMakeFiles/SpaceInvaders.dir/Level.cpp.o: ../Level.cpp
 CMakeFiles/SpaceInvaders.dir/Level.cpp.o: ../Level.h

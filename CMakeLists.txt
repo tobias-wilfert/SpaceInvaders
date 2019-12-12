@@ -2,7 +2,7 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
 
 PROJECT(SpaceInvaders)
 SET(CMAKE_CXX_STANDARD 14)
-ADD_EXECUTABLE(SpaceInvaders main.cpp Stopwatch.cpp Stopwatch.h Game.cpp Game.h Transformation.cpp Transformation.h Level.cpp Level.h resources.h)
+ADD_EXECUTABLE(SpaceInvaders main.cpp Stopwatch.cpp Stopwatch.h Game.cpp Game.h Transformation.cpp Transformation.h Level.cpp Level.h)
 
 # Extend the CMake module path to find the FindSFML.cmake
 # file in {project root}/cmake/Modules

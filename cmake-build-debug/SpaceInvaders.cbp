@@ -149,9 +149,6 @@
 		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/main.cpp">
 			<Option target="SpaceInvaders"/>
 		</Unit>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/resources.h">
-			<Option target="SpaceInvaders"/>
-		</Unit>
 		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

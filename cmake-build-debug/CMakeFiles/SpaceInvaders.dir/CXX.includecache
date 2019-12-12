@@ -9,8 +9,6 @@
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Game.cpp
 Game.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Game.h
-resources.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/resources.h
 
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Game.h
 SFML/Graphics.hpp
@@ -33,6 +31,4 @@ memory
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Transformation.h
 memory
 -
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/resources.h
 
