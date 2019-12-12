@@ -4,16 +4,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/student/Desktop/SpaceInvaders/Game.cpp" "/home/student/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Game.cpp.o"
-  "/home/student/Desktop/SpaceInvaders/Level.cpp" "/home/student/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Level.cpp.o"
-  "/home/student/Desktop/SpaceInvaders/Stopwatch.cpp" "/home/student/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Stopwatch.cpp.o"
-  "/home/student/Desktop/SpaceInvaders/Transformation.cpp" "/home/student/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Transformation.cpp.o"
-  "/home/student/Desktop/SpaceInvaders/main.cpp" "/home/student/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/main.cpp.o"
+  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Game.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Game.cpp.o"
+  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Level.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Level.cpp.o"
+  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Stopwatch.cpp.o"
+  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Transformation.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Transformation.cpp.o"
+  "/Users/tobiaswilfert/Desktop/SpaceInvaders/main.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/main.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/Library/Frameworks/SFML.framework"
   )
 
 # Targets to which this target links.

@@ -5,6 +5,7 @@
 //============================================================================
 
 #include "Game.h"
+#include "resources.h"
 
 std::shared_ptr<Stopwatch> Stopwatch::instance = nullptr;
 std::shared_ptr<Transformation> Transformation::instance = nullptr;
@@ -19,7 +20,9 @@ void Game::execute()
         sf::RenderWindow window( sf::VideoMode(transformation->get_width(),transformation->get_height()), "SpaceInvaders");
 
         sf::Font font;
-        if (!font.loadFromFile("../resources/fonts/KenPixel.ttf"))
+        // TODO: Could be more elegant
+        std::string pathString = path;
+        if (!font.loadFromFile(pathString+"fonts/KenPixel.ttf"))
         {
                 std::cout << "Error loading file" << std::endl;
                 system("pause");
@@ -39,7 +42,7 @@ void Game::execute()
         // Load the texture -> View
         // TODO: Adjust the Working director of the project for the resources to work
         sf::Texture texture;
-        if(!texture.loadFromFile("../resources/img/player.png"))
+        if(!texture.loadFromFile(pathString+"img/player.png"))
         {
                 std::cout << "Load failed" << std::endl;
                 system("pause");
