@@ -19,7 +19,7 @@ void Game::execute()
         sf::RenderWindow window( sf::VideoMode(transformation->get_width(),transformation->get_height()), "SpaceInvaders");
 
         sf::Font font;
-        if (!font.loadFromFile("resources/fonts/KenPixel.ttf"))
+        if (!font.loadFromFile("../resources/fonts/KenPixel.ttf"))
         {
                 std::cout << "Error loading file" << std::endl;
                 system("pause");
@@ -39,7 +39,7 @@ void Game::execute()
         // Load the texture -> View
         // TODO: Adjust the Working director of the project for the resources to work
         sf::Texture texture;
-        if(!texture.loadFromFile("resources/img/player.png"))
+        if(!texture.loadFromFile("../resources/img/player.png"))
         {
                 std::cout << "Load failed" << std::endl;
                 system("pause");
