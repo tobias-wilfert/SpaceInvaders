@@ -7,15 +7,16 @@
 #ifndef SPACEINVADERS_HELPERDATATYPES_H
 #define SPACEINVADERS_HELPERDATATYPES_H
 
-/**
- * Namespace of SpaceInvaders
- */
+///Namespace of SpaceInvaders
 namespace si {
 
+/// Namespace of the Entity hierarchy
+namespace entity {
 /**
  * Types of leaves in the Class hierarchy
  */
-enum entityType{
+enum entityType
+{
         counter,
         immortal,
         player,
@@ -27,7 +28,8 @@ enum entityType{
 /**
  * Size represented by 2 floats (width,height)
  */
-struct Size{
+struct Size
+{
 
         Size(float width, float height);
 
@@ -38,7 +40,8 @@ struct Size{
 /**
  * Position represented by (x,y)
  */
-struct Position{
+struct Position
+{
 
         Position(float x, float y);
 
@@ -49,7 +52,8 @@ struct Position{
 /**
  * Rectangle described by 2 Positions TopLeft and BottomRight
  */
-struct Rectangle{
+struct Rectangle
+{
 
         Rectangle(const Position& top_left, const Position& bottom_right);
 
@@ -59,6 +63,7 @@ struct Rectangle{
         Position bottomRight;
 };
 
+}
 }
 
 #endif // SPACEINVADERS_HELPERDATATYPES_H

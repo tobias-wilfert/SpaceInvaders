@@ -9,12 +9,16 @@
 
 #include "Entity.h"
 
-/**
- * Namespace of SpaceInvaders
- */
-namespace si{
+/// Namespace of SpaceInvaders
+namespace si {
 
-enum counterType{
+/// Namespace of the Entity hierarchy
+namespace entity {
+/**
+ * Type of the counter either health or score needed because view displays them differently
+ */
+enum counterType
+{
         health,
         score
 };
@@ -24,7 +28,7 @@ enum counterType{
  * because the Model doesn't care about looks.
  * Derived from Entity as a counter has a position and size
  */
-class Counter: private Entity
+class Counter : private Entity
 {
 public:
         Counter(const Size& size, const Position& position, int value, counterType counter_type);
@@ -54,7 +58,6 @@ public:
         entityType getEntityType() const override;
 
 private:
-
         // Value the counter tracks
         int value;
 
@@ -65,6 +68,7 @@ private:
         entityType entity_type{entityType::counter};
 };
 
+}
 }
 
 #endif // SPACEINVADERS_COUNTER_H

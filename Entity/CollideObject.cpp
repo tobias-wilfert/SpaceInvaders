@@ -7,30 +7,30 @@
 #include "CollideObject.h"
 #include <stdexcept>
 
-si::CollideObject::CollideObject(const si::Size& size, const si::Position& position, unsigned int attack_points,
-    si::collideObjectType type)
+si::entity::CollideObject::CollideObject(const si::entity::Size& size, const si::entity::Position& position, unsigned int attack_points,
+    si::entity::collideObjectType type)
     : Entity(size, position), attackPoints(attack_points), type(type)
 {
 }
 
-si::collideObjectType si::CollideObject::get_type() const { return type; }
+si::entity::collideObjectType si::entity::CollideObject::get_type() const { return type; }
 
-bool si::CollideObject::is_destroyed() const { return destroyed; }
+bool si::entity::CollideObject::is_destroyed() const { return destroyed; }
 
-void si::CollideObject::set_destroyed(bool destroyed) { CollideObject::destroyed = destroyed; }
+void si::entity::CollideObject::set_destroyed(bool destroyed) { CollideObject::destroyed = destroyed; }
 
-unsigned int si::CollideObject::get_attack_points() const { return attackPoints; }
+unsigned int si::entity::CollideObject::get_attack_points() const { return attackPoints; }
 
-si::Rectangle si::CollideObject::getBound() const
+si::entity::Rectangle si::entity::CollideObject::getBound() const
 {
         float topLeftX = position.x;
         float topLeftY = position.y;
         float bottomRightX = topLeftX + size.width;
         float bottomRightY = topLeftY + size.height;
-        return si::Rectangle{si::Position(topLeftX,topLeftY),si::Position(bottomRightX,bottomRightY)};
+        return si::entity::Rectangle{si::entity::Position(topLeftX,topLeftY),si::entity::Position(bottomRightX,bottomRightY)};
 }
 
-bool si::collided(const si::CollideObject& co1, const si::CollideObject& co2)
+bool si::entity::collided(const si::entity::CollideObject& co1, const si::entity::CollideObject& co2)
 {
         Position l1 = co1.getBound().topLeft;
         Position l2 = co2.getBound().topLeft;
@@ -45,7 +45,7 @@ bool si::collided(const si::CollideObject& co1, const si::CollideObject& co2)
                 return true;
         }
 }
-void si::checkCollision(si::CollideObject* co1, si::CollideObject* co2)
+void si::entity::checkCollision(si::entity::CollideObject* co1, si::entity::CollideObject* co2)
 {
         // Check that both objects are not jet destroyed
         if (co1->is_destroyed() or co2->is_destroyed()){

@@ -9,10 +9,11 @@
 
 #include "Mortal.h"
 
-/**
- * Namespace of SpaceInvaders
- */
+///Namespace of SpaceInvaders
 namespace si {
+
+/// Namespace of the Entity hierarchy
+namespace entity {
 
 /**
  * Class for all Enemies may serve as a base class for even more of them
@@ -31,12 +32,11 @@ public:
         entityType getEntityType() const override;
 
 private:
-
         // The type of the entity
         entityType entity_type{entityType::enemy};
-
 };
 
+}
 }
 
 #endif // SPACEINVADERS_ENEMY_H

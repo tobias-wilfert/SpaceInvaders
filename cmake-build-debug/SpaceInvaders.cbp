@@ -122,64 +122,64 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Bullet.cpp">
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Bullet.cpp">
 			<Option target="SpaceInvaders"/>
 		</Unit>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Bullet.h">
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Bullet.h">
 			<Option target="SpaceInvaders"/>
 		</Unit>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/CollideObject.cpp">
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/CollideObject.cpp">
 			<Option target="SpaceInvaders"/>
 		</Unit>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/CollideObject.h">
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/CollideObject.h">
 			<Option target="SpaceInvaders"/>
 		</Unit>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Counter.cpp">
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Counter.cpp">
 			<Option target="SpaceInvaders"/>
 		</Unit>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Counter.h">
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Counter.h">
 			<Option target="SpaceInvaders"/>
 		</Unit>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Enemy.cpp">
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Enemy.cpp">
 			<Option target="SpaceInvaders"/>
 		</Unit>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Enemy.h">
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Enemy.h">
 			<Option target="SpaceInvaders"/>
 		</Unit>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Entity.cpp">
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.cpp">
 			<Option target="SpaceInvaders"/>
 		</Unit>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Entity.h">
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.h">
 			<Option target="SpaceInvaders"/>
 		</Unit>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/HelperDatatypes.cpp">
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.cpp">
 			<Option target="SpaceInvaders"/>
 		</Unit>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/HelperDatatypes.h">
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.h">
 			<Option target="SpaceInvaders"/>
 		</Unit>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Immortal.cpp">
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Immortal.cpp">
 			<Option target="SpaceInvaders"/>
 		</Unit>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Immortal.h">
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Immortal.h">
 			<Option target="SpaceInvaders"/>
 		</Unit>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Mortal.cpp">
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.cpp">
 			<Option target="SpaceInvaders"/>
 		</Unit>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Mortal.h">
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.h">
 			<Option target="SpaceInvaders"/>
 		</Unit>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Player.cpp">
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Player.cpp">
 			<Option target="SpaceInvaders"/>
 		</Unit>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Player.h">
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Player.h">
 			<Option target="SpaceInvaders"/>
 		</Unit>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Shield.cpp">
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Shield.cpp">
 			<Option target="SpaceInvaders"/>
 		</Unit>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Shield.h">
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Shield.h">
 			<Option target="SpaceInvaders"/>
 		</Unit>
 		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Game.cpp">
@@ -192,6 +192,24 @@
 			<Option target="SpaceInvaders"/>
 		</Unit>
 		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Level.h">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Controller.cpp">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Controller.h">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.cpp">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.h">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/View.cpp">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/View.h">
 			<Option target="SpaceInvaders"/>
 		</Unit>
 		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.cpp">

@@ -19,11 +19,8 @@ void Game::execute()
 
         sf::RenderWindow window( sf::VideoMode(transformation->get_width(),transformation->get_height()), "SpaceInvaders");
 
-
-
+        /*
         sf::Font font;
-        // This here
-
         if (!font.loadFromFile("../resources/fonts/KenPixel.ttf"))
         {
                 std::cout << "Error loading file" << std::endl;
@@ -37,7 +34,7 @@ void Game::execute()
         text.setString("Space Invaders");
         sf::Rect<float> size = text.getGlobalBounds();
         text.setPosition(window.getSize().x/2.f-size.width/2.f,window.getSize().y/2.f-size.height/2.f);
-
+        */
 
         std::cout << CLOCKS_PER_SEC << std::endl;
 
@@ -47,6 +44,7 @@ void Game::execute()
         sf::RectangleShape rect(sf::Vector2f(transformation->convertWidth(xw),transformation->convertHeight(yh)));
 
         // Load the texture -> View
+        /*
         sf::Texture texture;
         if(!texture.loadFromFile("../resources/img/player.png"))
         {
@@ -54,6 +52,7 @@ void Game::execute()
                 system("pause");
         }
         rect.setTexture(&texture);
+         */
 
 
         // Main game Loop
@@ -103,7 +102,7 @@ void Game::execute()
 
                 // Draw consistently -> View
                 window.draw(rect);
-                window.draw(text);
+                //window.draw(text);
 
                 // Draw objects here -> View
                 window.display();

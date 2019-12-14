@@ -122,135 +122,174 @@ CMakeFiles/SpaceInvaders.dir/Level.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Level.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Level.cpp -o CMakeFiles/SpaceInvaders.dir/Level.cpp.s
 
-CMakeFiles/SpaceInvaders.dir/Entities/Entity.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
-CMakeFiles/SpaceInvaders.dir/Entities/Entity.cpp.o: ../Entities/Entity.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SpaceInvaders.dir/Entities/Entity.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Entities/Entity.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Entity.cpp
+CMakeFiles/SpaceInvaders.dir/Entity/Entity.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
+CMakeFiles/SpaceInvaders.dir/Entity/Entity.cpp.o: ../Entity/Entity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SpaceInvaders.dir/Entity/Entity.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Entity/Entity.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.cpp
 
-CMakeFiles/SpaceInvaders.dir/Entities/Entity.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Entities/Entity.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Entity.cpp > CMakeFiles/SpaceInvaders.dir/Entities/Entity.cpp.i
+CMakeFiles/SpaceInvaders.dir/Entity/Entity.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Entity/Entity.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.cpp > CMakeFiles/SpaceInvaders.dir/Entity/Entity.cpp.i
 
-CMakeFiles/SpaceInvaders.dir/Entities/Entity.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Entities/Entity.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Entity.cpp -o CMakeFiles/SpaceInvaders.dir/Entities/Entity.cpp.s
+CMakeFiles/SpaceInvaders.dir/Entity/Entity.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Entity/Entity.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.cpp -o CMakeFiles/SpaceInvaders.dir/Entity/Entity.cpp.s
 
-CMakeFiles/SpaceInvaders.dir/Entities/Player.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
-CMakeFiles/SpaceInvaders.dir/Entities/Player.cpp.o: ../Entities/Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SpaceInvaders.dir/Entities/Player.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Entities/Player.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Player.cpp
+CMakeFiles/SpaceInvaders.dir/Entity/Player.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
+CMakeFiles/SpaceInvaders.dir/Entity/Player.cpp.o: ../Entity/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SpaceInvaders.dir/Entity/Player.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Entity/Player.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Player.cpp
 
-CMakeFiles/SpaceInvaders.dir/Entities/Player.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Entities/Player.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Player.cpp > CMakeFiles/SpaceInvaders.dir/Entities/Player.cpp.i
+CMakeFiles/SpaceInvaders.dir/Entity/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Entity/Player.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Player.cpp > CMakeFiles/SpaceInvaders.dir/Entity/Player.cpp.i
 
-CMakeFiles/SpaceInvaders.dir/Entities/Player.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Entities/Player.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Player.cpp -o CMakeFiles/SpaceInvaders.dir/Entities/Player.cpp.s
+CMakeFiles/SpaceInvaders.dir/Entity/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Entity/Player.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Player.cpp -o CMakeFiles/SpaceInvaders.dir/Entity/Player.cpp.s
 
-CMakeFiles/SpaceInvaders.dir/Entities/CollideObject.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
-CMakeFiles/SpaceInvaders.dir/Entities/CollideObject.cpp.o: ../Entities/CollideObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SpaceInvaders.dir/Entities/CollideObject.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Entities/CollideObject.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/CollideObject.cpp
+CMakeFiles/SpaceInvaders.dir/Entity/CollideObject.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
+CMakeFiles/SpaceInvaders.dir/Entity/CollideObject.cpp.o: ../Entity/CollideObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SpaceInvaders.dir/Entity/CollideObject.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Entity/CollideObject.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/CollideObject.cpp
 
-CMakeFiles/SpaceInvaders.dir/Entities/CollideObject.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Entities/CollideObject.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/CollideObject.cpp > CMakeFiles/SpaceInvaders.dir/Entities/CollideObject.cpp.i
+CMakeFiles/SpaceInvaders.dir/Entity/CollideObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Entity/CollideObject.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/CollideObject.cpp > CMakeFiles/SpaceInvaders.dir/Entity/CollideObject.cpp.i
 
-CMakeFiles/SpaceInvaders.dir/Entities/CollideObject.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Entities/CollideObject.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/CollideObject.cpp -o CMakeFiles/SpaceInvaders.dir/Entities/CollideObject.cpp.s
+CMakeFiles/SpaceInvaders.dir/Entity/CollideObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Entity/CollideObject.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/CollideObject.cpp -o CMakeFiles/SpaceInvaders.dir/Entity/CollideObject.cpp.s
 
-CMakeFiles/SpaceInvaders.dir/Entities/Counter.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
-CMakeFiles/SpaceInvaders.dir/Entities/Counter.cpp.o: ../Entities/Counter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SpaceInvaders.dir/Entities/Counter.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Entities/Counter.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Counter.cpp
+CMakeFiles/SpaceInvaders.dir/Entity/Counter.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
+CMakeFiles/SpaceInvaders.dir/Entity/Counter.cpp.o: ../Entity/Counter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SpaceInvaders.dir/Entity/Counter.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Entity/Counter.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Counter.cpp
 
-CMakeFiles/SpaceInvaders.dir/Entities/Counter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Entities/Counter.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Counter.cpp > CMakeFiles/SpaceInvaders.dir/Entities/Counter.cpp.i
+CMakeFiles/SpaceInvaders.dir/Entity/Counter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Entity/Counter.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Counter.cpp > CMakeFiles/SpaceInvaders.dir/Entity/Counter.cpp.i
 
-CMakeFiles/SpaceInvaders.dir/Entities/Counter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Entities/Counter.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Counter.cpp -o CMakeFiles/SpaceInvaders.dir/Entities/Counter.cpp.s
+CMakeFiles/SpaceInvaders.dir/Entity/Counter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Entity/Counter.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Counter.cpp -o CMakeFiles/SpaceInvaders.dir/Entity/Counter.cpp.s
 
-CMakeFiles/SpaceInvaders.dir/Entities/HelperDatatypes.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
-CMakeFiles/SpaceInvaders.dir/Entities/HelperDatatypes.cpp.o: ../Entities/HelperDatatypes.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SpaceInvaders.dir/Entities/HelperDatatypes.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Entities/HelperDatatypes.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/HelperDatatypes.cpp
+CMakeFiles/SpaceInvaders.dir/Entity/HelperDatatypes.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
+CMakeFiles/SpaceInvaders.dir/Entity/HelperDatatypes.cpp.o: ../Entity/HelperDatatypes.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SpaceInvaders.dir/Entity/HelperDatatypes.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Entity/HelperDatatypes.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.cpp
 
-CMakeFiles/SpaceInvaders.dir/Entities/HelperDatatypes.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Entities/HelperDatatypes.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/HelperDatatypes.cpp > CMakeFiles/SpaceInvaders.dir/Entities/HelperDatatypes.cpp.i
+CMakeFiles/SpaceInvaders.dir/Entity/HelperDatatypes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Entity/HelperDatatypes.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.cpp > CMakeFiles/SpaceInvaders.dir/Entity/HelperDatatypes.cpp.i
 
-CMakeFiles/SpaceInvaders.dir/Entities/HelperDatatypes.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Entities/HelperDatatypes.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/HelperDatatypes.cpp -o CMakeFiles/SpaceInvaders.dir/Entities/HelperDatatypes.cpp.s
+CMakeFiles/SpaceInvaders.dir/Entity/HelperDatatypes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Entity/HelperDatatypes.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.cpp -o CMakeFiles/SpaceInvaders.dir/Entity/HelperDatatypes.cpp.s
 
-CMakeFiles/SpaceInvaders.dir/Entities/Mortal.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
-CMakeFiles/SpaceInvaders.dir/Entities/Mortal.cpp.o: ../Entities/Mortal.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SpaceInvaders.dir/Entities/Mortal.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Entities/Mortal.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Mortal.cpp
+CMakeFiles/SpaceInvaders.dir/Entity/Mortal.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
+CMakeFiles/SpaceInvaders.dir/Entity/Mortal.cpp.o: ../Entity/Mortal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SpaceInvaders.dir/Entity/Mortal.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Entity/Mortal.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.cpp
 
-CMakeFiles/SpaceInvaders.dir/Entities/Mortal.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Entities/Mortal.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Mortal.cpp > CMakeFiles/SpaceInvaders.dir/Entities/Mortal.cpp.i
+CMakeFiles/SpaceInvaders.dir/Entity/Mortal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Entity/Mortal.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.cpp > CMakeFiles/SpaceInvaders.dir/Entity/Mortal.cpp.i
 
-CMakeFiles/SpaceInvaders.dir/Entities/Mortal.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Entities/Mortal.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Mortal.cpp -o CMakeFiles/SpaceInvaders.dir/Entities/Mortal.cpp.s
+CMakeFiles/SpaceInvaders.dir/Entity/Mortal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Entity/Mortal.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.cpp -o CMakeFiles/SpaceInvaders.dir/Entity/Mortal.cpp.s
 
-CMakeFiles/SpaceInvaders.dir/Entities/Immortal.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
-CMakeFiles/SpaceInvaders.dir/Entities/Immortal.cpp.o: ../Entities/Immortal.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SpaceInvaders.dir/Entities/Immortal.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Entities/Immortal.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Immortal.cpp
+CMakeFiles/SpaceInvaders.dir/Entity/Immortal.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
+CMakeFiles/SpaceInvaders.dir/Entity/Immortal.cpp.o: ../Entity/Immortal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SpaceInvaders.dir/Entity/Immortal.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Entity/Immortal.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Immortal.cpp
 
-CMakeFiles/SpaceInvaders.dir/Entities/Immortal.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Entities/Immortal.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Immortal.cpp > CMakeFiles/SpaceInvaders.dir/Entities/Immortal.cpp.i
+CMakeFiles/SpaceInvaders.dir/Entity/Immortal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Entity/Immortal.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Immortal.cpp > CMakeFiles/SpaceInvaders.dir/Entity/Immortal.cpp.i
 
-CMakeFiles/SpaceInvaders.dir/Entities/Immortal.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Entities/Immortal.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Immortal.cpp -o CMakeFiles/SpaceInvaders.dir/Entities/Immortal.cpp.s
+CMakeFiles/SpaceInvaders.dir/Entity/Immortal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Entity/Immortal.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Immortal.cpp -o CMakeFiles/SpaceInvaders.dir/Entity/Immortal.cpp.s
 
-CMakeFiles/SpaceInvaders.dir/Entities/Enemy.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
-CMakeFiles/SpaceInvaders.dir/Entities/Enemy.cpp.o: ../Entities/Enemy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SpaceInvaders.dir/Entities/Enemy.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Entities/Enemy.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Enemy.cpp
+CMakeFiles/SpaceInvaders.dir/Entity/Enemy.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
+CMakeFiles/SpaceInvaders.dir/Entity/Enemy.cpp.o: ../Entity/Enemy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SpaceInvaders.dir/Entity/Enemy.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Entity/Enemy.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Enemy.cpp
 
-CMakeFiles/SpaceInvaders.dir/Entities/Enemy.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Entities/Enemy.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Enemy.cpp > CMakeFiles/SpaceInvaders.dir/Entities/Enemy.cpp.i
+CMakeFiles/SpaceInvaders.dir/Entity/Enemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Entity/Enemy.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Enemy.cpp > CMakeFiles/SpaceInvaders.dir/Entity/Enemy.cpp.i
 
-CMakeFiles/SpaceInvaders.dir/Entities/Enemy.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Entities/Enemy.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Enemy.cpp -o CMakeFiles/SpaceInvaders.dir/Entities/Enemy.cpp.s
+CMakeFiles/SpaceInvaders.dir/Entity/Enemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Entity/Enemy.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Enemy.cpp -o CMakeFiles/SpaceInvaders.dir/Entity/Enemy.cpp.s
 
-CMakeFiles/SpaceInvaders.dir/Entities/Bullet.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
-CMakeFiles/SpaceInvaders.dir/Entities/Bullet.cpp.o: ../Entities/Bullet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/SpaceInvaders.dir/Entities/Bullet.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Entities/Bullet.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Bullet.cpp
+CMakeFiles/SpaceInvaders.dir/Entity/Bullet.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
+CMakeFiles/SpaceInvaders.dir/Entity/Bullet.cpp.o: ../Entity/Bullet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/SpaceInvaders.dir/Entity/Bullet.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Entity/Bullet.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Bullet.cpp
 
-CMakeFiles/SpaceInvaders.dir/Entities/Bullet.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Entities/Bullet.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Bullet.cpp > CMakeFiles/SpaceInvaders.dir/Entities/Bullet.cpp.i
+CMakeFiles/SpaceInvaders.dir/Entity/Bullet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Entity/Bullet.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Bullet.cpp > CMakeFiles/SpaceInvaders.dir/Entity/Bullet.cpp.i
 
-CMakeFiles/SpaceInvaders.dir/Entities/Bullet.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Entities/Bullet.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Bullet.cpp -o CMakeFiles/SpaceInvaders.dir/Entities/Bullet.cpp.s
+CMakeFiles/SpaceInvaders.dir/Entity/Bullet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Entity/Bullet.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Bullet.cpp -o CMakeFiles/SpaceInvaders.dir/Entity/Bullet.cpp.s
 
-CMakeFiles/SpaceInvaders.dir/Entities/Shield.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
-CMakeFiles/SpaceInvaders.dir/Entities/Shield.cpp.o: ../Entities/Shield.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/SpaceInvaders.dir/Entities/Shield.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Entities/Shield.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Shield.cpp
+CMakeFiles/SpaceInvaders.dir/Entity/Shield.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
+CMakeFiles/SpaceInvaders.dir/Entity/Shield.cpp.o: ../Entity/Shield.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/SpaceInvaders.dir/Entity/Shield.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Entity/Shield.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Shield.cpp
 
-CMakeFiles/SpaceInvaders.dir/Entities/Shield.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Entities/Shield.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Shield.cpp > CMakeFiles/SpaceInvaders.dir/Entities/Shield.cpp.i
+CMakeFiles/SpaceInvaders.dir/Entity/Shield.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Entity/Shield.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Shield.cpp > CMakeFiles/SpaceInvaders.dir/Entity/Shield.cpp.i
 
-CMakeFiles/SpaceInvaders.dir/Entities/Shield.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Entities/Shield.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Entities/Shield.cpp -o CMakeFiles/SpaceInvaders.dir/Entities/Shield.cpp.s
+CMakeFiles/SpaceInvaders.dir/Entity/Shield.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Entity/Shield.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Shield.cpp -o CMakeFiles/SpaceInvaders.dir/Entity/Shield.cpp.s
+
+CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
+CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: ../MVC/Controller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Controller.cpp
+
+CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Controller.cpp > CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.i
+
+CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Controller.cpp -o CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.s
+
+CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
+CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o: ../MVC/Model.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.cpp
+
+CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.cpp > CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.i
+
+CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.cpp -o CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.s
+
+CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
+CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../MVC/View.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/View.cpp
+
+CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/View.cpp > CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.i
+
+CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/View.cpp -o CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.s
 
 # Object files for target SpaceInvaders
 SpaceInvaders_OBJECTS = \
@@ -259,16 +298,19 @@ SpaceInvaders_OBJECTS = \
 "CMakeFiles/SpaceInvaders.dir/Game.cpp.o" \
 "CMakeFiles/SpaceInvaders.dir/Transformation.cpp.o" \
 "CMakeFiles/SpaceInvaders.dir/Level.cpp.o" \
-"CMakeFiles/SpaceInvaders.dir/Entities/Entity.cpp.o" \
-"CMakeFiles/SpaceInvaders.dir/Entities/Player.cpp.o" \
-"CMakeFiles/SpaceInvaders.dir/Entities/CollideObject.cpp.o" \
-"CMakeFiles/SpaceInvaders.dir/Entities/Counter.cpp.o" \
-"CMakeFiles/SpaceInvaders.dir/Entities/HelperDatatypes.cpp.o" \
-"CMakeFiles/SpaceInvaders.dir/Entities/Mortal.cpp.o" \
-"CMakeFiles/SpaceInvaders.dir/Entities/Immortal.cpp.o" \
-"CMakeFiles/SpaceInvaders.dir/Entities/Enemy.cpp.o" \
-"CMakeFiles/SpaceInvaders.dir/Entities/Bullet.cpp.o" \
-"CMakeFiles/SpaceInvaders.dir/Entities/Shield.cpp.o"
+"CMakeFiles/SpaceInvaders.dir/Entity/Entity.cpp.o" \
+"CMakeFiles/SpaceInvaders.dir/Entity/Player.cpp.o" \
+"CMakeFiles/SpaceInvaders.dir/Entity/CollideObject.cpp.o" \
+"CMakeFiles/SpaceInvaders.dir/Entity/Counter.cpp.o" \
+"CMakeFiles/SpaceInvaders.dir/Entity/HelperDatatypes.cpp.o" \
+"CMakeFiles/SpaceInvaders.dir/Entity/Mortal.cpp.o" \
+"CMakeFiles/SpaceInvaders.dir/Entity/Immortal.cpp.o" \
+"CMakeFiles/SpaceInvaders.dir/Entity/Enemy.cpp.o" \
+"CMakeFiles/SpaceInvaders.dir/Entity/Bullet.cpp.o" \
+"CMakeFiles/SpaceInvaders.dir/Entity/Shield.cpp.o" \
+"CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o" \
+"CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o" \
+"CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o"
 
 # External object files for target SpaceInvaders
 SpaceInvaders_EXTERNAL_OBJECTS =
@@ -278,19 +320,22 @@ SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Stopwatch.cpp.o
 SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Game.cpp.o
 SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Transformation.cpp.o
 SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Level.cpp.o
-SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Entities/Entity.cpp.o
-SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Entities/Player.cpp.o
-SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Entities/CollideObject.cpp.o
-SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Entities/Counter.cpp.o
-SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Entities/HelperDatatypes.cpp.o
-SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Entities/Mortal.cpp.o
-SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Entities/Immortal.cpp.o
-SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Entities/Enemy.cpp.o
-SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Entities/Bullet.cpp.o
-SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Entities/Shield.cpp.o
+SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Entity/Entity.cpp.o
+SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Entity/Player.cpp.o
+SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Entity/CollideObject.cpp.o
+SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Entity/Counter.cpp.o
+SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Entity/HelperDatatypes.cpp.o
+SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Entity/Mortal.cpp.o
+SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Entity/Immortal.cpp.o
+SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Entity/Enemy.cpp.o
+SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Entity/Bullet.cpp.o
+SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Entity/Shield.cpp.o
+SpaceInvaders: CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o
+SpaceInvaders: CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o
+SpaceInvaders: CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o
 SpaceInvaders: CMakeFiles/SpaceInvaders.dir/build.make
 SpaceInvaders: CMakeFiles/SpaceInvaders.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable SpaceInvaders"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable SpaceInvaders"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SpaceInvaders.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

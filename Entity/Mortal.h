@@ -9,16 +9,18 @@
 
 #include "CollideObject.h"
 
-/**
- * Namespace of SpaceInvaders
- */
+
+///Namespace of SpaceInvaders
 namespace si {
+
+/// Namespace of the Entity hierarchy
+namespace entity {
 
 /**
  * All collide objects that have hp(can die / take damage on collision)
  * -> Player, Enemies, Shields
  */
-class Mortal: public CollideObject
+class Mortal : public CollideObject
 {
 public:
         Mortal(const Size& size, const Position& position, unsigned int attack_points, collideObjectType type,
@@ -28,7 +30,7 @@ public:
          \n Override of isDead() from CollideObject
          \n Checks if HP is below 0 a.k.a the entity is dead returns always false
          */
-        bool isDead() const override ;
+        bool isDead() const override;
 
         /**
          \n Override of collide() from CollideObject
@@ -48,6 +50,7 @@ private:
         int healthPoints;
 };
 
+}
 }
 
 #endif // SPACEINVADERS_MORTAL_H

@@ -7,7 +7,7 @@
 #ifndef SPACEINVADERS_LEVEL_H
 #define SPACEINVADERS_LEVEL_H
 
-#include "Entities/Counter.h"
+#include "Entity/Counter.h"
 
 /**
  * Namespace of SpaceInvaders
@@ -27,10 +27,11 @@ class Level
 public:
 private:
         // Track the health of the player
-        Counter healthCounter;
+        entity::Counter healthCounter;
 
         // Track the score
-        Counter scoreCounter;
+        entity::Counter scoreCounter;
+        
 };
 
 }

@@ -9,21 +9,23 @@
 
 #include "Mortal.h"
 
-/**
- * Namespace of SpaceInvaders
- */
+
+///Namespace of SpaceInvaders
 namespace si {
+
+/// Namespace of the Entity hierarchy
+namespace entity {
 
 /**
  * All the bullets, the once from the player and from the enemies
  */
-class Bullet: private Mortal
+class Bullet : private Mortal
 {
 public:
-
-        //TODO: Add features
+        // TODO: Add features
         Bullet(const Size& ize, const Position& position, unsigned int attack_points, collideObjectType type,
                int health_points, float velocity);
+
 private:
         /**
          * Override of getEntityType() from Entity
@@ -32,7 +34,6 @@ private:
         entityType getEntityType() const override;
 
 public:
-
         // Velocity of the bullet
         float velocity;
 
@@ -40,6 +41,7 @@ public:
         entityType entity_type{entityType::bullet};
 };
 
+}
 }
 
 #endif // SPACEINVADERS_BULLET_H

@@ -2,7 +2,13 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
 
 PROJECT(SpaceInvaders)
 SET(CMAKE_CXX_STANDARD 14)
-ADD_EXECUTABLE(SpaceInvaders main.cpp Stopwatch.cpp Stopwatch.h Game.cpp Game.h Transformation.cpp Transformation.h Level.cpp Level.h Entities/Entity.cpp Entities/Entity.h Entities/Player.cpp Entities/Player.h Entities/CollideObject.cpp Entities/CollideObject.h Entities/Counter.cpp Entities/Counter.h Entities/HelperDatatypes.cpp Entities/HelperDatatypes.h Entities/Mortal.cpp Entities/Mortal.h Entities/Immortal.cpp Entities/Immortal.h Entities/Enemy.cpp Entities/Enemy.h Entities/Bullet.cpp Entities/Bullet.h Entities/Shield.cpp Entities/Shield.h)
+ADD_EXECUTABLE(SpaceInvaders main.cpp Stopwatch.cpp Stopwatch.h Game.cpp Game.h Transformation.cpp Transformation.h
+        Level.cpp Level.h Entity/Entity.cpp Entity/Entity.h Entity/Player.cpp Entity/Player.h
+        Entity/CollideObject.cpp Entity/CollideObject.h Entity/Counter.cpp Entity/Counter.h
+        Entity/HelperDatatypes.cpp Entity/HelperDatatypes.h Entity/Mortal.cpp Entity/Mortal.h
+        Entity/Immortal.cpp Entity/Immortal.h Entity/Enemy.cpp Entity/Enemy.h Entity/Bullet.cpp
+        Entity/Bullet.h Entity/Shield.cpp Entity/Shield.h MVC/Controller.cpp MVC/Controller.h
+        MVC/Model.cpp MVC/Model.h MVC/View.cpp MVC/View.h)
 
 # Extend the CMake module path to find the FindSFML.cmake
 # file in {project root}/cmake/Modules

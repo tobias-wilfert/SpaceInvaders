@@ -6,11 +6,11 @@
 
 #include "HelperDatatypes.h"
 
-si::Size::Size(float width, float height) : width(width), height(height) {}
+si::entity::Size::Size(float width, float height) : width(width), height(height) {}
 
-si::Position::Position(float x, float y) : x(x), y(y) {}
+si::entity::Position::Position(float x, float y) : x(x), y(y) {}
 
-si::Rectangle::Rectangle(const si::Position& top_left, const si::Position& bottom_right)
+si::entity::Rectangle::Rectangle(const si::entity::Position& top_left, const si::entity::Position& bottom_right)
     : topLeft(top_left), bottomRight(bottom_right)
 {
 }

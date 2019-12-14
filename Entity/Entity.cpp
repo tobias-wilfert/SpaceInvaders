@@ -6,4 +6,4 @@
 
 #include "Entity.h"
 
-si::Entity::Entity(const si::Size& size, const si::Position& position) : size(size), position(position) {}
+si::entity::Entity::Entity(const si::entity::Size& size, const si::entity::Position& position) : size(size), position(position) {}
