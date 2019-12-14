@@ -9,8 +9,6 @@
 
 #include <memory>
 
-// TODO: Ask teacher about dimension specification
-
 /**
  \n Inspiration: https://www.tutorialspoint.com/Explain-Cplusplus-Singleton-design-pattern
  \n A Singleton implementation of a Transformation from [-4,4]x[-3,3] to 2D game pixels

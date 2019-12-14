@@ -7,6 +7,13 @@
 #ifndef SPACEINVADERS_LEVEL_H
 #define SPACEINVADERS_LEVEL_H
 
+#include "Entities/Counter.h"
+
+/**
+ * Namespace of SpaceInvaders
+ */
+namespace si {
+
 /**
  \n The product of the parser
  \n The model containing all entities
@@ -17,6 +24,15 @@
 class Level
 {
         // TODO: Before something can happen here I need a polymorphic class hierarchies for all the thing to add in here
+public:
+private:
+        // Track the health of the player
+        Counter healthCounter;
+
+        // Track the score
+        Counter scoreCounter;
 };
+
+}
 
 #endif // SPACEINVADERS_LEVEL_H

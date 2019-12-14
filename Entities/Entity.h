@@ -30,7 +30,10 @@ public:
         // The position of the entity
         Position position;
 
-private:
+         // Return the entityType of the object so that view knows what is to be drawn
+         virtual entityType getEntityType() const = 0;
+
+ private:
 
 };
 

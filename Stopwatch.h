@@ -34,7 +34,6 @@ public:
          */
         void restart();
 
-        // TODO: Ask the prof about this not working correctly
         /**
          \n Calculates the time(in Seconds) that elapsed since the last restart/construction,
          \n using the following formula: (current - start)

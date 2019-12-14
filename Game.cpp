@@ -6,10 +6,10 @@
 
 #include "Game.h"
 
-
 std::shared_ptr<Stopwatch> Stopwatch::instance = nullptr;
 std::shared_ptr<Transformation> Transformation::instance = nullptr;
 
+// TODO: Push once without all the load from File to check that it works
 
 void Game::execute()
 {
@@ -17,10 +17,8 @@ void Game::execute()
         // Initialize the game
         initialize();
 
-
-        // TODO: Figure out how to get the loadFromFile work with SFML
-
         sf::RenderWindow window( sf::VideoMode(transformation->get_width(),transformation->get_height()), "SpaceInvaders");
+
 
 
         sf::Font font;
@@ -49,7 +47,6 @@ void Game::execute()
         sf::RectangleShape rect(sf::Vector2f(transformation->convertWidth(xw),transformation->convertHeight(yh)));
 
         // Load the texture -> View
-        // TODO: Adjust the Working director of the project for the resources to work
         sf::Texture texture;
         if(!texture.loadFromFile("../resources/img/player.png"))
         {

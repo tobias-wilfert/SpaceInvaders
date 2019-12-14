@@ -169,6 +169,33 @@ SpaceInvaders/fast:
 	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/build
 .PHONY : SpaceInvaders/fast
 
+Entities/Bullet.o: Entities/Bullet.cpp.o
+
+.PHONY : Entities/Bullet.o
+
+# target to build an object file
+Entities/Bullet.cpp.o:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Entities/Bullet.cpp.o
+.PHONY : Entities/Bullet.cpp.o
+
+Entities/Bullet.i: Entities/Bullet.cpp.i
+
+.PHONY : Entities/Bullet.i
+
+# target to preprocess a source file
+Entities/Bullet.cpp.i:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Entities/Bullet.cpp.i
+.PHONY : Entities/Bullet.cpp.i
+
+Entities/Bullet.s: Entities/Bullet.cpp.s
+
+.PHONY : Entities/Bullet.s
+
+# target to generate assembly for a file
+Entities/Bullet.cpp.s:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Entities/Bullet.cpp.s
+.PHONY : Entities/Bullet.cpp.s
+
 Entities/CollideObject.o: Entities/CollideObject.cpp.o
 
 .PHONY : Entities/CollideObject.o
@@ -222,6 +249,33 @@ Entities/Counter.s: Entities/Counter.cpp.s
 Entities/Counter.cpp.s:
 	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Entities/Counter.cpp.s
 .PHONY : Entities/Counter.cpp.s
+
+Entities/Enemy.o: Entities/Enemy.cpp.o
+
+.PHONY : Entities/Enemy.o
+
+# target to build an object file
+Entities/Enemy.cpp.o:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Entities/Enemy.cpp.o
+.PHONY : Entities/Enemy.cpp.o
+
+Entities/Enemy.i: Entities/Enemy.cpp.i
+
+.PHONY : Entities/Enemy.i
+
+# target to preprocess a source file
+Entities/Enemy.cpp.i:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Entities/Enemy.cpp.i
+.PHONY : Entities/Enemy.cpp.i
+
+Entities/Enemy.s: Entities/Enemy.cpp.s
+
+.PHONY : Entities/Enemy.s
+
+# target to generate assembly for a file
+Entities/Enemy.cpp.s:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Entities/Enemy.cpp.s
+.PHONY : Entities/Enemy.cpp.s
 
 Entities/Entity.o: Entities/Entity.cpp.o
 
@@ -277,6 +331,60 @@ Entities/HelperDatatypes.cpp.s:
 	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Entities/HelperDatatypes.cpp.s
 .PHONY : Entities/HelperDatatypes.cpp.s
 
+Entities/Immortal.o: Entities/Immortal.cpp.o
+
+.PHONY : Entities/Immortal.o
+
+# target to build an object file
+Entities/Immortal.cpp.o:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Entities/Immortal.cpp.o
+.PHONY : Entities/Immortal.cpp.o
+
+Entities/Immortal.i: Entities/Immortal.cpp.i
+
+.PHONY : Entities/Immortal.i
+
+# target to preprocess a source file
+Entities/Immortal.cpp.i:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Entities/Immortal.cpp.i
+.PHONY : Entities/Immortal.cpp.i
+
+Entities/Immortal.s: Entities/Immortal.cpp.s
+
+.PHONY : Entities/Immortal.s
+
+# target to generate assembly for a file
+Entities/Immortal.cpp.s:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Entities/Immortal.cpp.s
+.PHONY : Entities/Immortal.cpp.s
+
+Entities/Mortal.o: Entities/Mortal.cpp.o
+
+.PHONY : Entities/Mortal.o
+
+# target to build an object file
+Entities/Mortal.cpp.o:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Entities/Mortal.cpp.o
+.PHONY : Entities/Mortal.cpp.o
+
+Entities/Mortal.i: Entities/Mortal.cpp.i
+
+.PHONY : Entities/Mortal.i
+
+# target to preprocess a source file
+Entities/Mortal.cpp.i:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Entities/Mortal.cpp.i
+.PHONY : Entities/Mortal.cpp.i
+
+Entities/Mortal.s: Entities/Mortal.cpp.s
+
+.PHONY : Entities/Mortal.s
+
+# target to generate assembly for a file
+Entities/Mortal.cpp.s:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Entities/Mortal.cpp.s
+.PHONY : Entities/Mortal.cpp.s
+
 Entities/Player.o: Entities/Player.cpp.o
 
 .PHONY : Entities/Player.o
@@ -303,6 +411,33 @@ Entities/Player.s: Entities/Player.cpp.s
 Entities/Player.cpp.s:
 	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Entities/Player.cpp.s
 .PHONY : Entities/Player.cpp.s
+
+Entities/Shield.o: Entities/Shield.cpp.o
+
+.PHONY : Entities/Shield.o
+
+# target to build an object file
+Entities/Shield.cpp.o:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Entities/Shield.cpp.o
+.PHONY : Entities/Shield.cpp.o
+
+Entities/Shield.i: Entities/Shield.cpp.i
+
+.PHONY : Entities/Shield.i
+
+# target to preprocess a source file
+Entities/Shield.cpp.i:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Entities/Shield.cpp.i
+.PHONY : Entities/Shield.cpp.i
+
+Entities/Shield.s: Entities/Shield.cpp.s
+
+.PHONY : Entities/Shield.s
+
+# target to generate assembly for a file
+Entities/Shield.cpp.s:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Entities/Shield.cpp.s
+.PHONY : Entities/Shield.cpp.s
 
 Game.o: Game.cpp.o
 
@@ -452,21 +587,36 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... SpaceInvaders"
+	@echo "... Entities/Bullet.o"
+	@echo "... Entities/Bullet.i"
+	@echo "... Entities/Bullet.s"
 	@echo "... Entities/CollideObject.o"
 	@echo "... Entities/CollideObject.i"
 	@echo "... Entities/CollideObject.s"
 	@echo "... Entities/Counter.o"
 	@echo "... Entities/Counter.i"
 	@echo "... Entities/Counter.s"
+	@echo "... Entities/Enemy.o"
+	@echo "... Entities/Enemy.i"
+	@echo "... Entities/Enemy.s"
 	@echo "... Entities/Entity.o"
 	@echo "... Entities/Entity.i"
 	@echo "... Entities/Entity.s"
 	@echo "... Entities/HelperDatatypes.o"
 	@echo "... Entities/HelperDatatypes.i"
 	@echo "... Entities/HelperDatatypes.s"
+	@echo "... Entities/Immortal.o"
+	@echo "... Entities/Immortal.i"
+	@echo "... Entities/Immortal.s"
+	@echo "... Entities/Mortal.o"
+	@echo "... Entities/Mortal.i"
+	@echo "... Entities/Mortal.s"
 	@echo "... Entities/Player.o"
 	@echo "... Entities/Player.i"
 	@echo "... Entities/Player.s"
+	@echo "... Entities/Shield.o"
+	@echo "... Entities/Shield.i"
+	@echo "... Entities/Shield.s"
 	@echo "... Game.o"
 	@echo "... Game.i"
 	@echo "... Game.s"

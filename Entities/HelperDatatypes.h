@@ -13,6 +13,18 @@
 namespace si {
 
 /**
+ * Types of leaves in the Class hierarchy
+ */
+enum entityType{
+        counter,
+        immortal,
+        player,
+        shield,
+        enemy,
+        bullet
+};
+
+/**
  * Size represented by 2 floats (width,height)
  */
 struct Size{

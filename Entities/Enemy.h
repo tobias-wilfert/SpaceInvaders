@@ -1,27 +1,28 @@
 //============================================================================
-// Name        : Player.h
+// Name        : Enemy.h
 // Author      : Tobias Wilfert
 // Copyright   : Tobias Wilfert - University of Antwerp
 //============================================================================
 
-#ifndef SPACEINVADERS_PLAYER_H
-#define SPACEINVADERS_PLAYER_H
+#ifndef SPACEINVADERS_ENEMY_H
+#define SPACEINVADERS_ENEMY_H
 
 #include "Mortal.h"
 
 /**
  * Namespace of SpaceInvaders
  */
-namespace si{
+namespace si {
 
 /**
- * Character fo the player of th game (The space cannon)
+ * Class for all Enemies may serve as a base class for even more of them
  */
-class Player: private Mortal
+class Enemy : private Mortal
 {
 public:
-        Player(const Size& size, const Position& position, unsigned int attack_points, collideObjectType type,
-               int health_points);
+        // TODO Add more features to the aliens
+        Enemy(const Size& size, const Position& position, unsigned int attack_points, collideObjectType type,
+              int health_points);
 
         /**
          * Override of getEntityType() from Entity
@@ -32,10 +33,10 @@ public:
 private:
 
         // The type of the entity
-        entityType entity_type{entityType::player};
+        entityType entity_type{entityType::enemy};
 
 };
 
 }
 
-#endif // SPACEINVADERS_PLAYER_H
+#endif // SPACEINVADERS_ENEMY_H

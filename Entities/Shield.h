@@ -1,11 +1,11 @@
 //============================================================================
-// Name        : Player.h
+// Name        : Shield.h
 // Author      : Tobias Wilfert
 // Copyright   : Tobias Wilfert - University of Antwerp
 //============================================================================
 
-#ifndef SPACEINVADERS_PLAYER_H
-#define SPACEINVADERS_PLAYER_H
+#ifndef SPACEINVADERS_SHIELD_H
+#define SPACEINVADERS_SHIELD_H
 
 #include "Mortal.h"
 
@@ -15,12 +15,12 @@
 namespace si{
 
 /**
- * Character fo the player of th game (The space cannon)
+ * The shields the player can hide behind
  */
-class Player: private Mortal
+class Shield: private Mortal
 {
 public:
-        Player(const Size& size, const Position& position, unsigned int attack_points, collideObjectType type,
+        Shield(const Size& size, const Position& position, unsigned int attack_points, collideObjectType type,
                int health_points);
 
         /**
@@ -32,10 +32,10 @@ public:
 private:
 
         // The type of the entity
-        entityType entity_type{entityType::player};
+        entityType entity_type{entityType::shield};
 
 };
 
 }
 
-#endif // SPACEINVADERS_PLAYER_H
+#endif // SPACEINVADERS_SHIELD_H
