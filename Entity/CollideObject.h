@@ -96,6 +96,8 @@ private:
  */
 bool collided(const CollideObject& co1, const CollideObject& co2);
 
+
+// TODO: Replace with smart pointer
 /**
  \n Checks that:
  \n 1.) co1 and co2 are both not destroyed

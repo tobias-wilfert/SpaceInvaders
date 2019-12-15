@@ -9,6 +9,7 @@
 
 #include "Model.h"
 
+#include <memory>
 // To handle the inputs
 #include <SFML/Graphics.hpp>
 
@@ -24,6 +25,8 @@ namespace mvc {
 class Controller
 {
 public:
+        Controller(const std::shared_ptr<Model>& model);
+
         // Main function
         void handleInput(sf::RenderWindow& window ) const; // Could be const as we deal with pointers anyway???
 
@@ -34,7 +37,7 @@ public:
 private:
 
         // Controller controls the Model
-        Model* model;
+        std::shared_ptr<Model> model;
 
 };
 

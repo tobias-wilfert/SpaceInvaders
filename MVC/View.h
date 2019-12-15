@@ -9,6 +9,10 @@
 
 #include "Model.h"
 
+#include "../Singleton/Transformation.h"
+
+#include <memory>
+#include <iostream>
 #include <SFML/Graphics.hpp>
 
 /// Namespace of SpaceInvaders
@@ -23,6 +27,7 @@ namespace mvc {
 class View
 {
 public:
+        View(const std::shared_ptr<Model>& model, const std::shared_ptr<singleton::Transformation>& transformation);
 
         // Main function to draw the Model
         void display(sf::RenderWindow& window ) const;
@@ -30,8 +35,11 @@ public:
 private:
 
         // Needs the model to display
-        Model* model;
+        std::shared_ptr<Model> model;
 
+        // Used to transform from the [-4,4]x[-3, 3] logic of the Model
+        // to the [0,windowHeight]x[0,windowWidth] logic of the view
+        std::shared_ptr<singleton::Transformation> transformation;
 };
 
 }

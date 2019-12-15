@@ -18,7 +18,7 @@ namespace entity {
 /**
  * Character fo the player of th game (The space cannon)
  */
-class Player : private Mortal
+class Player : public Mortal
 {
 public:
         Player(const Size& size, const Position& position, unsigned int attack_points, collideObjectType type,

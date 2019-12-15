@@ -7,6 +7,10 @@
 #ifndef SPACEINVADERS_MODEL_H
 #define SPACEINVADERS_MODEL_H
 
+#include <memory>
+
+#include "../Entity/Player.h"
+
 /// Namespace of SpaceInvaders
 namespace si {
 
@@ -19,6 +23,7 @@ namespace mvc {
 class Model
 {
 public:
+        Model();
 
         // View needs a list of entities it can draw and cast if extra info is needed
 
@@ -28,6 +33,7 @@ public:
 
         // - Update all the alien movement -> could be specified in file as LLRR=(left,left,right,right)
 
+        std::shared_ptr<si::entity::Player> pplayer;
 
 private:
         // All of the info the Model holds

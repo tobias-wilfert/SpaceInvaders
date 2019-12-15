@@ -12,32 +12,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e5097d6-8f54-4856-a7d8-629138d3e85b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/tobiaswilfert.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/tobiaswilfert.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/CollideObject.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/CollideObject.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Player.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Player.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Level.h" beforeDir="false" afterPath="$PROJECT_DIR$/Level.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVC/Controller.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/Controller.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVC/Controller.h" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/Controller.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC/Model.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/Model.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVC/Model.h" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/Model.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVC/View.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/View.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVC/View.h" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/View.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stopwatch.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Singleton/Stopwatch.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stopwatch.h" beforeDir="false" afterPath="$PROJECT_DIR$/Singleton/Stopwatch.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Transformation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Singleton/Transformation.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Transformation.h" beforeDir="false" afterPath="$PROJECT_DIR$/Singleton/Transformation.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/SpaceInvaders" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SpaceInvaders" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SpaceInvaders.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SpaceInvaders.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +103,8 @@
       <workItem from="1576306326992" duration="9912000" />
       <workItem from="1576323725819" duration="3962000" />
       <workItem from="1576348885487" duration="2550000" />
-      <workItem from="1576396658358" duration="3725000" />
+      <workItem from="1576396658358" duration="4188000" />
+      <workItem from="1576421481471" duration="2628000" />
     </task>
     <servers />
   </component>

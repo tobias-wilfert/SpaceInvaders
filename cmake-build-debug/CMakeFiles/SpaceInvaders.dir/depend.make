@@ -58,6 +58,11 @@ CMakeFiles/SpaceInvaders.dir/Entity/Shield.cpp.o: ../Entity/Mortal.h
 CMakeFiles/SpaceInvaders.dir/Entity/Shield.cpp.o: ../Entity/Shield.cpp
 CMakeFiles/SpaceInvaders.dir/Entity/Shield.cpp.o: ../Entity/Shield.h
 
+CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Entity/CollideObject.h
+CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Entity/Entity.h
+CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Entity/HelperDatatypes.h
+CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Entity/Mortal.h
+CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Entity/Player.h
 CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Game.cpp
 CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Game.h
 CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../MVC/Controller.h
@@ -72,16 +77,32 @@ CMakeFiles/SpaceInvaders.dir/Level.cpp.o: ../Entity/HelperDatatypes.h
 CMakeFiles/SpaceInvaders.dir/Level.cpp.o: ../Level.cpp
 CMakeFiles/SpaceInvaders.dir/Level.cpp.o: ../Level.h
 
+CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: ../Entity/CollideObject.h
+CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: ../Entity/Entity.h
+CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: ../Entity/HelperDatatypes.h
+CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: ../Entity/Mortal.h
+CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: ../Entity/Player.h
 CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: ../MVC/Controller.cpp
 CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: ../MVC/Controller.h
 CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: ../MVC/Model.h
 
+CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o: ../Entity/CollideObject.h
+CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o: ../Entity/Entity.h
+CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o: ../Entity/HelperDatatypes.h
+CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o: ../Entity/Mortal.h
+CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o: ../Entity/Player.h
 CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o: ../MVC/Model.cpp
 CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o: ../MVC/Model.h
 
+CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../Entity/CollideObject.h
+CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../Entity/Entity.h
+CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../Entity/HelperDatatypes.h
+CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../Entity/Mortal.h
+CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../Entity/Player.h
 CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../MVC/Model.h
 CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../MVC/View.cpp
 CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../MVC/View.h
+CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../Singleton/Transformation.h
 
 CMakeFiles/SpaceInvaders.dir/Singleton/Stopwatch.cpp.o: ../Singleton/Stopwatch.cpp
 CMakeFiles/SpaceInvaders.dir/Singleton/Stopwatch.cpp.o: ../Singleton/Stopwatch.h
@@ -89,6 +110,11 @@ CMakeFiles/SpaceInvaders.dir/Singleton/Stopwatch.cpp.o: ../Singleton/Stopwatch.h
 CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.o: ../Singleton/Transformation.cpp
 CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.o: ../Singleton/Transformation.h
 
+CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../Entity/CollideObject.h
+CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../Entity/Entity.h
+CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../Entity/HelperDatatypes.h
+CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../Entity/Mortal.h
+CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../Entity/Player.h
 CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../Game.h
 CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../MVC/Controller.h
 CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../MVC/Model.h

@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/CollideObject.h
+Entity.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.h
+
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.h
+HelperDatatypes.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.h
+
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.h
+
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.h
+CollideObject.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/CollideObject.h
+
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Player.h
+Mortal.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.h
+
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Game.cpp
 Game.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Game.h
@@ -31,14 +49,26 @@ Singleton/Transformation.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Controller.h
 Model.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.h
+memory
+-
 SFML/Graphics.hpp
 -
 
 /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.h
+memory
+-
+../Entity/Player.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Player.h
 
 /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/View.h
 Model.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.h
+../Singleton/Transformation.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Transformation.h
+memory
+-
+iostream
+-
 SFML/Graphics.hpp
 -
 

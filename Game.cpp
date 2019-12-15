@@ -19,8 +19,9 @@ void si::Game::execute()
 
         //TODO: Model View and Controller constructor
         mvc::Model model{};
-        mvc::View view{};
-        mvc::Controller controller{};
+        std::shared_ptr<mvc::Model> modelPointer = std::make_shared<mvc::Model>(model);
+        mvc::View view{modelPointer,transformation};
+        mvc::Controller controller{modelPointer};
 
         // Create the window
         sf::RenderWindow window( sf::VideoMode(transformation->get_width(),transformation->get_height()), "SpaceInvaders");
@@ -31,6 +32,7 @@ void si::Game::execute()
                 // Till the player interacts with the game don't start a level
                 while(!interacted){
                         titleScreen(window);
+
                 }
 
                 // Calculate the delta -> Clock
@@ -39,15 +41,13 @@ void si::Game::execute()
                 accumulatedTimeSinceLastUpdate += timeSinceLastFrame;
 
                 // Update every X Second -> Clock
-                if (accumulatedTimeSinceLastUpdate >= 1) {
+                if (accumulatedTimeSinceLastUpdate >= 0.01) {
 
                         // TODO: Do something with the model
                         controller.handleInput(window);
 
-                        std::cout << "Game is on going" << std::endl;
-
                         // Reset the delta
-                        accumulatedTimeSinceLastUpdate -= 1;
+                        accumulatedTimeSinceLastUpdate -= 0.01;
                 }
 
                 // View should be updated every frame
@@ -94,27 +94,10 @@ void si::Game::titleScreen(sf::RenderWindow& window)
                         break;
                 case sf::Event::KeyPressed:
                         interacted = true;
+                        // Set the clock 0 so that you don't get an illiegla bost
+                        stopwatch->restart();
                 default:
                         break;
                 }
         }
 }
-
-
-/**
- * PLayer:
- * float xw = 0.52, yh = 0.32;
-        float x=0-xw/2.f, y=3.5;
-        sf::RectangleShape rect(sf::Vector2f(transformation->convertWidth(xw),transformation->convertHeight(yh)));
-
-        // Load the texture -> View
-
-        sf::Texture texture;
-        if(!texture.loadFromFile("../resources/img/player.png"))
-        {
-                std::cout << "Load failed" << std::endl;
-                system("pause");
-        }
-        rect.setTexture(&texture);
-
- */
