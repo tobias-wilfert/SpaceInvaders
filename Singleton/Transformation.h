@@ -9,6 +9,12 @@
 
 #include <memory>
 
+/// Namespace of SpaceInvaders
+namespace si {
+
+/// Namespace of Singleton Classes
+namespace singleton {
+
 /**
  \n Inspiration: https://www.tutorialspoint.com/Explain-Cplusplus-Singleton-design-pattern
  \n A Singleton implementation of a Transformation from [-4,4]x[-3,3] to 2D game pixels
@@ -31,7 +37,7 @@ public:
          \n @param height The height of the Application Window
          \n @return static std::shared_ptr<Transformation> instance
          */
-        static std::shared_ptr<Transformation> initialize(int width, int  height);
+        static std::shared_ptr<Transformation> initialize(int width, int height);
 
         /**
          \n @pre Checks if instance is not nullptr
@@ -87,11 +93,10 @@ public:
         float convertHeight(float height) const;
 
 private:
-
-        //The width of the Application Window
+        // The width of the Application Window
         int windowWidth;
 
-        //The height of the Application Window
+        // The height of the Application Window
         int windowHeight;
 
         // Smart pointer to an instance of Transformation that is shared by all instances of Transformation
@@ -104,5 +109,7 @@ private:
          */
         Transformation(int window_width, int window_height);
 };
+}
+}
 
 #endif // SPACEINVADERS_TRANSFORMATION_H

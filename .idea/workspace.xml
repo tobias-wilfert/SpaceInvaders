@@ -12,40 +12,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e5097d6-8f54-4856-a7d8-629138d3e85b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Entity/Counter.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entity/Immortal.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Entity/Mortal.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC/Controller.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC/Controller.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC/Model.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC/Model.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC/View.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MVC/View.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/tobiaswilfert.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/tobiaswilfert.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/Bullet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Bullet.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/Bullet.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Bullet.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/CollideObject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/CollideObject.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/CollideObject.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/CollideObject.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/Counter.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/Counter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Counter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Enemy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Enemy.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/Entity.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Entity.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/Entity.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Entity.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/HelperDatatypes.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/HelperDatatypes.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/HelperDatatypes.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/HelperDatatypes.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/Immortal.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/Immortal.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Immortal.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/Mortal.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/Mortal.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Mortal.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Player.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/Player.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Player.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/Shield.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Shield.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/Shield.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Shield.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Level.h" beforeDir="false" afterPath="$PROJECT_DIR$/Level.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC/Controller.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/Controller.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC/Controller.h" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/Controller.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC/Model.h" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/Model.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC/View.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/View.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC/View.h" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/View.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stopwatch.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Singleton/Stopwatch.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stopwatch.h" beforeDir="false" afterPath="$PROJECT_DIR$/Singleton/Stopwatch.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Transformation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Singleton/Transformation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Transformation.h" beforeDir="false" afterPath="$PROJECT_DIR$/Singleton/Transformation.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/build.make" afterDir="false" />
@@ -53,11 +34,10 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/SpaceInvaders" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SpaceInvaders" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/SpaceInvaders.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SpaceInvaders.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,6 +64,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Singleton" />
+      <recent name="$PROJECT_DIR$/Singelton" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/MVC" />
       <recent name="$PROJECT_DIR$/Entities" />
@@ -132,7 +114,8 @@
       <workItem from="1576155974729" duration="7572000" />
       <workItem from="1576306326992" duration="9912000" />
       <workItem from="1576323725819" duration="3962000" />
-      <workItem from="1576348885487" duration="163000" />
+      <workItem from="1576348885487" duration="2550000" />
+      <workItem from="1576396658358" duration="3725000" />
     </task>
     <servers />
   </component>

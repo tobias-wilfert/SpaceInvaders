@@ -6,12 +6,10 @@
 
 #include "Game.h"
 
-// TODO: Think about if Google tests are worth it
-
 int main()
 {
         // Construct SpaceInvaders
-        Game game = Game{};
+        si::Game game = si::Game{};
         // Start the gameLoop
         // TODO: Do error handling if needed
         game.execute();

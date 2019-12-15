@@ -17,18 +17,38 @@ memory
 -
 iostream
 -
-Stopwatch.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.h
-Transformation.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Transformation.h
+MVC/View.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/View.h
+MVC/Model.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.h
+MVC/Controller.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Controller.h
+Singleton/Stopwatch.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Stopwatch.h
+Singleton/Transformation.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Transformation.h
 
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Controller.h
+Model.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.h
+SFML/Graphics.hpp
+-
+
+/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.h
+
+/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/View.h
+Model.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.h
+SFML/Graphics.hpp
+-
+
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Stopwatch.h
 chrono
 -
 memory
 -
 
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Transformation.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Transformation.h
 memory
 -
 

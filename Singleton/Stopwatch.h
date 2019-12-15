@@ -10,6 +10,12 @@
 #include <chrono>
 #include <memory>
 
+/// Namespace of SpaceInvaders
+namespace si {
+
+/// Namespace of Singleton Classes
+namespace singleton {
+
 /**
  \n Inspiration: https://www.tutorialspoint.com/Explain-Cplusplus-Singleton-design-pattern
  \n A Singleton implementation of a Stopwatch
@@ -42,7 +48,6 @@ public:
         float getElapsedTime() const;
 
 private:
-
         // Smart pointer to an instance of Stopwatch that is shared by all instances of Stopwatch
         static std::shared_ptr<Stopwatch> instance;
 
@@ -51,7 +56,8 @@ private:
 
         // Private constructor causing only 1 instance ot Stopwatch to be allowed
         Stopwatch();
-
 };
+}
+}
 
 #endif // SPACEINVADERS_STOPWATCH_H

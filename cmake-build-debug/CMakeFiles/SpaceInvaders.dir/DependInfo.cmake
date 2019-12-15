@@ -19,8 +19,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Controller.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o"
   "/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o"
   "/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/View.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o"
-  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Stopwatch.cpp.o"
-  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Transformation.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Transformation.cpp.o"
+  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Stopwatch.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Singleton/Stopwatch.cpp.o"
+  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Transformation.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.o"
   "/Users/tobiaswilfert/Desktop/SpaceInvaders/main.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

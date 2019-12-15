@@ -14,8 +14,14 @@
 #include <memory>
 #include <iostream>
 
-#include "Stopwatch.h"
-#include "Transformation.h"
+#include "MVC/View.h"
+#include "MVC/Model.h"
+#include "MVC/Controller.h"
+#include "Singleton/Stopwatch.h"
+#include "Singleton/Transformation.h"
+
+/// Namespace of SpaceInvaders
+namespace si {
 
 /**
  \n An object that combines the different parts of the game.
@@ -23,7 +29,6 @@
 class Game
 {
 public:
-
         /**
          \n The main function of game
          */
@@ -35,8 +40,13 @@ public:
          */
         void initialize();
 
-private:
+        /**
+         * TitleScreen of the game that stays open till the user interacts with it.
+         * @param window Window of game
+         */
+        void titleScreen(sf::RenderWindow& window );
 
+private:
         // The score of the player
         int score{0};
 
@@ -44,12 +54,16 @@ private:
         int levelNr{1};
 
         // Stopwatch used to clock the Model and Controller -> making Speed PC independent
-        std::shared_ptr<Stopwatch> stopwatch;
+        std::shared_ptr<singleton::Stopwatch> stopwatch;
 
         // Used to transform from the [-4,4]x[-3, 3] logic of the Model
         // to the [0,windowHeight]x[0,windowWidth] logic of the view
-        std::shared_ptr<Transformation> transformation;
+        std::shared_ptr<singleton::Transformation> transformation;
+
+        // Used to lock the player in Title Screen / Menu till action is taken
+        bool interacted{false};
 
 };
+}
 
 #endif // SPACEINVADERS_GAME_H

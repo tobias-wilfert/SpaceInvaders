@@ -9,9 +9,7 @@
 
 #include "Entity/Counter.h"
 
-/**
- * Namespace of SpaceInvaders
- */
+/// Namespace of SpaceInvaders
 namespace si {
 
 /**

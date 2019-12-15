@@ -574,59 +574,59 @@ MVC/View.cpp.s:
 	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.s
 .PHONY : MVC/View.cpp.s
 
-Stopwatch.o: Stopwatch.cpp.o
+Singleton/Stopwatch.o: Singleton/Stopwatch.cpp.o
 
-.PHONY : Stopwatch.o
-
-# target to build an object file
-Stopwatch.cpp.o:
-	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Stopwatch.cpp.o
-.PHONY : Stopwatch.cpp.o
-
-Stopwatch.i: Stopwatch.cpp.i
-
-.PHONY : Stopwatch.i
-
-# target to preprocess a source file
-Stopwatch.cpp.i:
-	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Stopwatch.cpp.i
-.PHONY : Stopwatch.cpp.i
-
-Stopwatch.s: Stopwatch.cpp.s
-
-.PHONY : Stopwatch.s
-
-# target to generate assembly for a file
-Stopwatch.cpp.s:
-	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Stopwatch.cpp.s
-.PHONY : Stopwatch.cpp.s
-
-Transformation.o: Transformation.cpp.o
-
-.PHONY : Transformation.o
+.PHONY : Singleton/Stopwatch.o
 
 # target to build an object file
-Transformation.cpp.o:
-	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Transformation.cpp.o
-.PHONY : Transformation.cpp.o
+Singleton/Stopwatch.cpp.o:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Singleton/Stopwatch.cpp.o
+.PHONY : Singleton/Stopwatch.cpp.o
 
-Transformation.i: Transformation.cpp.i
+Singleton/Stopwatch.i: Singleton/Stopwatch.cpp.i
 
-.PHONY : Transformation.i
+.PHONY : Singleton/Stopwatch.i
 
 # target to preprocess a source file
-Transformation.cpp.i:
-	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Transformation.cpp.i
-.PHONY : Transformation.cpp.i
+Singleton/Stopwatch.cpp.i:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Singleton/Stopwatch.cpp.i
+.PHONY : Singleton/Stopwatch.cpp.i
 
-Transformation.s: Transformation.cpp.s
+Singleton/Stopwatch.s: Singleton/Stopwatch.cpp.s
 
-.PHONY : Transformation.s
+.PHONY : Singleton/Stopwatch.s
 
 # target to generate assembly for a file
-Transformation.cpp.s:
-	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Transformation.cpp.s
-.PHONY : Transformation.cpp.s
+Singleton/Stopwatch.cpp.s:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Singleton/Stopwatch.cpp.s
+.PHONY : Singleton/Stopwatch.cpp.s
+
+Singleton/Transformation.o: Singleton/Transformation.cpp.o
+
+.PHONY : Singleton/Transformation.o
+
+# target to build an object file
+Singleton/Transformation.cpp.o:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.o
+.PHONY : Singleton/Transformation.cpp.o
+
+Singleton/Transformation.i: Singleton/Transformation.cpp.i
+
+.PHONY : Singleton/Transformation.i
+
+# target to preprocess a source file
+Singleton/Transformation.cpp.i:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.i
+.PHONY : Singleton/Transformation.cpp.i
+
+Singleton/Transformation.s: Singleton/Transformation.cpp.s
+
+.PHONY : Singleton/Transformation.s
+
+# target to generate assembly for a file
+Singleton/Transformation.cpp.s:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.s
+.PHONY : Singleton/Transformation.cpp.s
 
 main.o: main.cpp.o
 
@@ -713,12 +713,12 @@ help:
 	@echo "... MVC/View.o"
 	@echo "... MVC/View.i"
 	@echo "... MVC/View.s"
-	@echo "... Stopwatch.o"
-	@echo "... Stopwatch.i"
-	@echo "... Stopwatch.s"
-	@echo "... Transformation.o"
-	@echo "... Transformation.i"
-	@echo "... Transformation.s"
+	@echo "... Singleton/Stopwatch.o"
+	@echo "... Singleton/Stopwatch.i"
+	@echo "... Singleton/Stopwatch.s"
+	@echo "... Singleton/Transformation.o"
+	@echo "... Singleton/Transformation.i"
+	@echo "... Singleton/Transformation.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

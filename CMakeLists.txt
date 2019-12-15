@@ -2,7 +2,7 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
 
 PROJECT(SpaceInvaders)
 SET(CMAKE_CXX_STANDARD 14)
-ADD_EXECUTABLE(SpaceInvaders main.cpp Stopwatch.cpp Stopwatch.h Game.cpp Game.h Transformation.cpp Transformation.h
+ADD_EXECUTABLE(SpaceInvaders main.cpp Singleton/Stopwatch.cpp Singleton/Stopwatch.h Game.cpp Game.h Singleton/Transformation.cpp Singleton/Transformation.h
         Level.cpp Level.h Entity/Entity.cpp Entity/Entity.h Entity/Player.cpp Entity/Player.h
         Entity/CollideObject.cpp Entity/CollideObject.h Entity/Counter.cpp Entity/Counter.h
         Entity/HelperDatatypes.cpp Entity/HelperDatatypes.h Entity/Mortal.cpp Entity/Mortal.h

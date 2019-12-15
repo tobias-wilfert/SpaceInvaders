@@ -212,16 +212,16 @@
 		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/View.h">
 			<Option target="SpaceInvaders"/>
 		</Unit>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.cpp">
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Stopwatch.cpp">
 			<Option target="SpaceInvaders"/>
 		</Unit>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.h">
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Stopwatch.h">
 			<Option target="SpaceInvaders"/>
 		</Unit>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Transformation.cpp">
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Transformation.cpp">
 			<Option target="SpaceInvaders"/>
 		</Unit>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Transformation.h">
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Transformation.h">
 			<Option target="SpaceInvaders"/>
 		</Unit>
 		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/main.cpp">

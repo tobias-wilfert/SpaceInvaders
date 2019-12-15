@@ -7,13 +7,15 @@
 #ifndef SPACEINVADERS_CONTROLLER_H
 #define SPACEINVADERS_CONTROLLER_H
 
-/**
- * Namespace of SpaceInvaders
- */
+#include "Model.h"
+
+// To handle the inputs
+#include <SFML/Graphics.hpp>
+
+/// Namespace of SpaceInvaders
 namespace si {
-/**
- * Namespace of Model View Controller
- */
+
+/// Namespace of Model View Controller
 namespace mvc {
 
 /**
@@ -22,10 +24,18 @@ namespace mvc {
 class Controller
 {
 public:
-        // Main function needed
+        // Main function
+        void handleInput(sf::RenderWindow& window ) const; // Could be const as we deal with pointers anyway???
+
+        // Function to update the movement  of the alliens
+
+        // Function to update the bullets
 
 private:
-        // Needs a Model it can control
+
+        // Controller controls the Model
+        Model* model;
+
 };
 
 }

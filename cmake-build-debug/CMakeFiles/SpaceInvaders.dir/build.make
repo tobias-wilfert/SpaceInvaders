@@ -70,18 +70,18 @@ CMakeFiles/SpaceInvaders.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/main.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/main.cpp -o CMakeFiles/SpaceInvaders.dir/main.cpp.s
 
-CMakeFiles/SpaceInvaders.dir/Stopwatch.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
-CMakeFiles/SpaceInvaders.dir/Stopwatch.cpp.o: ../Stopwatch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SpaceInvaders.dir/Stopwatch.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Stopwatch.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.cpp
+CMakeFiles/SpaceInvaders.dir/Singleton/Stopwatch.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
+CMakeFiles/SpaceInvaders.dir/Singleton/Stopwatch.cpp.o: ../Singleton/Stopwatch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SpaceInvaders.dir/Singleton/Stopwatch.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Singleton/Stopwatch.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Stopwatch.cpp
 
-CMakeFiles/SpaceInvaders.dir/Stopwatch.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Stopwatch.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.cpp > CMakeFiles/SpaceInvaders.dir/Stopwatch.cpp.i
+CMakeFiles/SpaceInvaders.dir/Singleton/Stopwatch.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Singleton/Stopwatch.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Stopwatch.cpp > CMakeFiles/SpaceInvaders.dir/Singleton/Stopwatch.cpp.i
 
-CMakeFiles/SpaceInvaders.dir/Stopwatch.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Stopwatch.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Stopwatch.cpp -o CMakeFiles/SpaceInvaders.dir/Stopwatch.cpp.s
+CMakeFiles/SpaceInvaders.dir/Singleton/Stopwatch.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Singleton/Stopwatch.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Stopwatch.cpp -o CMakeFiles/SpaceInvaders.dir/Singleton/Stopwatch.cpp.s
 
 CMakeFiles/SpaceInvaders.dir/Game.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
 CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Game.cpp
@@ -96,18 +96,18 @@ CMakeFiles/SpaceInvaders.dir/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Game.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Game.cpp -o CMakeFiles/SpaceInvaders.dir/Game.cpp.s
 
-CMakeFiles/SpaceInvaders.dir/Transformation.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
-CMakeFiles/SpaceInvaders.dir/Transformation.cpp.o: ../Transformation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SpaceInvaders.dir/Transformation.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Transformation.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Transformation.cpp
+CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
+CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.o: ../Singleton/Transformation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Transformation.cpp
 
-CMakeFiles/SpaceInvaders.dir/Transformation.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Transformation.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Transformation.cpp > CMakeFiles/SpaceInvaders.dir/Transformation.cpp.i
+CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Transformation.cpp > CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.i
 
-CMakeFiles/SpaceInvaders.dir/Transformation.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Transformation.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Transformation.cpp -o CMakeFiles/SpaceInvaders.dir/Transformation.cpp.s
+CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Transformation.cpp -o CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.s
 
 CMakeFiles/SpaceInvaders.dir/Level.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
 CMakeFiles/SpaceInvaders.dir/Level.cpp.o: ../Level.cpp
@@ -294,9 +294,9 @@ CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.s: cmake_force
 # Object files for target SpaceInvaders
 SpaceInvaders_OBJECTS = \
 "CMakeFiles/SpaceInvaders.dir/main.cpp.o" \
-"CMakeFiles/SpaceInvaders.dir/Stopwatch.cpp.o" \
+"CMakeFiles/SpaceInvaders.dir/Singleton/Stopwatch.cpp.o" \
 "CMakeFiles/SpaceInvaders.dir/Game.cpp.o" \
-"CMakeFiles/SpaceInvaders.dir/Transformation.cpp.o" \
+"CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.o" \
 "CMakeFiles/SpaceInvaders.dir/Level.cpp.o" \
 "CMakeFiles/SpaceInvaders.dir/Entity/Entity.cpp.o" \
 "CMakeFiles/SpaceInvaders.dir/Entity/Player.cpp.o" \
@@ -316,9 +316,9 @@ SpaceInvaders_OBJECTS = \
 SpaceInvaders_EXTERNAL_OBJECTS =
 
 SpaceInvaders: CMakeFiles/SpaceInvaders.dir/main.cpp.o
-SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Stopwatch.cpp.o
+SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Singleton/Stopwatch.cpp.o
 SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Game.cpp.o
-SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Transformation.cpp.o
+SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.o
 SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Level.cpp.o
 SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Entity/Entity.cpp.o
 SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Entity/Player.cpp.o

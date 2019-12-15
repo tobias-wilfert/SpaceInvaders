@@ -6,7 +6,7 @@
 
 #include "Stopwatch.h"
 
-std::shared_ptr<Stopwatch> Stopwatch::getInstance()
+std::shared_ptr<si::singleton::Stopwatch> si::singleton::Stopwatch::getInstance()
 {
         if (!instance) { // The first time getInstance() is called
                 instance = std::make_shared<Stopwatch>(Stopwatch{});
@@ -14,13 +14,13 @@ std::shared_ptr<Stopwatch> Stopwatch::getInstance()
         return instance;
 }
 
-void Stopwatch::restart() { start = std::chrono::high_resolution_clock::now(); }
+void si::singleton::Stopwatch::restart() { start = std::chrono::high_resolution_clock::now(); }
 
-float Stopwatch::getElapsedTime() const
+float si::singleton::Stopwatch::getElapsedTime() const
 {
         std::chrono::duration<float> diff = std::chrono::high_resolution_clock::now() - start;
         return diff.count();
 }
 
-Stopwatch::Stopwatch() : start(std::chrono::high_resolution_clock::now()) {}
+si::singleton::Stopwatch::Stopwatch() : start(std::chrono::high_resolution_clock::now()) {}
 

@@ -6,110 +6,57 @@
 
 #include "Game.h"
 
-std::shared_ptr<Stopwatch> Stopwatch::instance = nullptr;
-std::shared_ptr<Transformation> Transformation::instance = nullptr;
+std::shared_ptr<si::singleton::Stopwatch> si::singleton::Stopwatch::instance = nullptr;
+std::shared_ptr<si::singleton::Transformation> si::singleton::Transformation::instance = nullptr;
 
 // TODO: Push once without all the load from File to check that it works
 
-void Game::execute()
+void si::Game::execute()
 {
-        // This is where the real stuff happens
         // Initialize the game
         initialize();
-
-        sf::RenderWindow window( sf::VideoMode(transformation->get_width(),transformation->get_height()), "SpaceInvaders");
-
-        /*
-        sf::Font font;
-        if (!font.loadFromFile("../resources/fonts/KenPixel.ttf"))
-        {
-                std::cout << "Error loading file" << std::endl;
-                system("pause");
-        }
-
-
-        sf::Text text;
-        text.setFont(font);
-        text.setCharacterSize(50);
-        text.setString("Space Invaders");
-        sf::Rect<float> size = text.getGlobalBounds();
-        text.setPosition(window.getSize().x/2.f-size.width/2.f,window.getSize().y/2.f-size.height/2.f);
-        */
-
-        std::cout << CLOCKS_PER_SEC << std::endl;
-
-        float xw = 0.52, yh = 0.32;
-        float x=0-xw/2.f, y=3.5;
         float accumulatedTimeSinceLastUpdate = 0;
-        sf::RectangleShape rect(sf::Vector2f(transformation->convertWidth(xw),transformation->convertHeight(yh)));
 
-        // Load the texture -> View
-        /*
-        sf::Texture texture;
-        if(!texture.loadFromFile("../resources/img/player.png"))
-        {
-                std::cout << "Load failed" << std::endl;
-                system("pause");
-        }
-        rect.setTexture(&texture);
-         */
+        //TODO: Model View and Controller constructor
+        mvc::Model model{};
+        mvc::View view{};
+        mvc::Controller controller{};
 
+        // Create the window
+        sf::RenderWindow window( sf::VideoMode(transformation->get_width(),transformation->get_height()), "SpaceInvaders");
 
         // Main game Loop
         while (window.isOpen()) {
 
-                // TODO: Call a level
-
-                // TODO: Controller and Model should be in a Clock Loop to assure that every PC is equally fast
-
-                // Call a level
-                // A level has a Model, View and Controller
-
-                // Handle all events -> Controller
-                sf::Event event{};
-                while (window.pollEvent(event)) {
-                        switch (event.type) {
-                        case sf::Event::Closed:
-                                window.close();
-                                break;
-                                // Place to add extra Handels if needed.
-                        default:
-                                break;
-                        }
+                // Till the player interacts with the game don't start a level
+                while(!interacted){
+                        titleScreen(window);
                 }
-                // Update the game -> Model
-                rect.setPosition(transformation->convertXCoordinate(x), transformation->convertYCoordinate(y));
-                rect.setSize(sf::Vector2f(transformation->convertWidth(xw),transformation->convertHeight(yh)));
 
                 // Calculate the delta -> Clock
                 float timeSinceLastFrame = stopwatch->getElapsedTime();
                 stopwatch->restart();
                 accumulatedTimeSinceLastUpdate += timeSinceLastFrame;
 
-                // Update every Second -> Clock
+                // Update every X Second -> Clock
                 if (accumulatedTimeSinceLastUpdate >= 1) {
 
-                        // DO somthing
+                        // TODO: Do something with the model
+                        controller.handleInput(window);
 
-                        std::cout << "timeSinceLastFrame" << timeSinceLastFrame << std::endl;
-                        std::cout << "accumulatedTimeSinceLastUpdate" << accumulatedTimeSinceLastUpdate << std::endl;
+                        std::cout << "Game is on going" << std::endl;
+
+                        // Reset the delta
                         accumulatedTimeSinceLastUpdate -= 1;
-                        //std::cout <<transformation->convertYCoordinate(y) <<":"<< y << std::endl;
                 }
 
-                // Draw Objects here -> View
-                window.clear();
+                // View should be updated every frame
+                view.display(window);
 
-                // Draw consistently -> View
-                window.draw(rect);
-                //window.draw(text);
-
-                // Draw objects here -> View
-                window.display();
         }
 }
 
-void Game::initialize()
+void si::Game::initialize()
 {
         // Get the size of the monitor
         unsigned int width{0}, height{0};
@@ -117,7 +64,57 @@ void Game::initialize()
         width = height/8.f*6.f;
 
         // Initialize transformation and stopwatch
-        stopwatch = Stopwatch::getInstance();
-        transformation = Transformation::initialize(width,height);
+        stopwatch = si::singleton::Stopwatch::getInstance();
+        transformation = si::singleton::Transformation::initialize(width,height);
+}
+void si::Game::titleScreen(sf::RenderWindow& window)
+{
+        sf::Font font;
+        if (!font.loadFromFile("../resources/fonts/KenPixel.ttf"))
+        {
+                std::cout << "Error loading file" << std::endl;
+                system("pause");
+                // TODO Error Handling
+        }
+
+        sf::Text title("Space Invaders",font,50);
+        sf::Rect<float> size = title.getGlobalBounds();
+        title.setPosition(window.getSize().x/2.f-size.width/2.f,window.getSize().y/2.f-size.height/2.f);
+
+        window.clear();
+        window.draw(title);
+        window.display();
+
+        // Check if the player presses a key
+        sf::Event event{};
+        while (window.pollEvent(event)) {
+                switch (event.type) {
+                case sf::Event::Closed:
+                        window.close();
+                        break;
+                case sf::Event::KeyPressed:
+                        interacted = true;
+                default:
+                        break;
+                }
+        }
 }
 
+
+/**
+ * PLayer:
+ * float xw = 0.52, yh = 0.32;
+        float x=0-xw/2.f, y=3.5;
+        sf::RectangleShape rect(sf::Vector2f(transformation->convertWidth(xw),transformation->convertHeight(yh)));
+
+        // Load the texture -> View
+
+        sf::Texture texture;
+        if(!texture.loadFromFile("../resources/img/player.png"))
+        {
+                std::cout << "Load failed" << std::endl;
+                system("pause");
+        }
+        rect.setTexture(&texture);
+
+ */
