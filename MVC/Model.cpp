@@ -12,3 +12,4 @@ si::mvc::Model::Model()
         pplayer = std::shared_ptr<si::entity::Player>(new entity::Player{size,position,1,entity::collideObjectType::friendly,1});
 
 }
+bool si::mvc::Model::is_interacted() const { return interacted; }

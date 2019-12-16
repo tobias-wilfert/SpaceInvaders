@@ -40,12 +40,6 @@ public:
          */
         void initialize();
 
-        /**
-         * TitleScreen of the game that stays open till the user interacts with it.
-         * @param window Window of game
-         */
-        void titleScreen(sf::RenderWindow& window );
-
 private:
         // The score of the player
         int score{0};
@@ -53,15 +47,14 @@ private:
         // The number of level the Player is currently at
         int levelNr{1};
 
+        //TODO Check if game actually needs these?
+
         // Stopwatch used to clock the Model and Controller -> making Speed PC independent
         std::shared_ptr<singleton::Stopwatch> stopwatch;
 
         // Used to transform from the [-4,4]x[-3, 3] logic of the Model
         // to the [0,windowHeight]x[0,windowWidth] logic of the view
         std::shared_ptr<singleton::Transformation> transformation;
-
-        // Used to lock the player in Title Screen / Menu till action is taken
-        bool interacted{false};
 
 };
 }

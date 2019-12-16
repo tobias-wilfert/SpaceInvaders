@@ -25,6 +25,18 @@ class Model
 public:
         Model();
 
+        bool is_interacted() const;
+
+private:
+        // Make Controller and View friends of Model
+        friend class View;
+        friend class Controller;
+
+        // Used to lock the player in Title Screen / Menu till action is taken
+        bool interacted{false};
+
+        // Most things should be private and reached via friend privilege
+
         // View needs a list of entities it can draw and cast if extra info is needed
 
         // Controller just needs to update player position
@@ -35,7 +47,6 @@ public:
 
         std::shared_ptr<si::entity::Player> pplayer;
 
-private:
         // All of the info the Model holds
 
         // Model should hold some items

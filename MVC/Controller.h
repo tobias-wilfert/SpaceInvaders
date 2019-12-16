@@ -10,6 +10,8 @@
 #include "Model.h"
 
 #include <memory>
+#include <utility>
+
 // To handle the inputs
 #include <SFML/Graphics.hpp>
 
@@ -25,10 +27,19 @@ namespace mvc {
 class Controller
 {
 public:
-        Controller(const std::shared_ptr<Model>& model);
+        explicit Controller(std::shared_ptr<Model>  model);
 
-        // Main function
-        void handleInput(sf::RenderWindow& window ) const; // Could be const as we deal with pointers anyway???
+        /**
+         * Main Function
+         * @param window
+         */
+        void handleInput(sf::RenderWindow& window) const; // Could be const as we deal with pointers anyway???
+
+        /**
+         *
+         * @param window
+         */
+        void handleTitleScreenInput(sf::RenderWindow& window) const;
 
         // Function to update the movement  of the alliens
 
@@ -38,6 +49,9 @@ private:
 
         // Controller controls the Model
         std::shared_ptr<Model> model;
+
+
+        // TODO: May need its own version of clock in order to handle the input of fire
 
 };
 

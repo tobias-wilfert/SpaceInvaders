@@ -34,6 +34,10 @@ public:
 private:
         // The type of the entity
         entityType entity_type{entityType::enemy};
+
+        // Have a state in order to manage that the sprite changes all x seconds
+
+
 };
 
 }
