@@ -466,33 +466,6 @@ Game.cpp.s:
 	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Game.cpp.s
 .PHONY : Game.cpp.s
 
-Level.o: Level.cpp.o
-
-.PHONY : Level.o
-
-# target to build an object file
-Level.cpp.o:
-	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Level.cpp.o
-.PHONY : Level.cpp.o
-
-Level.i: Level.cpp.i
-
-.PHONY : Level.i
-
-# target to preprocess a source file
-Level.cpp.i:
-	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Level.cpp.i
-.PHONY : Level.cpp.i
-
-Level.s: Level.cpp.s
-
-.PHONY : Level.s
-
-# target to generate assembly for a file
-Level.cpp.s:
-	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Level.cpp.s
-.PHONY : Level.cpp.s
-
 MVC/Controller.o: MVC/Controller.cpp.o
 
 .PHONY : MVC/Controller.o
@@ -519,6 +492,33 @@ MVC/Controller.s: MVC/Controller.cpp.s
 MVC/Controller.cpp.s:
 	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.s
 .PHONY : MVC/Controller.cpp.s
+
+MVC/Level.o: MVC/Level.cpp.o
+
+.PHONY : MVC/Level.o
+
+# target to build an object file
+MVC/Level.cpp.o:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.o
+.PHONY : MVC/Level.cpp.o
+
+MVC/Level.i: MVC/Level.cpp.i
+
+.PHONY : MVC/Level.i
+
+# target to preprocess a source file
+MVC/Level.cpp.i:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.i
+.PHONY : MVC/Level.cpp.i
+
+MVC/Level.s: MVC/Level.cpp.s
+
+.PHONY : MVC/Level.s
+
+# target to generate assembly for a file
+MVC/Level.cpp.s:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.s
+.PHONY : MVC/Level.cpp.s
 
 MVC/Model.o: MVC/Model.cpp.o
 
@@ -701,12 +701,12 @@ help:
 	@echo "... Game.o"
 	@echo "... Game.i"
 	@echo "... Game.s"
-	@echo "... Level.o"
-	@echo "... Level.i"
-	@echo "... Level.s"
 	@echo "... MVC/Controller.o"
 	@echo "... MVC/Controller.i"
 	@echo "... MVC/Controller.s"
+	@echo "... MVC/Level.o"
+	@echo "... MVC/Level.i"
+	@echo "... MVC/Level.s"
 	@echo "... MVC/Model.o"
 	@echo "... MVC/Model.i"
 	@echo "... MVC/Model.s"

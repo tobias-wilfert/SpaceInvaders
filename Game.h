@@ -16,6 +16,7 @@
 
 #include "MVC/View.h"
 #include "MVC/Model.h"
+#include "MVC/Level.h"
 #include "MVC/Controller.h"
 #include "Singleton/Stopwatch.h"
 #include "Singleton/Transformation.h"
@@ -41,19 +42,21 @@ public:
         void initialize();
 
 private:
-        // The score of the player
+        /// The score of the player
         int score{0};
 
-        // The number of level the Player is currently at
+        /// The number of level the Player is currently at
         int levelNr{1};
 
         //TODO Check if game actually needs these?
 
-        // Stopwatch used to clock the Model and Controller -> making Speed PC independent
+        /// Stopwatch used to clock the Model and Controller -> making Speed PC independent
         std::shared_ptr<singleton::Stopwatch> stopwatch;
 
-        // Used to transform from the [-4,4]x[-3, 3] logic of the Model
-        // to the [0,windowHeight]x[0,windowWidth] logic of the view
+        /**
+         \n Used to transform from the [-4,4]x[-3, 3] logic of the Model
+         \n to the [0,windowHeight]x[0,windowWidth] logic of the view
+         */
         std::shared_ptr<singleton::Transformation> transformation;
 
 };

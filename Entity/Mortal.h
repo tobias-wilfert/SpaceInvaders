@@ -46,7 +46,7 @@ public:
         int get_health_points() const;
 
 private:
-        // The HP of the Entity
+        /// The HP of the Entity
         int healthPoints;
 };
 

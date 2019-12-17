@@ -19,7 +19,7 @@ namespace entity {
 /**
  * All the bullets, the once from the player and from the enemies
  */
-class Bullet : private Mortal
+class Bullet : public Mortal
 {
 public:
         // TODO: Add features
@@ -34,10 +34,10 @@ private:
         entityType getEntityType() const override;
 
 public:
-        // Velocity of the bullet
+        /// Velocity of the bullet
         float velocity;
 
-        // The type of the entity
+        /// The type of the entity
         entityType entity_type{entityType::bullet};
 };
 

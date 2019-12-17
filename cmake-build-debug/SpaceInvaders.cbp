@@ -188,16 +188,16 @@
 		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Game.h">
 			<Option target="SpaceInvaders"/>
 		</Unit>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Level.cpp">
-			<Option target="SpaceInvaders"/>
-		</Unit>
-		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Level.h">
-			<Option target="SpaceInvaders"/>
-		</Unit>
 		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Controller.cpp">
 			<Option target="SpaceInvaders"/>
 		</Unit>
 		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Controller.h">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Level.cpp">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Level.h">
 			<Option target="SpaceInvaders"/>
 		</Unit>
 		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.cpp">

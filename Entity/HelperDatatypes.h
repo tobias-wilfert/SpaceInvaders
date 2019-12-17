@@ -26,6 +26,19 @@ enum entityType
 };
 
 /**
+ * Possible Colours
+ */
+enum colourType{
+        white,
+        red,
+        green,
+        blue,
+        yellow,
+        magenta,
+        cyan,
+};
+
+/**
  * Size represented by 2 floats (width,height)
  */
 struct Size

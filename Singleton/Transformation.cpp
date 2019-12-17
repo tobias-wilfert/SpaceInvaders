@@ -48,18 +48,12 @@ si::singleton::Transformation::Transformation(int window_width, int window_heigh
 
 float si::singleton::Transformation::convertXCoordinate(float xCoordinate) const
 {
-        if (xCoordinate < -3 or 3 < xCoordinate){
-                throw std::invalid_argument("xCoordinate needs to be in [-3,3]");
-        }
         return (xCoordinate+3.f)/6.f*static_cast<float>(windowWidth);
 }
 
 float si::singleton::Transformation::convertYCoordinate(float yCoordinate) const
 {
-        if (yCoordinate < -4 or 4 < yCoordinate){
-                throw std::invalid_argument("yCoordinate needs to be in [-4,4]");
-        }
-        return (yCoordinate+4.f)/8.f*static_cast<float>(windowHeight);
+        return (yCoordinate + 4.f) / 8.f * static_cast<float>(windowHeight);
 }
 
 float si::singleton::Transformation::convertWidth(float width) const { return width/6.f* static_cast<float>(windowWidth); }

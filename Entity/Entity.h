@@ -23,13 +23,13 @@ class Entity
 public:
         Entity(const Size& size, const Position& position);
 
-        // The size of the entity
+        /// The size of the entity
         Size size;
 
-        // The position of the entity
+        /// The position of the entity
         Position position;
 
-        // Return the entityType of the object so that view knows what is to be drawn
+        /// Return the entityType of the object so that view knows what is to be drawn
         virtual entityType getEntityType() const = 0;
 
 private:

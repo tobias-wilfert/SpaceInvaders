@@ -31,7 +31,7 @@ public:
         entityType getEntityType() const override;
 
 private:
-        // The type of the entity
+        /// The type of the entity
         entityType entity_type{entityType::player};
 };
 

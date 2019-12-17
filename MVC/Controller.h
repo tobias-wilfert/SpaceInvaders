@@ -8,12 +8,11 @@
 #define SPACEINVADERS_CONTROLLER_H
 
 #include "Model.h"
+#include "../Singleton/Stopwatch.h"
 
 #include <memory>
 #include <utility>
-
-// To handle the inputs
-#include <SFML/Graphics.hpp>
+#include <SFML/Graphics.hpp>    // To handle the inputs
 
 /// Namespace of SpaceInvaders
 namespace si {
@@ -30,28 +29,33 @@ public:
         explicit Controller(std::shared_ptr<Model>  model);
 
         /**
-         * Main Function
-         * @param window
+         * Main Function of the controller
+         * @param window The sfml window the player sees and interacts with
          */
         void handleInput(sf::RenderWindow& window) const; // Could be const as we deal with pointers anyway???
 
         /**
-         *
-         * @param window
+         * Handles the input during the titleScreen
+         * @param window The sfml window the player sees and interacts with
          */
         void handleTitleScreenInput(sf::RenderWindow& window) const;
 
         // Function to update the movement  of the alliens
-
         // Function to update the bullets
+
+        /**
+         *
+         */
+        void updateModel() const;
+
 
 private:
 
-        // Controller controls the Model
+        /// The model the controller controls
         std::shared_ptr<Model> model;
 
-
-        // TODO: May need its own version of clock in order to handle the input of fire
+        /// Stopwatch used to clock the Model and Controller -> making Speed PC independent
+        std::shared_ptr<singleton::Stopwatch> stopwatch;
 
 };
 

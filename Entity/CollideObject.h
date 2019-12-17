@@ -78,13 +78,13 @@ public:
         virtual bool isDead() const = 0;
 
 private:
-        // The damage an object causes when collided with
+        /// The damage an object causes when collided with
         unsigned int attackPoints;
 
-        // True it the collide Object is already destroyed
+        /// True it the collide Object is already destroyed
         bool destroyed{false};
 
-        // Type to clarify what you are safes time when checking
+        /// Type to clarify what you are safes time when checking
         collideObjectType type;
 };
 

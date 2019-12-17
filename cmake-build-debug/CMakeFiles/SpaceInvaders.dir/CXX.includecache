@@ -10,11 +10,19 @@
 Entity.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.h
 
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Counter.h
+Entity.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.h
+
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.h
 HelperDatatypes.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.h
 
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.h
+
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Immortal.h
+CollideObject.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/CollideObject.h
 
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.h
 CollideObject.h
@@ -24,11 +32,25 @@ CollideObject.h
 Mortal.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.h
 
-/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Level.h
+../Entity/Counter.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Counter.h
+deque
+-
 memory
 -
+
+/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.h
+Level.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Level.h
 ../Entity/Player.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Player.h
+../Entity/Counter.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Counter.h
+../Entity/Immortal.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Immortal.h
+memory
+-
 
 /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/View.cpp
 View.h

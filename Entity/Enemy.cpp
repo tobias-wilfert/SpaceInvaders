@@ -7,8 +7,9 @@
 #include "Enemy.h"
 
 si::entity::Enemy::Enemy(const si::entity::Size& size, const si::entity::Position& position, unsigned int attack_points,
-                 si::entity::collideObjectType type, int health_points)
-    : Mortal(size, position, attack_points, type, health_points)
+                         si::entity::collideObjectType type, int health_points, si::entity::enemyType enemy_type,
+                         si::entity::colourType colour)
+    : Mortal(size, position, attack_points, type, health_points), enemy_type(enemy_type), colour(colour)
 {
 }
 

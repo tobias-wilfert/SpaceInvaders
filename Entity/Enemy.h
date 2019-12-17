@@ -16,14 +16,23 @@ namespace si {
 namespace entity {
 
 /**
+ * Types of different aliens
+ */
+enum enemyType{
+        a,
+        b,
+        c,
+        m,
+};
+
+/**
  * Class for all Enemies may serve as a base class for even more of them
  */
-class Enemy : private Mortal
+class Enemy : public Mortal
 {
 public:
-        // TODO Add more features to the aliens
         Enemy(const Size& size, const Position& position, unsigned int attack_points, collideObjectType type,
-              int health_points);
+              int health_points, enemyType enemy_type, colourType colour);
 
         /**
          * Override of getEntityType() from Entity
@@ -32,12 +41,17 @@ public:
         entityType getEntityType() const override;
 
 private:
-        // The type of the entity
+        /// The type of the entity
         entityType entity_type{entityType::enemy};
 
-        // Have a state in order to manage that the sprite changes all x seconds
+        /// State as some enemies have different appearances
+        bool state{false};
 
+        /// The type of the enemy
+        enemyType enemy_type;
 
+        /// Color of the enemy
+        colourType colour;
 };
 
 }

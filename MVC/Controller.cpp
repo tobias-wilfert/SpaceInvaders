@@ -22,28 +22,38 @@ void si::mvc::Controller::handleInput(sf::RenderWindow& window) const
                 }
         }
 
+        // TODO replace values with variables
+
         // Handle game input
         if ( sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left))
         {
                 // Check that move is legal -> The player doesn't move from the screen
-                if (model->pplayer->position.x - 0.05 >= -3){
+                if (model->player->position.x - 0.05 >= -3){
                         // Move the player left
-                        model->pplayer->position.x -= 0.05;
+                        model->player->position.x -= 0.05;
                 }
 
 
         }else if ( sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right))
         {
                 // Check that move is legal
-                if (model->pplayer->position.x + 0.05 <= (3-model->pplayer->size.width)) {
+                if (model->player->position.x + 0.05 <= (3-model->player->size.width)) {
                         // Move the player right
-                        model->pplayer->position.x += 0.05;
+                        model->player->position.x += 0.05;
                 }
 
-        }else if ( sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Down))
+        }else if ( sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up))
         {
                 // Keep track of the time so that the player can't spam shoot
-                // Let the player shoot
+                // Check if shooting is available
+                if (model->coolDownCounter->get_value() == 0){
+                        // Let the player shoot
+
+                        // Reset the counter
+                        // TODO Fine tune the value
+                        model->coolDownCounter->set_value(200);
+                }
+
         }
 }
 si::mvc::Controller::Controller(std::shared_ptr<Model>  model) : model(std::move(model)) {}
@@ -63,5 +73,14 @@ void si::mvc::Controller::handleTitleScreenInput(sf::RenderWindow& window) const
                         break;
                 }
         }
+
+}
+void si::mvc::Controller::updateModel() const
+{
+        // TODO: Update the movement of bullets alliens and the cooldown counter
+        if(model->coolDownCounter->get_value() > 0){
+                model->coolDownCounter->set_value(model->coolDownCounter->get_value()-1);
+        }
+
 
 }

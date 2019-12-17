@@ -109,18 +109,18 @@ CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Transformation.cpp -o CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.s
 
-CMakeFiles/SpaceInvaders.dir/Level.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
-CMakeFiles/SpaceInvaders.dir/Level.cpp.o: ../Level.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SpaceInvaders.dir/Level.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Level.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Level.cpp
+CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
+CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.o: ../MVC/Level.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Level.cpp
 
-CMakeFiles/SpaceInvaders.dir/Level.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Level.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Level.cpp > CMakeFiles/SpaceInvaders.dir/Level.cpp.i
+CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Level.cpp > CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.i
 
-CMakeFiles/SpaceInvaders.dir/Level.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Level.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Level.cpp -o CMakeFiles/SpaceInvaders.dir/Level.cpp.s
+CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Level.cpp -o CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.s
 
 CMakeFiles/SpaceInvaders.dir/Entity/Entity.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
 CMakeFiles/SpaceInvaders.dir/Entity/Entity.cpp.o: ../Entity/Entity.cpp
@@ -297,7 +297,7 @@ SpaceInvaders_OBJECTS = \
 "CMakeFiles/SpaceInvaders.dir/Singleton/Stopwatch.cpp.o" \
 "CMakeFiles/SpaceInvaders.dir/Game.cpp.o" \
 "CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.o" \
-"CMakeFiles/SpaceInvaders.dir/Level.cpp.o" \
+"CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.o" \
 "CMakeFiles/SpaceInvaders.dir/Entity/Entity.cpp.o" \
 "CMakeFiles/SpaceInvaders.dir/Entity/Player.cpp.o" \
 "CMakeFiles/SpaceInvaders.dir/Entity/CollideObject.cpp.o" \
@@ -319,7 +319,7 @@ SpaceInvaders: CMakeFiles/SpaceInvaders.dir/main.cpp.o
 SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Singleton/Stopwatch.cpp.o
 SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Game.cpp.o
 SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.o
-SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Level.cpp.o
+SpaceInvaders: CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.o
 SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Entity/Entity.cpp.o
 SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Entity/Player.cpp.o
 SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Entity/CollideObject.cpp.o

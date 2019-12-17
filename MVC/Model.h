@@ -7,9 +7,12 @@
 #ifndef SPACEINVADERS_MODEL_H
 #define SPACEINVADERS_MODEL_H
 
-#include <memory>
-
+#include "Level.h"
 #include "../Entity/Player.h"
+#include "../Entity/Counter.h"
+#include "../Entity/Immortal.h"
+
+#include <memory>
 
 /// Namespace of SpaceInvaders
 namespace si {
@@ -25,27 +28,62 @@ class Model
 public:
         Model();
 
+        /**
+         * Checks weather the player already interacted with the model thru the controller
+         * @return True if the player already interacted else false
+         */
         bool is_interacted() const;
 
+        void set_level(const Level& level);
+
 private:
-        // Make Controller and View friends of Model
+        /// Make View friend of Model
         friend class View;
+        /// Make Controller friend of Model
         friend class Controller;
 
-        // Used to lock the player in Title Screen / Menu till action is taken
+        /// Used to lock the player in Title Screen till action is taken
         bool interacted{false};
 
-        // Most things should be private and reached via friend privilege
+        // --- Entities that are level independent ---
+        /**
+         * Pointer to the Player
+         * Fast and easy access for Controller
+         * Pointer so that it can all so be in the list of entities that can be hit
+         */
+        std::shared_ptr<si::entity::Player> player;
 
-        // View needs a list of entities it can draw and cast if extra info is needed
+        /// Top bound of the window
+        std::shared_ptr<si::entity::Immortal> sky;
 
-        // Controller just needs to update player position
+        /// Bottom bound of the window
+        std::shared_ptr<si::entity::Immortal> earth;
+
+        /// Score Counter
+        std::shared_ptr<si::entity::Counter> scoreCounter;
+
+        /// health Counter
+        std::shared_ptr<si::entity::Counter> healthCounter;
+
+        /// health Counter
+        std::shared_ptr<si::entity::Counter> coolDownCounter;
+
+        /**
+         * The level the Model is currently at
+         * Contains all the bullets, aliens and shields
+         * Also all non level depend entities so that view only needs to look at one place
+         */
+        Level level;
+
+
+        // Get all enties in one list for the view
+
 
         // - Update all the bullets movement
 
         // - Update all the alien movement -> could be specified in file as LLRR=(left,left,right,right)
 
-        std::shared_ptr<si::entity::Player> pplayer;
+
 
         // All of the info the Model holds
 

@@ -18,7 +18,10 @@ void si::Game::execute()
         float accumulatedTimeSinceLastUpdate = 0;
 
         //TODO: Model View and Controller constructor
+
+        mvc::Level level{};
         mvc::Model model{};
+        model.set_level(level);
         std::shared_ptr<mvc::Model> modelPointer = std::make_shared<mvc::Model>(model);
         mvc::View view{modelPointer,transformation};
         mvc::Controller controller{modelPointer};
@@ -33,8 +36,7 @@ void si::Game::execute()
                 while(!modelPointer->is_interacted()){
                         controller.handleTitleScreenInput(window);
                         view.displayTitleScreen(window);
-                        // Reset the stop watch
-                        stopwatch->restart();
+                        stopwatch->restart(); // Reset the stop watch
                 }
 
                 // Calculate the delta -> Clock
@@ -46,6 +48,7 @@ void si::Game::execute()
                 if (accumulatedTimeSinceLastUpdate >= 0.01) {
 
                         // TODO: Do something with the model
+                        controller.updateModel();
                         controller.handleInput(window);
 
                         // Reset the delta

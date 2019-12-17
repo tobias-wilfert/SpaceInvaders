@@ -20,7 +20,8 @@ namespace entity {
 enum counterType
 {
         health,
-        score
+        score,
+        cooldown
 };
 
 /**
@@ -28,7 +29,7 @@ enum counterType
  * because the Model doesn't care about looks.
  * Derived from Entity as a counter has a position and size
  */
-class Counter : private Entity
+class Counter : public Entity
 {
 public:
         Counter(const Size& size, const Position& position, int value, counterType counter_type);
@@ -58,13 +59,13 @@ public:
         entityType getEntityType() const override;
 
 private:
-        // Value the counter tracks
+        /// Value the counter tracks
         int value;
 
-        // The type of counter, determines how view draws this
+        /// The type of counter, determines how view draws this
         counterType counter_type;
 
-        // The type of the entity
+        /// The type of the entity
         entityType entity_type{entityType::counter};
 };
 

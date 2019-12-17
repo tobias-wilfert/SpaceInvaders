@@ -19,7 +19,7 @@ namespace entity {
 /**
  * Class for the sky and the ground that should not die when hit by a bullet
  */
-class Immortal : private CollideObject
+class Immortal : public CollideObject
 {
 public:
         Immortal(const Size& size, const Position& position, unsigned int attack_points, collideObjectType type);
@@ -44,7 +44,7 @@ public:
         entityType getEntityType() const override;
 
 private:
-        // The type of the entity
+        /// The type of the entity
         entityType entity_type{entityType::immortal};
 };
 

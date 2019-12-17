@@ -18,7 +18,7 @@ namespace entity {
 /**
  * The shields the player can hide behind
  */
-class Shield : private Mortal
+class Shield : public Mortal
 {
 public:
         Shield(const Size& size, const Position& position, unsigned int attack_points, collideObjectType type,
@@ -31,7 +31,7 @@ public:
         entityType getEntityType() const override;
 
 private:
-        // The type of the entity
+        /// The type of the entity
         entityType entity_type{entityType::shield};
 };
 
