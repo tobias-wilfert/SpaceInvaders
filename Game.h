@@ -11,13 +11,13 @@
 // Model should never know about this, view and control very much need this
 #include <SFML/Graphics.hpp>
 
-#include <memory>
 #include <iostream>
+#include <memory>
 
-#include "MVC/View.h"
-#include "MVC/Model.h"
-#include "MVC/Level.h"
 #include "MVC/Controller.h"
+#include "MVC/Level.h"
+#include "MVC/Model.h"
+#include "MVC/View.h"
 #include "Singleton/Stopwatch.h"
 #include "Singleton/Transformation.h"
 
@@ -48,7 +48,7 @@ private:
         /// The number of level the Player is currently at
         int levelNr{1};
 
-        //TODO Check if game actually needs these?
+        // TODO Check if game actually needs these?
 
         /// Stopwatch used to clock the Model and Controller -> making Speed PC independent
         std::shared_ptr<singleton::Stopwatch> stopwatch;
@@ -58,8 +58,7 @@ private:
          \n to the [0,windowHeight]x[0,windowWidth] logic of the view
          */
         std::shared_ptr<singleton::Transformation> transformation;
-
 };
-}
+} // namespace si
 
 #endif // SPACEINVADERS_GAME_H

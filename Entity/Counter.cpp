@@ -6,7 +6,8 @@
 
 #include "Counter.h"
 
-si::entity::Counter::Counter(const si::entity::Size& size, const si::entity::Position& position, int value, si::entity::counterType counter_type)
+si::entity::Counter::Counter(const si::entity::Size& size, const si::entity::Position& position, int value,
+                             si::entity::counterType counter_type)
     : Entity(size, position), value(value), counter_type(counter_type)
 {
 }
@@ -18,4 +19,3 @@ void si::entity::Counter::set_value(int inputValue) { Counter::value = inputValu
 si::entity::entityType si::entity::Counter::getEntityType() const { return entity_type; }
 
 si::entity::counterType si::entity::Counter::get_counter_type() const { return counter_type; }
-

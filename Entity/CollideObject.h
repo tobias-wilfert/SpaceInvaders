@@ -9,8 +9,7 @@
 
 #include "Entity.h"
 
-
-///Namespace of SpaceInvaders
+/// Namespace of SpaceInvaders
 namespace si {
 
 /// Namespace of the Entity hierarchy
@@ -96,7 +95,6 @@ private:
  */
 bool collided(const CollideObject& co1, const CollideObject& co2);
 
-
 // TODO: Replace with smart pointer
 /**
  \n Checks that:
@@ -112,7 +110,7 @@ bool collided(const CollideObject& co1, const CollideObject& co2);
  */
 void checkCollision(CollideObject* co1, CollideObject* co2);
 
-}
-}
+} // namespace entity
+} // namespace si
 
 #endif // SPACEINVADERS_COLLIDEOBJECT_H

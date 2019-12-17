@@ -6,8 +6,9 @@
 
 #include "Bullet.h"
 
-si::entity::Bullet::Bullet(const si::entity::Size& size, const si::entity::Position& position, unsigned int attack_points,
-                   si::entity::collideObjectType type, int health_points, float velocity)
+si::entity::Bullet::Bullet(const si::entity::Size& size, const si::entity::Position& position,
+                           unsigned int attack_points, si::entity::collideObjectType type, int health_points,
+                           float velocity)
     : Mortal(size, position, attack_points, type, health_points), velocity(velocity)
 {
 }

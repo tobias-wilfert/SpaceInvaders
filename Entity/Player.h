@@ -9,7 +9,7 @@
 
 #include "Mortal.h"
 
-///Namespace of SpaceInvaders
+/// Namespace of SpaceInvaders
 namespace si {
 
 /// Namespace of the Entity hierarchy
@@ -35,7 +35,7 @@ private:
         entityType entity_type{entityType::player};
 };
 
-}
-}
+} // namespace entity
+} // namespace si
 
 #endif // SPACEINVADERS_PLAYER_H

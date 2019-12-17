@@ -57,7 +57,7 @@ private:
         // Private constructor causing only 1 instance ot Stopwatch to be allowed
         Stopwatch();
 };
-}
-}
+} // namespace singleton
+} // namespace si
 
 #endif // SPACEINVADERS_STOPWATCH_H

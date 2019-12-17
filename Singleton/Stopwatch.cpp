@@ -23,4 +23,3 @@ float si::singleton::Stopwatch::getElapsedTime() const
 }
 
 si::singleton::Stopwatch::Stopwatch() : start(std::chrono::high_resolution_clock::now()) {}
-

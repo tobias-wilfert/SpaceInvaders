@@ -69,7 +69,7 @@ private:
         entityType entity_type{entityType::counter};
 };
 
-}
-}
+} // namespace entity
+} // namespace si
 
 #endif // SPACEINVADERS_COUNTER_H

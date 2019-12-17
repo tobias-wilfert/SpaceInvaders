@@ -6,8 +6,7 @@
 
 #include "View.h"
 
-si::mvc::View::View(std::shared_ptr<Model>  model,
-    std::shared_ptr<singleton::Transformation>  transformation)
+si::mvc::View::View(std::shared_ptr<Model> model, std::shared_ptr<singleton::Transformation> transformation)
     : model(std::move(model)), transformation(std::move(transformation))
 {
         // TODO Handel error and if needed Destruct View
@@ -30,19 +29,19 @@ void si::mvc::View::initializerResources()
 
         // Alien A
         alienA = std::make_tuple(loadFromFile("../resources/img/alien-a1.png"),
-            loadFromFile("../resources/img/alien-a2.png"));
+                                 loadFromFile("../resources/img/alien-a2.png"));
 
         // Alien B
         alienB = std::make_tuple(loadFromFile("../resources/img/alien-b1.png"),
-            loadFromFile("../resources/img/alien-b2.png"));
+                                 loadFromFile("../resources/img/alien-b2.png"));
 
         // Alien C
         alienC = std::make_tuple(loadFromFile("../resources/img/alien-c1.png"),
-            loadFromFile("../resources/img/alien-c2.png"));
+                                 loadFromFile("../resources/img/alien-c2.png"));
 
         // Alien M
         alienM = std::make_tuple(loadFromFile("../resources/img/mothership-a.png"),
-            loadFromFile("../resources/img/mothership-b.png"));
+                                 loadFromFile("../resources/img/mothership-b.png"));
 }
 
 sf::Texture si::mvc::View::loadFromFile(std::string path) const
@@ -73,7 +72,6 @@ void si::mvc::View::display(sf::RenderWindow& window) const
         window.display();
 }
 
-
 void si::mvc::View::drawEntity(const std::shared_ptr<si::entity::Entity>& entity, sf::RenderWindow& window) const
 {
         // Switch over all possible types
@@ -85,7 +83,7 @@ void si::mvc::View::drawEntity(const std::shared_ptr<si::entity::Entity>& entity
                 // Immortals don't have an appearance
                 break;
         case entity::entityType::player:
-                drawPlayer(entity,window);
+                drawPlayer(entity, window);
                 break;
         case entity::entityType::shield:
 
@@ -129,22 +127,22 @@ void si::mvc::View::drawCounter(const std::shared_ptr<si::entity::Entity>& entit
 
                 for (int i = 0; i < counter->get_value(); ++i) {
 
-                        lifeIndicator.setPosition(transformation->convertXCoordinate(entity->position.x + 0.8 + 0.4*i),
-                                                  transformation->convertYCoordinate(entity->position.y));
+                        lifeIndicator.setPosition(
+                            transformation->convertXCoordinate(entity->position.x + 0.8 + 0.4 * i),
+                            transformation->convertYCoordinate(entity->position.y));
                         window.draw(lifeIndicator);
                 }
 
         } else if (counter->get_counter_type() == si::entity::counterType::score) {
                 // Size made to fit nicely with  100,000,000
-                title.setString(" Score: "+ std::to_string(counter->get_value()));
+                title.setString(" Score: " + std::to_string(counter->get_value()));
 
         } else if (counter->get_counter_type() == si::entity::counterType::cooldown) {
-                if (counter->get_value() == 0){
+                if (counter->get_value() == 0) {
                         title.setString(" Gun ready");
-                }else{
-                        title.setString(" Gun ready in : "+ std::to_string(counter->get_value()/20+1));
+                } else {
+                        title.setString(" Gun ready in : " + std::to_string(counter->get_value() / 20 + 1));
                 }
-
         }
 
         // Draw
@@ -162,10 +160,10 @@ sf::RectangleShape si::mvc::View::entityToRectangle(const std::shared_ptr<si::en
 {
         sf::RectangleShape rect;
         rect.setSize(sf::Vector2f(transformation->convertWidth(entity->size.width),
-            transformation->convertHeight(entity->size.height)));
+                                  transformation->convertHeight(entity->size.height)));
 
         rect.setPosition(transformation->convertXCoordinate(entity->position.x),
-            transformation->convertYCoordinate(entity->position.y));
+                         transformation->convertYCoordinate(entity->position.y));
 
         return rect;
 }
@@ -181,4 +179,3 @@ void si::mvc::View::displayTitleScreen(sf::RenderWindow& window) const
         window.draw(title);
         window.display();
 }
-

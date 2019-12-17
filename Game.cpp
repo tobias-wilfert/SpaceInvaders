@@ -17,23 +17,24 @@ void si::Game::execute()
         initialize();
         float accumulatedTimeSinceLastUpdate = 0;
 
-        //TODO: Model View and Controller constructor
+        // TODO: Model View and Controller constructor
 
         mvc::Level level{};
         mvc::Model model{};
         model.set_level(level);
         std::shared_ptr<mvc::Model> modelPointer = std::make_shared<mvc::Model>(model);
-        mvc::View view{modelPointer,transformation};
+        mvc::View view{modelPointer, transformation};
         mvc::Controller controller{modelPointer};
 
         // Create the window
-        sf::RenderWindow window( sf::VideoMode(transformation->get_width(),transformation->get_height()), "SpaceInvaders");
+        sf::RenderWindow window(sf::VideoMode(transformation->get_width(), transformation->get_height()),
+                                "SpaceInvaders");
 
         // Main game Loop
         while (window.isOpen()) {
 
                 // Till the player interacts with the game don't start a level
-                while(!modelPointer->is_interacted()){
+                while (!modelPointer->is_interacted()) {
                         controller.handleTitleScreenInput(window);
                         view.displayTitleScreen(window);
                         stopwatch->restart(); // Reset the stop watch
@@ -57,7 +58,6 @@ void si::Game::execute()
 
                 // View should be updated every frame
                 view.display(window);
-
         }
 }
 

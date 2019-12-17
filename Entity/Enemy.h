@@ -9,7 +9,7 @@
 
 #include "Mortal.h"
 
-///Namespace of SpaceInvaders
+/// Namespace of SpaceInvaders
 namespace si {
 
 /// Namespace of the Entity hierarchy
@@ -18,7 +18,8 @@ namespace entity {
 /**
  * Types of different aliens
  */
-enum enemyType{
+enum enemyType
+{
         a,
         b,
         c,
@@ -54,7 +55,7 @@ private:
         colourType colour;
 };
 
-}
-}
+} // namespace entity
+} // namespace si
 
 #endif // SPACEINVADERS_ENEMY_H

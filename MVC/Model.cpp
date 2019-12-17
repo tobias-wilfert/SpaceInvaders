@@ -27,17 +27,15 @@ si::mvc::Model::Model()
         healthCounter = std::shared_ptr<si::entity::Counter>(
             new entity::Counter{sizeLC, positionLC, 3, entity::counterType::health});
 
-        entity::Size sizeSS{6,2};
+        entity::Size sizeSS{6, 2};
         entity::Position positionSS{-3, -6};
         sky = std::shared_ptr<si::entity::Immortal>(
-            new entity::Immortal{sizeSS,positionSS,1,entity::collideObjectType::hostile});
+            new entity::Immortal{sizeSS, positionSS, 1, entity::collideObjectType::hostile});
 
-        entity::Size sizeES{6,2};
+        entity::Size sizeES{6, 2};
         entity::Position positionES{-3, 4};
         earth = std::shared_ptr<si::entity::Immortal>(
-            new entity::Immortal{sizeES,positionES,1,entity::collideObjectType::friendly});
-
-
+            new entity::Immortal{sizeES, positionES, 1, entity::collideObjectType::friendly});
 }
 
 bool si::mvc::Model::is_interacted() const { return interacted; }

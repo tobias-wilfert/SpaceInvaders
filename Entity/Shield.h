@@ -10,7 +10,7 @@
 #include "Mortal.h"
 
 /// Namespace of SpaceInvaders
-namespace si{
+namespace si {
 
 /// Namespace of the Entity hierarchy
 namespace entity {
@@ -35,7 +35,7 @@ private:
         entityType entity_type{entityType::shield};
 };
 
-}
-}
+} // namespace entity
+} // namespace si
 
 #endif // SPACEINVADERS_SHIELD_H

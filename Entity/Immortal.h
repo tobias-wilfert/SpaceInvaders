@@ -9,8 +9,7 @@
 
 #include "CollideObject.h"
 
-
-///Namespace of SpaceInvaders
+/// Namespace of SpaceInvaders
 namespace si {
 
 /// Namespace of the Entity hierarchy
@@ -48,7 +47,7 @@ private:
         entityType entity_type{entityType::immortal};
 };
 
-}
-}
+} // namespace entity
+} // namespace si
 
 #endif // SPACEINVADERS_IMMORTAL_H

@@ -7,15 +7,15 @@
 #ifndef SPACEINVADERS_VIEW_H
 #define SPACEINVADERS_VIEW_H
 
-#include "Model.h"
 #include "../Singleton/Transformation.h"
+#include "Model.h"
 
-#include <tuple>
-#include <string>
-#include <memory>
-#include <utility>
-#include <iostream>
 #include <SFML/Graphics.hpp>
+#include <iostream>
+#include <memory>
+#include <string>
+#include <tuple>
+#include <utility>
 
 /// Namespace of SpaceInvaders
 namespace si {
@@ -29,22 +29,21 @@ namespace mvc {
 class View
 {
 public:
-        View(std::shared_ptr<Model>  model, std::shared_ptr<singleton::Transformation>  transformation);
+        View(std::shared_ptr<Model> model, std::shared_ptr<singleton::Transformation> transformation);
 
         /**
          \n Main function of View
          \n @param window The sfml window the users sees and interacts with
          */
-        void display(sf::RenderWindow& window ) const;
+        void display(sf::RenderWindow& window) const;
 
         /**
          \n Displays the title Screen
          \n @param window The sfml window the users sees and interacts with
          */
-        void displayTitleScreen(sf::RenderWindow& window ) const;
+        void displayTitleScreen(sf::RenderWindow& window) const;
 
-
-        //TODO: Complete
+        // TODO: Complete
         /**
          \n Loads Font and Texture from file for the View to use
          \n @throw
@@ -59,9 +58,7 @@ public:
          */
         sf::Texture loadFromFile(std::string path) const;
 
-
 private:
-
         /// Needs the model to display
         std::shared_ptr<Model> model;
 
@@ -79,11 +76,10 @@ private:
         sf::Texture playerTexture;
 
         /// Textures of the Aliens
-        std::tuple<sf::Texture,sf::Texture> alienA;
-        std::tuple<sf::Texture,sf::Texture> alienB;
-        std::tuple<sf::Texture,sf::Texture> alienC;
-        std::tuple<sf::Texture,sf::Texture> alienM;
-
+        std::tuple<sf::Texture, sf::Texture> alienA;
+        std::tuple<sf::Texture, sf::Texture> alienB;
+        std::tuple<sf::Texture, sf::Texture> alienC;
+        std::tuple<sf::Texture, sf::Texture> alienM;
 
         /**
          *
@@ -111,12 +107,10 @@ private:
          * @param entity
          * @return
          */
-        sf::RectangleShape entityToRectangle( const std::shared_ptr<si::entity::Entity>& entity) const;
-
-
+        sf::RectangleShape entityToRectangle(const std::shared_ptr<si::entity::Entity>& entity) const;
 };
 
-}
-}
+} // namespace mvc
+} // namespace si
 
 #endif // SPACEINVADERS_VIEW_H

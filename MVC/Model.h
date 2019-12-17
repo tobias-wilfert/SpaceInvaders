@@ -7,10 +7,10 @@
 #ifndef SPACEINVADERS_MODEL_H
 #define SPACEINVADERS_MODEL_H
 
-#include "Level.h"
-#include "../Entity/Player.h"
 #include "../Entity/Counter.h"
 #include "../Entity/Immortal.h"
+#include "../Entity/Player.h"
+#include "Level.h"
 
 #include <memory>
 
@@ -75,15 +75,11 @@ private:
          */
         Level level;
 
-
         // Get all enties in one list for the view
-
 
         // - Update all the bullets movement
 
         // - Update all the alien movement -> could be specified in file as LLRR=(left,left,right,right)
-
-
 
         // All of the info the Model holds
 
@@ -99,10 +95,9 @@ private:
         // Player, Counter and Immortal
 
         // List of all collide objects for the game logic
-
 };
 
-}
-}
+} // namespace mvc
+} // namespace si
 
 #endif // SPACEINVADERS_MODEL_H

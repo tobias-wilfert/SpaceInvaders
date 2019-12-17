@@ -109,7 +109,7 @@ private:
          */
         Transformation(int window_width, int window_height);
 };
-}
-}
+} // namespace singleton
+} // namespace si
 
 #endif // SPACEINVADERS_TRANSFORMATION_H

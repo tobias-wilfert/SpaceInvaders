@@ -7,7 +7,7 @@
 #ifndef SPACEINVADERS_HELPERDATATYPES_H
 #define SPACEINVADERS_HELPERDATATYPES_H
 
-///Namespace of SpaceInvaders
+/// Namespace of SpaceInvaders
 namespace si {
 
 /// Namespace of the Entity hierarchy
@@ -28,7 +28,8 @@ enum entityType
 /**
  * Possible Colours
  */
-enum colourType{
+enum colourType
+{
         white,
         red,
         green,
@@ -76,7 +77,7 @@ struct Rectangle
         Position bottomRight;
 };
 
-}
-}
+} // namespace entity
+} // namespace si
 
 #endif // SPACEINVADERS_HELPERDATATYPES_H

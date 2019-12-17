@@ -9,8 +9,7 @@
 
 #include "CollideObject.h"
 
-
-///Namespace of SpaceInvaders
+/// Namespace of SpaceInvaders
 namespace si {
 
 /// Namespace of the Entity hierarchy
@@ -50,7 +49,7 @@ private:
         int healthPoints;
 };
 
-}
-}
+} // namespace entity
+} // namespace si
 
 #endif // SPACEINVADERS_MORTAL_H

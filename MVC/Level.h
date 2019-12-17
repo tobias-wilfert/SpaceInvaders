@@ -25,7 +25,8 @@ namespace mvc {
  */
 class Level
 {
-        // TODO: Before something can happen here I need a polymorphic class hierarchies for all the thing to add in here
+        // TODO: Before something can happen here I need a polymorphic class hierarchies for all the thing to add in
+        // here
 public:
 private:
         /// Make Model friend of Model
@@ -37,7 +38,7 @@ private:
 
         std::deque<std::shared_ptr<entity::Entity>> listOfEntities;
 };
-}
-}
+} // namespace mvc
+} // namespace si
 
 #endif // SPACEINVADERS_LEVEL_H

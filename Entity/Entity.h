@@ -10,7 +10,7 @@
 #include "HelperDatatypes.h"
 
 /// Namespace of SpaceInvaders
-namespace si{
+namespace si {
 
 /// Namespace of the Entity hierarchy
 namespace entity {
@@ -35,7 +35,7 @@ public:
 private:
 };
 
-}
-}
+} // namespace entity
+} // namespace si
 
 #endif // SPACEINVADERS_ENTITY_H

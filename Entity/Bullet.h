@@ -9,8 +9,7 @@
 
 #include "Mortal.h"
 
-
-///Namespace of SpaceInvaders
+/// Namespace of SpaceInvaders
 namespace si {
 
 /// Namespace of the Entity hierarchy
@@ -41,7 +40,7 @@ public:
         entityType entity_type{entityType::bullet};
 };
 
-}
-}
+} // namespace entity
+} // namespace si
 
 #endif // SPACEINVADERS_BULLET_H
