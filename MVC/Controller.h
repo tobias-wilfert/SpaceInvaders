@@ -65,7 +65,8 @@ private:
          * @param origin
          * @param bullet_type
          */
-        void shoot(entity::Position origin, entity::bulletType bullet_type);
+         // TODO:: Give extra parameteres
+        void shoot(entity::Position origin, entity::bulletType bullet_type, bool fromPlayer) const;
 
 };
 

@@ -51,12 +51,12 @@ void si::mvc::Controller::handleInput(sf::RenderWindow& window) const
                 // Check if shooting is available
                 if (model->coolDownCounter->get_value() == 0) {
                         // Let the player shoot
-
-
+                        entity::Position position = model->player->position;
+                        position.x += model->player->size.width/2.F;
+                        shoot(position,entity::bulletType::laser,true);
 
                         // Reset the counter
-                        // TODO Fine tune the value
-                        model->coolDownCounter->set_value(200);
+                        model->coolDownCounter->set_value(100);
                 }
         }
 }
@@ -110,24 +110,89 @@ void si::mvc::Controller::updateModel()
                 updateCycles = 0;
         }
 
-        // TODO: Update the movement of bullets and spawn them randomly for the user
+        // TODO: Spawn bullets randomly for the aliens
 
         // TODO: Check if any bullet collided with an object
+        /*
+        for( int i=0; i < model->level.listOfBullets.size(); ++i){
+                auto bullet = model->level.listOfBullets.front();
+                model->level.listOfBullets.pop_front();
+                for(auto obj: model->level.listOfCollideObjects){
+                        entity::checkCollision(bullet,obj);
+                }
+                if (!bullet->is_destroyed()){
+                        model->level.listOfBullets.push_back(bullet);
+                }
+        }
+         */
+
+        // TODO check if an alien collided with the player or the ground
+        for( int i=0; i < model->level.listOfCollideObjects.size(); ++i){
+                auto entity = model->level.listOfCollideObjects.front();
+                model->level.listOfCollideObjects.pop_front();
+                for(auto obj: model->level.listOfCollideObjects){
+                        entity::checkCollision(entity,obj);
+                }
+                if (!entity->is_destroyed()){
+                        model->level.listOfCollideObjects.push_back(entity);
+                }
+        }
+
+        // TODO Check if the ground was it best to check if alien has a y-cord < y
+
+        // TODO Check if player got hit if yes repsawn with 1 life less handle death
+
+
+        for (int i=0; i < model->level.listOfCollideObjects.size(); ++i){
+                auto front = model->level.listOfCollideObjects.front();
+                model->level.listOfCollideObjects.pop_front();
+                if (!front->is_destroyed()){
+                        model->level.listOfCollideObjects.push_back(front);
+                }
+        }
+
+
+
+        for (int i=0; i < model->level.listOfEntities.size(); ++i){
+                auto entity = model->level.listOfEntities.front();
+                model->level.listOfEntities.pop_front();
+
+                // Check that it is a collide object
+                if (entity->getEntityType() != entity::entityType::counter){
+                        if (!std::dynamic_pointer_cast<entity::CollideObject>(entity)->is_destroyed()){
+                                model->level.listOfEntities.push_back(entity);
+                        }
+                }else{
+                        model->level.listOfEntities.push_back(entity);
+                }
+        }
+
+
 
         // Increment the cycleCount
         ++updateCycles;
 }
-void si::mvc::Controller::shoot(si::entity::Position origin, si::entity::bulletType bullet_type)
+void si::mvc::Controller::shoot(si::entity::Position origin, si::entity::bulletType bullet_type, bool fromPlayer) const
 {
+        // Make the bullet
+        int health = 1;
+        unsigned int attack = 1;
+        entity::Size size{0.06,0.12};
+        entity::collideObjectType collide_object_type;
+        entity::Position position{origin.x-size.width/2.f,origin.y - (size.height*!fromPlayer)};
 
-        switch (bullet_type){
-        case entity::bulletType::laser :
-                // TODO Can Aliens shoot lasers
-                break;
-        case entity::bulletType::up :
+        entity::MovePattern move_pattern{"P",0.125,15};
 
-                break;
-        case entity::bulletType::down :
-                break;
+        if (fromPlayer){
+                collide_object_type = entity::collideObjectType::friendly;
+                move_pattern.pattern = "U";
+        }else{
+                collide_object_type = entity::collideObjectType::hostile;
+                move_pattern.pattern = "D";
         }
+
+        std::shared_ptr<entity::Bullet> bulletPrt = std::make_shared<entity::Bullet>(entity::Bullet{size,position,attack,collide_object_type,health,move_pattern,bullet_type});
+        model->level.listOfCollideObjects.push_back(bulletPrt);
+        model->level.listOfEntities.push_back(bulletPrt);
+        model->level.listOfBullets.push_back(bulletPrt);
 }

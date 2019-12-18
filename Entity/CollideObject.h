@@ -23,7 +23,8 @@ namespace entity {
 enum collideObjectType
 {
         friendly,
-        hostile
+        hostile,
+        passive
 };
 
 /**
@@ -108,7 +109,7 @@ bool collided(const CollideObject& co1, const CollideObject& co2);
  \n @param co1 pointer to the first collideObject
  \n @param co2 pointer to the second collideObject
  */
-void checkCollision(CollideObject* co1, CollideObject* co2);
+void checkCollision(std::shared_ptr<CollideObject> co1, std::shared_ptr<CollideObject> co2);
 
 } // namespace entity
 } // namespace si

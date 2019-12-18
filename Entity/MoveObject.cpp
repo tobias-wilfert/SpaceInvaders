@@ -33,10 +33,10 @@ void si::entity::MoveObject::takeStep()
 {
         switch(move_pattern.pattern[move_pattern.patternIndex]){
         case 'U':
-                position.y -= move_pattern.stepSize;
+                position.y += move_pattern.stepSize;
                 break;
         case 'D':
-                position.y += move_pattern.stepSize;
+                position.y -= move_pattern.stepSize;
                 break;
         case 'L':
                 position.x -= move_pattern.stepSize;

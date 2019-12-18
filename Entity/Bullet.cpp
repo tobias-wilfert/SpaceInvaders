@@ -14,3 +14,5 @@ si::entity::Bullet::Bullet(const si::entity::Size& size, const si::entity::Posit
 }
 
 si::entity::entityType si::entity::Bullet::getEntityType() const { return entity_type; }
+
+si::entity::bulletType si::entity::Bullet::get_bullet_type() const { return bullet_type; }

@@ -120,6 +120,20 @@ private:
 
         /**
          *
+         * @param shield
+         * @param window
+         */
+        void drawShield(const std::shared_ptr<si::entity::Shield>& shield, sf::RenderWindow& window) const;
+
+        /**
+         *
+         * @param shield
+         * @param window
+         */
+        void drawBullet(const std::shared_ptr<si::entity::Bullet>& bullet, sf::RenderWindow& window) const;
+
+        /**
+         *
          * @param colour
          * @return
          */

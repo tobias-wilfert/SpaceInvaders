@@ -11,6 +11,8 @@
 
 #include "Level.h"
 #include "../Entity/Enemy.h"
+#include "../Entity/Bullet.h"
+#include "../Entity/Shield.h"
 #include "../Entity/Player.h"
 #include "../Entity/Counter.h"
 #include "../Entity/Immortal.h"

@@ -87,8 +87,7 @@ void si::mvc::View::display(sf::RenderWindow& window) const
 
 void si::mvc::View::drawEntity(const std::shared_ptr<si::entity::Entity>& entity, sf::RenderWindow& window) const
 {
-        // TODO: Finish this
-        // Switch over all possible types
+        // Switch over all possible types and delegate the draw
         switch (entity->getEntityType()) {
         case entity::entityType::counter:
                 drawCounter(std::dynamic_pointer_cast<si::entity::Counter>(entity), window);
@@ -100,15 +99,13 @@ void si::mvc::View::drawEntity(const std::shared_ptr<si::entity::Entity>& entity
                 drawPlayer(std::dynamic_pointer_cast<si::entity::Player>(entity), window);
                 break;
         case entity::entityType::shield:
-                // TODO: Add missing Draw functions
+                drawShield(std::dynamic_pointer_cast<si::entity::Shield>(entity),window);
                 break;
         case entity::entityType::enemy:
                 drawEnemy(std::dynamic_pointer_cast<si::entity::Enemy>(entity), window);
                 break;
         case entity::entityType::bullet:
-
-                break;
-        default:
+                drawBullet(std::dynamic_pointer_cast<si::entity::Bullet>(entity), window);
                 break;
         }
 }
@@ -191,6 +188,46 @@ void si::mvc::View::drawEnemy(const std::shared_ptr<si::entity::Enemy>& enemy, s
 
         enemyRect.setFillColor(gameColourToSFMLColour(enemy->get_colour()));
         window.draw(enemyRect);
+}
+
+void si::mvc::View::drawShield(const std::shared_ptr<si::entity::Shield>& shield, sf::RenderWindow& window) const
+{
+        sf::RectangleShape shieldRect = entityToRectangle(shield);
+
+        float relativeHealth =
+            static_cast<float>(shield->get_health_points()) / static_cast<float>(shield->get_initial_health());
+
+        if (relativeHealth > 0.75) {
+                shieldRect.setTexture(&shields[0]);
+        } else if (relativeHealth > 0.5) {
+                shieldRect.setTexture(&shields[1]);
+        } else if (relativeHealth > 0.25) {
+                shieldRect.setTexture(&shields[2]);
+        } else {
+                shieldRect.setTexture(&shields[3]);
+        }
+
+        window.draw(shieldRect);
+}
+
+void si::mvc::View::drawBullet(const std::shared_ptr<si::entity::Bullet>& bullet, sf::RenderWindow& window) const
+{
+        sf::RectangleShape bulletRect = entityToRectangle(bullet);
+
+        switch (bullet->get_bullet_type()){
+        case entity::bulletType::laser :
+                bulletRect.setTexture(&bullets[0]);
+                break;
+        case entity::bulletType::up :
+                bulletRect.setTexture(&bullets[1]);
+                break;
+        case entity::bulletType::down :
+                bulletRect.setTexture(&bullets[2]);
+                break;
+        }
+        // TODO: Maybe add Color?
+
+        window.draw(bulletRect);
 }
 
 sf::RectangleShape si::mvc::View::entityToRectangle(const std::shared_ptr<si::entity::Entity>& entity) const

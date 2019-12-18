@@ -41,6 +41,9 @@ public:
          */
         entityType getEntityType() const override;
 
+        // TODO: Document
+        bulletType get_bullet_type() const;
+
 private:
         /// The type of the entity
         entityType entity_type{entityType::bullet};

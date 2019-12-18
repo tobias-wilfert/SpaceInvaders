@@ -30,11 +30,14 @@ public:
          */
         entityType getEntityType() const override;
 
+        int get_initial_health() const;
+
 private:
         /// The type of the entity
         entityType entity_type{entityType::shield};
 
-        // TODO: Add begin health so that game can calculate the percentage remaining
+        /// The initialHealth of the shield
+        int initialHealth;
 };
 
 } // namespace entity

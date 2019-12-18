@@ -77,6 +77,7 @@ CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Entity/Immortal.h
 CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Entity/Mortal.h
 CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Entity/MoveObject.h
 CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Entity/Player.h
+CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Entity/Shield.h
 CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Game.cpp
 CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Game.h
 CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../MVC/Controller.h
@@ -96,6 +97,7 @@ CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: ../Entity/Immortal.h
 CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: ../Entity/Mortal.h
 CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: ../Entity/MoveObject.h
 CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: ../Entity/Player.h
+CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: ../Entity/Shield.h
 CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: ../MVC/Controller.cpp
 CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: ../MVC/Controller.h
 CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: ../MVC/Level.h
@@ -110,6 +112,7 @@ CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.o: ../Entity/Entity.h
 CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.o: ../Entity/HelperDatatypes.h
 CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.o: ../Entity/Mortal.h
 CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.o: ../Entity/MoveObject.h
+CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.o: ../Entity/Shield.h
 CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.o: ../MVC/Level.cpp
 CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.o: ../MVC/Level.h
 
@@ -123,6 +126,7 @@ CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o: ../Entity/Immortal.h
 CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o: ../Entity/Mortal.h
 CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o: ../Entity/MoveObject.h
 CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o: ../Entity/Player.h
+CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o: ../Entity/Shield.h
 CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o: ../MVC/Level.h
 CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o: ../MVC/Model.cpp
 CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o: ../MVC/Model.h
@@ -137,6 +141,7 @@ CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../Entity/Immortal.h
 CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../Entity/Mortal.h
 CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../Entity/MoveObject.h
 CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../Entity/Player.h
+CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../Entity/Shield.h
 CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../MVC/Level.h
 CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../MVC/Model.h
 CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../MVC/View.cpp
@@ -159,6 +164,7 @@ CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../Entity/Immortal.h
 CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../Entity/Mortal.h
 CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../Entity/MoveObject.h
 CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../Entity/Player.h
+CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../Entity/Shield.h
 CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../Game.h
 CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../MVC/Controller.h
 CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../MVC/Level.h
