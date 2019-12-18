@@ -14,10 +14,10 @@
 #include <iostream>
 #include <memory>
 
-#include "MVC/Controller.h"
+#include "MVC/View.h"
 #include "MVC/Level.h"
 #include "MVC/Model.h"
-#include "MVC/View.h"
+#include "MVC/Controller.h"
 #include "Singleton/Stopwatch.h"
 #include "Singleton/Transformation.h"
 
@@ -30,6 +30,8 @@ namespace si {
 class Game
 {
 public:
+        explicit Game(float cycles_per_second);
+
         /**
          \n The main function of game
          */
@@ -48,7 +50,8 @@ private:
         /// The number of level the Player is currently at
         int levelNr{1};
 
-        // TODO Check if game actually needs these?
+        /// The number of logic cycles per second the game should make
+        float cyclesPerSecond;
 
         /// Stopwatch used to clock the Model and Controller -> making Speed PC independent
         std::shared_ptr<singleton::Stopwatch> stopwatch;

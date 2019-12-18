@@ -7,12 +7,13 @@
 #ifndef SPACEINVADERS_MODEL_H
 #define SPACEINVADERS_MODEL_H
 
+#include <memory>
+
+#include "Level.h"
+#include "../Entity/Enemy.h"
+#include "../Entity/Player.h"
 #include "../Entity/Counter.h"
 #include "../Entity/Immortal.h"
-#include "../Entity/Player.h"
-#include "Level.h"
-
-#include <memory>
 
 /// Namespace of SpaceInvaders
 namespace si {
@@ -29,11 +30,16 @@ public:
         Model();
 
         /**
-         * Checks weather the player already interacted with the model thru the controller
-         * @return True if the player already interacted else false
+         \n Checks weather the player already interacted with the model thru the controller
+         \n @return True if the player already interacted else false
          */
         bool is_interacted() const;
 
+        /**
+         \n Sets the level the model is currently operating on
+         \n Adds all the level independent items to the level so that the View only needs to look at one place
+         \n @param level The level the model should operate on
+         */
         void set_level(const Level& level);
 
 private:
@@ -44,6 +50,9 @@ private:
 
         /// Used to lock the player in Title Screen till action is taken
         bool interacted{false};
+
+        /// The movement speed of the player in int/seconds
+        int playerMovementSpeed{3};
 
         // --- Entities that are level independent ---
         /**
@@ -75,27 +84,8 @@ private:
          */
         Level level;
 
-        // Get all enties in one list for the view
-
-        // - Update all the bullets movement
-
-        // - Update all the alien movement -> could be specified in file as LLRR=(left,left,right,right)
-
-        // All of the info the Model holds
-
-        // Model should hold some items
-
-        // While others should be held by the level
-        // -> Player, Counter and immortal are independent of level
-        //   L-> Maybe change position but that is all
-        // -> Aliens, Bullets and Shields are level dependent
-
-        // List of all entities for view to draw
-
-        // Player, Counter and Immortal
-
-        // List of all collide objects for the game logic
 };
+
 
 } // namespace mvc
 } // namespace si

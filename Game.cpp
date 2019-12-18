@@ -9,22 +9,18 @@
 std::shared_ptr<si::singleton::Stopwatch> si::singleton::Stopwatch::instance = nullptr;
 std::shared_ptr<si::singleton::Transformation> si::singleton::Transformation::instance = nullptr;
 
-// TODO: Push once without all the load from File to check that it works
-
 void si::Game::execute()
 {
         // Initialize the game
         initialize();
-        float accumulatedTimeSinceLastUpdate = 0;
 
-        // TODO: Model View and Controller constructor
-
+        //Model View and Controller constructor
         mvc::Level level{};
         mvc::Model model{};
         model.set_level(level);
         std::shared_ptr<mvc::Model> modelPointer = std::make_shared<mvc::Model>(model);
         mvc::View view{modelPointer, transformation};
-        mvc::Controller controller{modelPointer};
+        mvc::Controller controller{cyclesPerSecond,modelPointer,stopwatch};
 
         // Create the window
         sf::RenderWindow window(sf::VideoMode(transformation->get_width(), transformation->get_height()),
@@ -40,20 +36,15 @@ void si::Game::execute()
                         stopwatch->restart(); // Reset the stop watch
                 }
 
-                // Calculate the delta -> Clock
-                float timeSinceLastFrame = stopwatch->getElapsedTime();
-                stopwatch->restart();
-                accumulatedTimeSinceLastUpdate += timeSinceLastFrame;
+                // Update every X Second
+                if (stopwatch->getElapsedTime() >= 1.f/cyclesPerSecond) {
 
-                // Update every X Second -> Clock
-                if (accumulatedTimeSinceLastUpdate >= 0.01) {
-
-                        // TODO: Do something with the model
+                        // Update the model and handle input
                         controller.updateModel();
                         controller.handleInput(window);
 
                         // Reset the delta
-                        accumulatedTimeSinceLastUpdate -= 0.01;
+                        stopwatch->restart();
                 }
 
                 // View should be updated every frame
@@ -72,3 +63,4 @@ void si::Game::initialize()
         stopwatch = si::singleton::Stopwatch::getInstance();
         transformation = si::singleton::Transformation::initialize(width, height);
 }
+si::Game::Game(float cycles_per_second) : cyclesPerSecond(cycles_per_second) {}

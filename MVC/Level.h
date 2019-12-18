@@ -7,7 +7,9 @@
 #ifndef SPACEINVADERS_LEVEL_H
 #define SPACEINVADERS_LEVEL_H
 
+#include "../Entity/Enemy.h"
 #include "../Entity/Counter.h"
+#include "../Entity/CollideObject.h"
 
 #include <deque>
 #include <memory>
@@ -25,9 +27,9 @@ namespace mvc {
  */
 class Level
 {
-        // TODO: Before something can happen here I need a polymorphic class hierarchies for all the thing to add in
-        // here
-public:
+public: // TODO: Before something can happen here I need a polymorphic class hierarchies for all the thing to add in
+        Level();
+
 private:
         /// Make Model friend of Model
         friend class Model;
@@ -36,7 +38,15 @@ private:
         /// Make Controller friend of Model
         friend class Controller;
 
+        /// List of all entities that the view should draw
         std::deque<std::shared_ptr<entity::Entity>> listOfEntities;
+
+        /// List of all the entities that need to be checked if they collide
+        std::deque<std::shared_ptr<entity::CollideObject>> listOfCollideObjects;
+
+        // Update all the alien movement -> could be specified in file as LLRR=(left,left,right,right)
+
+        // List of all collide objects for the game logic
 };
 } // namespace mvc
 } // namespace si

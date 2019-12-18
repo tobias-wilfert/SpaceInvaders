@@ -41,6 +41,16 @@ public:
          */
         entityType getEntityType() const override;
 
+        // TODO:: Document
+
+        enemyType get_enemy_type() const;
+
+        colourType get_colour() const;
+
+        bool is_state() const;
+
+        void set_state(bool inputState);
+
 private:
         /// The type of the entity
         entityType entity_type{entityType::enemy};

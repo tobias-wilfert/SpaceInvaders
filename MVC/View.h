@@ -7,15 +7,15 @@
 #ifndef SPACEINVADERS_VIEW_H
 #define SPACEINVADERS_VIEW_H
 
-#include "../Singleton/Transformation.h"
 #include "Model.h"
+#include "../Singleton/Transformation.h"
 
-#include <SFML/Graphics.hpp>
-#include <iostream>
+#include <array>
 #include <memory>
 #include <string>
-#include <tuple>
 #include <utility>
+#include <iostream>
+#include <SFML/Graphics.hpp>
 
 /// Namespace of SpaceInvaders
 namespace si {
@@ -43,22 +43,9 @@ public:
          */
         void displayTitleScreen(sf::RenderWindow& window) const;
 
-        // TODO: Complete
-        /**
-         \n Loads Font and Texture from file for the View to use
-         \n @throw
-         */
-        void initializerResources();
-
-        /**
-         \n Loads Texture from file
-         \n @throw
-         \n @param path The path to the file that should conain the Texture
-         \n @return The texture that file contained
-         */
-        sf::Texture loadFromFile(std::string path) const;
-
 private:
+        // --- Data members ---
+
         /// Needs the model to display
         std::shared_ptr<Model> model;
 
@@ -66,7 +53,6 @@ private:
          \n Used to transform from the [-4,4]x[-3, 3] logic of the Model
          \n to the [0,windowHeight]x[0,windowWidth] logic of the view
          */
-
         std::shared_ptr<singleton::Transformation> transformation;
 
         /// Font that will be used throughout the game
@@ -76,36 +62,67 @@ private:
         sf::Texture playerTexture;
 
         /// Textures of the Aliens
-        std::tuple<sf::Texture, sf::Texture> alienA;
-        std::tuple<sf::Texture, sf::Texture> alienB;
-        std::tuple<sf::Texture, sf::Texture> alienC;
-        std::tuple<sf::Texture, sf::Texture> alienM;
+        std::array<sf::Texture,2> alienA;
+        std::array<sf::Texture,2> alienB;
+        std::array<sf::Texture,2> alienC;
+        std::array<sf::Texture,2> alienM;
+
+        // --- Functions ---
 
         /**
-         *
-         * @param entity
-         * @param window
+         \n Loads Font and Texture from file for the View to use
+         \n @warning If any of the textures can't be loaded the Program exit
+         */
+        void initializerResources();
+
+        /**
+         \n Loads Texture from file
+         \n @throw runtime_error("Failed to allocate resources at: "+path);
+         \n @param path The path to the file that should contain the Texture
+         \n @return The texture that file contained
+         */
+        sf::Texture loadFromFile(std::string path) const;
+
+        /**
+         \n Finds out what derived class entity is an entity of,
+         \n casts and delegates further to the correct function to draw the entity
+         \n @param entity The entity that should be drawn
+         \n @param window The window the users sees
          */
         void drawEntity(const std::shared_ptr<si::entity::Entity>& entity, sf::RenderWindow& window) const;
 
         /**
-         *
-         * @param entity
-         * @param window
+         \n Draws an instance of Counter to the Window
+         \n @param counter The counter that should be drawn
+         \n @param window The window the users sees
          */
-        void drawCounter(const std::shared_ptr<si::entity::Entity>& entity, sf::RenderWindow& window) const;
+        void drawCounter(const std::shared_ptr<si::entity::Counter>& counter, sf::RenderWindow& window) const;
+
+        /**
+         \n Draws an instance of Player to the Window
+         \n @param player The player that should be drawn
+         \n @param window The window the users sees
+         */
+        void drawPlayer(const std::shared_ptr<si::entity::Player>& player, sf::RenderWindow& window) const;
 
         /**
          *
-         * @param entity
+         * @param player
          * @param window
          */
-        void drawPlayer(const std::shared_ptr<si::entity::Entity>& entity, sf::RenderWindow& window) const;
+        void drawEnemy(const std::shared_ptr<si::entity::Enemy>& enemy, sf::RenderWindow& window) const;
 
         /**
          *
-         * @param entity
+         * @param colour
          * @return
+         */
+        sf::Color gameColourToSFMLColour(const entity::colourType colour) const;
+
+        /**
+         \n Creates a RectangleShape representing entity
+         \n @param entity The entity that will be used to specify the proportions of the RectangleShape
+         \n @return An instance of sf::RectangleShape with dimensions and position of Entity
          */
         sf::RectangleShape entityToRectangle(const std::shared_ptr<si::entity::Entity>& entity) const;
 };

@@ -7,6 +7,8 @@
 #include "Model.h"
 si::mvc::Model::Model()
 {
+        // Initialize all the level independent entities
+
         entity::Size size{0.26, 0.16};
         entity::Position position{-0.26, 3.5};
         player = std::shared_ptr<si::entity::Player>(

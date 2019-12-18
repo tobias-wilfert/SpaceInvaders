@@ -16,42 +16,44 @@ si::mvc::View::View(std::shared_ptr<Model> model, std::shared_ptr<singleton::Tra
 void si::mvc::View::initializerResources()
 {
 
-        // Load the Font that will be used
-        if (!font.loadFromFile("../resources/fonts/KenPixel.ttf")) {
-                std::cout << "Error loading file" << std::endl;
-                system("pause");
-                // TODO Error Handling
+        try {
+                // Load the Font that will be used
+                if (!font.loadFromFile("../resources/fonts/KenPixel.ttf")) {
+                        throw std::runtime_error("Failed to allocate resources at: ../resources/fonts/KenPixel.ttf");
+                }
+
+                // Load the Textures that will be used
+                // PLayer
+                playerTexture = loadFromFile("../resources/img/player.png");
+
+                // Alien A
+                alienA = std::array<sf::Texture, 2>{loadFromFile("../resources/img/alien-a1.png"),
+                                                    loadFromFile("../resources/img/alien-a2.png")};
+
+                // Alien B
+                alienB = std::array<sf::Texture, 2>{loadFromFile("../resources/img/alien-b1.png"),
+                                                    loadFromFile("../resources/img/alien-b2.png")};
+
+                // Alien C
+                alienC = std::array<sf::Texture, 2>{loadFromFile("../resources/img/alien-c1.png"),
+                                                    loadFromFile("../resources/img/alien-c2.png")};
+
+                // Alien M
+                alienM = std::array<sf::Texture, 2>{loadFromFile("../resources/img/mothership-a.png"),
+                                                    loadFromFile("../resources/img/mothership-b.png")};
+
+        } catch (const std::exception& e) {
+                std::cerr << "Failed to load resources need for SpaceInvders" << std::endl;
+                std::cerr << e.what() << std::endl;
+                exit(1);
         }
-
-        // Load the Textures that will be used
-        // PLayer
-        playerTexture = loadFromFile("../resources/img/player.png");
-
-        // Alien A
-        alienA = std::make_tuple(loadFromFile("../resources/img/alien-a1.png"),
-                                 loadFromFile("../resources/img/alien-a2.png"));
-
-        // Alien B
-        alienB = std::make_tuple(loadFromFile("../resources/img/alien-b1.png"),
-                                 loadFromFile("../resources/img/alien-b2.png"));
-
-        // Alien C
-        alienC = std::make_tuple(loadFromFile("../resources/img/alien-c1.png"),
-                                 loadFromFile("../resources/img/alien-c2.png"));
-
-        // Alien M
-        alienM = std::make_tuple(loadFromFile("../resources/img/mothership-a.png"),
-                                 loadFromFile("../resources/img/mothership-b.png"));
 }
 
 sf::Texture si::mvc::View::loadFromFile(std::string path) const
 {
         sf::Texture texture;
-
         if (!texture.loadFromFile(path)) {
-                std::cout << "Load failed:" << path << std::endl;
-                system("pause");
-                // TODO Error Handling
+                throw std::runtime_error("Failed to allocate resources at: "+path);
         }
 
         return texture;
@@ -74,22 +76,23 @@ void si::mvc::View::display(sf::RenderWindow& window) const
 
 void si::mvc::View::drawEntity(const std::shared_ptr<si::entity::Entity>& entity, sf::RenderWindow& window) const
 {
+        // TODO: Finish this
         // Switch over all possible types
         switch (entity->getEntityType()) {
         case entity::entityType::counter:
-                drawCounter(entity, window);
+                drawCounter(std::dynamic_pointer_cast<si::entity::Counter>(entity), window);
                 break;
         case entity::entityType::immortal:
                 // Immortals don't have an appearance
                 break;
         case entity::entityType::player:
-                drawPlayer(entity, window);
+                drawPlayer(std::dynamic_pointer_cast<si::entity::Player>(entity), window);
                 break;
         case entity::entityType::shield:
 
                 break;
         case entity::entityType::enemy:
-
+                drawEnemy(std::dynamic_pointer_cast<si::entity::Enemy>(entity), window);
                 break;
         case entity::entityType::bullet:
 
@@ -99,16 +102,15 @@ void si::mvc::View::drawEntity(const std::shared_ptr<si::entity::Entity>& entity
         }
 }
 
-void si::mvc::View::drawCounter(const std::shared_ptr<si::entity::Entity>& entity, sf::RenderWindow& window) const
+void si::mvc::View::drawCounter(const std::shared_ptr<si::entity::Counter>& counter, sf::RenderWindow& window) const
 {
-        std::shared_ptr<si::entity::Counter> counter = std::dynamic_pointer_cast<si::entity::Counter>(entity);
-
+        // TODO: Adjust font to the Screen resolution
         sf::Text title;
         title.setFont(font);
         title.setCharacterSize(30);
         title.setFillColor(sf::Color::Cyan);
-        title.setPosition(transformation->convertXCoordinate(entity->position.x),
-                          transformation->convertYCoordinate(entity->position.y));
+        title.setPosition(transformation->convertXCoordinate(counter->position.x),
+                          transformation->convertYCoordinate(counter->position.y));
 
         /* Debugging
         sf::RectangleShape rect = entityToRectangle(counter);
@@ -128,8 +130,8 @@ void si::mvc::View::drawCounter(const std::shared_ptr<si::entity::Entity>& entit
                 for (int i = 0; i < counter->get_value(); ++i) {
 
                         lifeIndicator.setPosition(
-                            transformation->convertXCoordinate(entity->position.x + 0.8 + 0.4 * i),
-                            transformation->convertYCoordinate(entity->position.y));
+                            transformation->convertXCoordinate(counter->position.x + 0.8 + 0.4 * i),
+                            transformation->convertYCoordinate(counter->position.y));
                         window.draw(lifeIndicator);
                 }
 
@@ -149,11 +151,35 @@ void si::mvc::View::drawCounter(const std::shared_ptr<si::entity::Entity>& entit
         window.draw(title);
 }
 
-void si::mvc::View::drawPlayer(const std::shared_ptr<si::entity::Entity>& entity, sf::RenderWindow& window) const
+void si::mvc::View::drawPlayer(const std::shared_ptr<si::entity::Player>& player, sf::RenderWindow& window) const
 {
-        sf::RectangleShape player = entityToRectangle(entity);
-        player.setTexture(&playerTexture);
-        window.draw(player);
+        sf::RectangleShape playerRect = entityToRectangle(player);
+        playerRect.setTexture(&playerTexture);
+        window.draw(playerRect);
+}
+
+void si::mvc::View::drawEnemy(const std::shared_ptr<si::entity::Enemy>& enemy, sf::RenderWindow& window) const
+{
+        sf::RectangleShape enemyRect = entityToRectangle(enemy);
+
+
+        switch (enemy->get_enemy_type()){
+        case entity::enemyType::a :
+                enemyRect.setTexture(&alienA[enemy->is_state()]);
+                break;
+        case entity::enemyType::b :
+                enemyRect.setTexture(&alienB[enemy->is_state()]);
+                break;
+        case entity::enemyType::c :
+                enemyRect.setTexture(&alienC[enemy->is_state()]);
+                break;
+        case entity::enemyType::m :
+                enemyRect.setTexture(&alienM[enemy->is_state()]);
+                break;
+        }
+
+        enemyRect.setFillColor(gameColourToSFMLColour(enemy->get_colour()));
+        window.draw(enemyRect);
 }
 
 sf::RectangleShape si::mvc::View::entityToRectangle(const std::shared_ptr<si::entity::Entity>& entity) const
@@ -178,4 +204,32 @@ void si::mvc::View::displayTitleScreen(sf::RenderWindow& window) const
         window.clear();
         window.draw(title);
         window.display();
+}
+sf::Color si::mvc::View::gameColourToSFMLColour(const si::entity::colourType colour) const
+{
+        sf::Color c;
+        switch (colour) {
+        case entity::colourType::white:
+                c = sf::Color::White;
+                break;
+        case entity::colourType::red:
+                c = sf::Color::Red;
+                break;
+        case entity::colourType::green:
+                c = sf::Color::Green;
+                break;
+        case entity::colourType::blue:
+                c = sf::Color::Blue;
+                break;
+        case entity::colourType::yellow:
+                c = sf::Color::Yellow;
+                break;
+        case entity::colourType::magenta:
+                c = sf::Color::Magenta;
+                break;
+        case entity::colourType::cyan:
+                c = sf::Color::Cyan;
+                break;
+        }
+        return c;
 }

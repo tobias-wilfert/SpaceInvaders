@@ -60,6 +60,7 @@ CMakeFiles/SpaceInvaders.dir/Entity/Shield.cpp.o: ../Entity/Shield.h
 
 CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Entity/CollideObject.h
 CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Entity/Counter.h
+CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Entity/Enemy.h
 CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Entity/Entity.h
 CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Entity/HelperDatatypes.h
 CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Entity/Immortal.h
@@ -76,6 +77,7 @@ CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Singleton/Transformation.h
 
 CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: ../Entity/CollideObject.h
 CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: ../Entity/Counter.h
+CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: ../Entity/Enemy.h
 CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: ../Entity/Entity.h
 CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: ../Entity/HelperDatatypes.h
 CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: ../Entity/Immortal.h
@@ -87,14 +89,18 @@ CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: ../MVC/Level.h
 CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: ../MVC/Model.h
 CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o: ../Singleton/Stopwatch.h
 
+CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.o: ../Entity/CollideObject.h
 CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.o: ../Entity/Counter.h
+CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.o: ../Entity/Enemy.h
 CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.o: ../Entity/Entity.h
 CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.o: ../Entity/HelperDatatypes.h
+CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.o: ../Entity/Mortal.h
 CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.o: ../MVC/Level.cpp
 CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.o: ../MVC/Level.h
 
 CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o: ../Entity/CollideObject.h
 CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o: ../Entity/Counter.h
+CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o: ../Entity/Enemy.h
 CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o: ../Entity/Entity.h
 CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o: ../Entity/HelperDatatypes.h
 CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o: ../Entity/Immortal.h
@@ -106,6 +112,7 @@ CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o: ../MVC/Model.h
 
 CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../Entity/CollideObject.h
 CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../Entity/Counter.h
+CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../Entity/Enemy.h
 CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../Entity/Entity.h
 CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../Entity/HelperDatatypes.h
 CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../Entity/Immortal.h
@@ -125,6 +132,7 @@ CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.o: ../Singleton/Transf
 
 CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../Entity/CollideObject.h
 CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../Entity/Counter.h
+CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../Entity/Enemy.h
 CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../Entity/Entity.h
 CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../Entity/HelperDatatypes.h
 CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../Entity/Immortal.h

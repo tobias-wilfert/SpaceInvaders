@@ -2,13 +2,24 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
 
 PROJECT(SpaceInvaders)
 SET(CMAKE_CXX_STANDARD 14)
-ADD_EXECUTABLE(SpaceInvaders main.cpp Singleton/Stopwatch.cpp Singleton/Stopwatch.h Game.cpp Game.h Singleton/Transformation.cpp Singleton/Transformation.h
-        MVC/Level.cpp MVC/Level.h Entity/Entity.cpp Entity/Entity.h Entity/Player.cpp Entity/Player.h
-        Entity/CollideObject.cpp Entity/CollideObject.h Entity/Counter.cpp Entity/Counter.h
-        Entity/HelperDatatypes.cpp Entity/HelperDatatypes.h Entity/Mortal.cpp Entity/Mortal.h
-        Entity/Immortal.cpp Entity/Immortal.h Entity/Enemy.cpp Entity/Enemy.h Entity/Bullet.cpp
-        Entity/Bullet.h Entity/Shield.cpp Entity/Shield.h MVC/Controller.cpp MVC/Controller.h
-        MVC/Model.cpp MVC/Model.h MVC/View.cpp MVC/View.h)
+ADD_EXECUTABLE(SpaceInvaders main.cpp
+        Singleton/Stopwatch.cpp Singleton/Stopwatch.h
+        Game.cpp Game.h
+        Singleton/Transformation.cpp Singleton/Transformation.h
+        MVC/Level.cpp MVC/Level.h
+        Entity/Entity.cpp Entity/Entity.h
+        Entity/Player.cpp Entity/Player.h
+        Entity/CollideObject.cpp Entity/CollideObject.h
+        Entity/Counter.cpp Entity/Counter.h
+        Entity/HelperDatatypes.cpp Entity/HelperDatatypes.h
+        Entity/Mortal.cpp Entity/Mortal.h
+        Entity/Immortal.cpp Entity/Immortal.h
+        Entity/Enemy.cpp Entity/Enemy.h
+        Entity/Bullet.cpp Entity/Bullet.h
+        Entity/Shield.cpp Entity/Shield.h
+        MVC/Controller.cpp MVC/Controller.h
+        MVC/Model.cpp MVC/Model.h
+        MVC/View.cpp MVC/View.h)
 
 # Extend the CMake module path to find the FindSFML.cmake
 # file in {project root}/cmake/Modules

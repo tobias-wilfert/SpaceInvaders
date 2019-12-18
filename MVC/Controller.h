@@ -7,12 +7,14 @@
 #ifndef SPACEINVADERS_CONTROLLER_H
 #define SPACEINVADERS_CONTROLLER_H
 
-#include "../Singleton/Stopwatch.h"
 #include "Model.h"
+#include "../Singleton/Stopwatch.h"
+#include "Level.h"
 
-#include <SFML/Graphics.hpp> // To handle the inputs
+
 #include <memory>
 #include <utility>
+#include <SFML/Graphics.hpp> // To handle the inputs
 
 /// Namespace of SpaceInvaders
 namespace si {
@@ -26,7 +28,8 @@ namespace mvc {
 class Controller
 {
 public:
-        explicit Controller(std::shared_ptr<Model> model);
+        Controller(float cycles_per_second, std::shared_ptr<Model>  model,
+                   std::shared_ptr<singleton::Stopwatch>  stopwatch);
 
         /**
          * Main Function of the controller
@@ -40,21 +43,24 @@ public:
          */
         void handleTitleScreenInput(sf::RenderWindow& window) const;
 
-        // Function to update the movement  of the alliens
-        // Function to update the bullets
-
         /**
-         *
+         \n Updates the movement of the aliens
+         \n Updates the bullets
          */
         void updateModel() const;
 
 private:
+
+        /// The number of logic cycles per second the game should make
+        float cyclesPerSecond;
+
         /// The model the controller controls
         std::shared_ptr<Model> model;
 
         /// Stopwatch used to clock the Model and Controller -> making Speed PC independent
         std::shared_ptr<singleton::Stopwatch> stopwatch;
 };
+
 
 } // namespace mvc
 } // namespace si

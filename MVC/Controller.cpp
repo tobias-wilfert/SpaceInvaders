@@ -6,6 +6,14 @@
 
 #include "Controller.h"
 
+#include <utility>
+
+si::mvc::Controller::Controller(float cycles_per_second, std::shared_ptr<Model> model,
+    std::shared_ptr<singleton::Stopwatch>  stopwatch)
+    : cyclesPerSecond(cycles_per_second), model(std::move(model)), stopwatch(std::move(stopwatch))
+{
+}
+
 void si::mvc::Controller::handleInput(sf::RenderWindow& window) const
 {
         // Handle all events
@@ -22,21 +30,21 @@ void si::mvc::Controller::handleInput(sf::RenderWindow& window) const
                 }
         }
 
-        // TODO replace values with variables
-
         // Handle game input
+        float playerMovement = model->playerMovementSpeed/cyclesPerSecond;
+
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)) {
                 // Check that move is legal -> The player doesn't move from the screen
-                if (model->player->position.x - 0.05 >= -3) {
+                if (model->player->position.x - playerMovement >= -3) {
                         // Move the player left
-                        model->player->position.x -= 0.05;
+                        model->player->position.x -= playerMovement;
                 }
 
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)) {
                 // Check that move is legal
-                if (model->player->position.x + 0.05 <= (3 - model->player->size.width)) {
+                if (model->player->position.x + playerMovement <= (3 - model->player->size.width)) {
                         // Move the player right
-                        model->player->position.x += 0.05;
+                        model->player->position.x += playerMovement;
                 }
 
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)) {
@@ -51,7 +59,6 @@ void si::mvc::Controller::handleInput(sf::RenderWindow& window) const
                 }
         }
 }
-si::mvc::Controller::Controller(std::shared_ptr<Model> model) : model(std::move(model)) {}
 
 void si::mvc::Controller::handleTitleScreenInput(sf::RenderWindow& window) const
 {

@@ -36,7 +36,7 @@ enum colourType
         blue,
         yellow,
         magenta,
-        cyan,
+        cyan
 };
 
 /**
