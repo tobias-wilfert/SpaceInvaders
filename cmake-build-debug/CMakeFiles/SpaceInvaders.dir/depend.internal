@@ -8,6 +8,7 @@ CMakeFiles/SpaceInvaders.dir/Entity/Bullet.cpp.o
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/MoveObject.h
 CMakeFiles/SpaceInvaders.dir/Entity/CollideObject.cpp.o
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/CollideObject.cpp
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/CollideObject.h
@@ -25,6 +26,7 @@ CMakeFiles/SpaceInvaders.dir/Entity/Enemy.cpp.o
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/MoveObject.h
 CMakeFiles/SpaceInvaders.dir/Entity/Entity.cpp.o
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.cpp
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.h
@@ -44,6 +46,13 @@ CMakeFiles/SpaceInvaders.dir/Entity/Mortal.cpp.o
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.cpp
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.h
+CMakeFiles/SpaceInvaders.dir/Entity/MoveObject.cpp.o
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/CollideObject.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/MoveObject.cpp
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/MoveObject.h
 CMakeFiles/SpaceInvaders.dir/Entity/Player.cpp.o
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/CollideObject.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.h
@@ -59,6 +68,7 @@ CMakeFiles/SpaceInvaders.dir/Entity/Shield.cpp.o
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Shield.cpp
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Shield.h
 CMakeFiles/SpaceInvaders.dir/Game.cpp.o
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Bullet.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/CollideObject.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Counter.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Enemy.h
@@ -66,6 +76,7 @@ CMakeFiles/SpaceInvaders.dir/Game.cpp.o
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Immortal.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/MoveObject.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Player.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Game.cpp
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Game.h
@@ -76,6 +87,7 @@ CMakeFiles/SpaceInvaders.dir/Game.cpp.o
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Stopwatch.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Transformation.h
 CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Bullet.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/CollideObject.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Counter.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Enemy.h
@@ -83,6 +95,7 @@ CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Immortal.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/MoveObject.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Player.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Controller.cpp
  /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Controller.h
@@ -90,15 +103,18 @@ CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o
  /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Stopwatch.h
 CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.o
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Bullet.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/CollideObject.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Counter.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Enemy.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/MoveObject.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Level.cpp
  /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Level.h
 CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Bullet.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/CollideObject.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Counter.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Enemy.h
@@ -106,11 +122,13 @@ CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Immortal.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/MoveObject.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Player.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Level.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.cpp
  /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.h
 CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Bullet.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/CollideObject.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Counter.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Enemy.h
@@ -118,6 +136,7 @@ CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Immortal.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/MoveObject.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Player.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Level.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.h
@@ -131,6 +150,7 @@ CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.o
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Transformation.cpp
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Transformation.h
 CMakeFiles/SpaceInvaders.dir/main.cpp.o
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Bullet.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/CollideObject.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Counter.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Enemy.h
@@ -138,6 +158,7 @@ CMakeFiles/SpaceInvaders.dir/main.cpp.o
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Immortal.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/MoveObject.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Player.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Game.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Controller.h

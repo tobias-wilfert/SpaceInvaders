@@ -7,12 +7,14 @@
 #ifndef SPACEINVADERS_LEVEL_H
 #define SPACEINVADERS_LEVEL_H
 
+#include "../Entity/Bullet.h"
 #include "../Entity/Enemy.h"
 #include "../Entity/Counter.h"
 #include "../Entity/CollideObject.h"
 
 #include <deque>
 #include <memory>
+#include <string>
 
 /// Namespace of SpaceInvaders
 namespace si {
@@ -44,9 +46,9 @@ private:
         /// List of all the entities that need to be checked if they collide
         std::deque<std::shared_ptr<entity::CollideObject>> listOfCollideObjects;
 
-        // Update all the alien movement -> could be specified in file as LLRR=(left,left,right,right)
+        /// List of all the bullets
+        std::deque<std::shared_ptr<entity::Bullet>> listOfBullets;
 
-        // List of all collide objects for the game logic
 };
 } // namespace mvc
 } // namespace si

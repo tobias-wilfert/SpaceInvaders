@@ -33,6 +33,8 @@ public:
 private:
         /// The type of the entity
         entityType entity_type{entityType::shield};
+
+        // TODO: Add begin health so that game can calculate the percentage remaining
 };
 
 } // namespace entity

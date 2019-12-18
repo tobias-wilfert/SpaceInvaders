@@ -67,6 +67,12 @@ private:
         std::array<sf::Texture,2> alienC;
         std::array<sf::Texture,2> alienM;
 
+        /// Textures of the Bullets
+        std::array<sf::Texture,3> bullets;
+
+        /// Textures of the Shields
+        std::array<sf::Texture,4> shields;
+
         // --- Functions ---
 
         /**

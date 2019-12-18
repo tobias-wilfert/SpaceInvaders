@@ -20,7 +20,7 @@ void si::Game::execute()
         model.set_level(level);
         std::shared_ptr<mvc::Model> modelPointer = std::make_shared<mvc::Model>(model);
         mvc::View view{modelPointer, transformation};
-        mvc::Controller controller{cyclesPerSecond,modelPointer,stopwatch};
+        mvc::Controller controller{cyclesPerSecond,modelPointer};
 
         // Create the window
         sf::RenderWindow window(sf::VideoMode(transformation->get_width(), transformation->get_height()),

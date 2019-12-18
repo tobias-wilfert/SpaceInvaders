@@ -28,8 +28,7 @@ namespace mvc {
 class Controller
 {
 public:
-        Controller(float cycles_per_second, std::shared_ptr<Model>  model,
-                   std::shared_ptr<singleton::Stopwatch>  stopwatch);
+        Controller(float cycles_per_second, const std::shared_ptr<Model>& model);
 
         /**
          * Main Function of the controller
@@ -46,8 +45,9 @@ public:
         /**
          \n Updates the movement of the aliens
          \n Updates the bullets
+         \n Check if any objects collided and delete them if needed
          */
-        void updateModel() const;
+        void updateModel();
 
 private:
 
@@ -57,8 +57,16 @@ private:
         /// The model the controller controls
         std::shared_ptr<Model> model;
 
-        /// Stopwatch used to clock the Model and Controller -> making Speed PC independent
-        std::shared_ptr<singleton::Stopwatch> stopwatch;
+        /// Number of update cycles
+        int updateCycles{0};
+
+        /**
+         *
+         * @param origin
+         * @param bullet_type
+         */
+        void shoot(entity::Position origin, entity::bulletType bullet_type);
+
 };
 
 

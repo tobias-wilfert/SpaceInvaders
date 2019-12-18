@@ -7,7 +7,7 @@
 #ifndef SPACEINVADERS_BULLET_H
 #define SPACEINVADERS_BULLET_H
 
-#include "Mortal.h"
+#include "MoveObject.h"
 
 /// Namespace of SpaceInvaders
 namespace si {
@@ -16,28 +16,37 @@ namespace si {
 namespace entity {
 
 /**
+ * Types of different bullets
+ */
+enum bulletType
+{
+        up,
+        down,
+        laser
+};
+
+/**
  * All the bullets, the once from the player and from the enemies
  */
-class Bullet : public Mortal
+class Bullet : public MoveObject
 {
 public:
         // TODO: Add features
-        Bullet(const Size& ize, const Position& position, unsigned int attack_points, collideObjectType type,
-               int health_points, float velocity);
+        Bullet(const Size& size, const Position& position, unsigned int attack_points, collideObjectType type,
+               int health_points, const MovePattern& move_pattern, bulletType bullet_type);
 
-private:
         /**
          * Override of getEntityType() from Entity
          * @return The entity type of this entity
          */
         entityType getEntityType() const override;
 
-public:
-        /// Velocity of the bullet
-        float velocity;
-
+private:
         /// The type of the entity
         entityType entity_type{entityType::bullet};
+
+        /// The type of the bullet
+        bulletType bullet_type;
 };
 
 } // namespace entity

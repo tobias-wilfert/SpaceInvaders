@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/SpaceInvaders.dir/Entity/HelperDatatypes.cpp.o"
   "CMakeFiles/SpaceInvaders.dir/Entity/Immortal.cpp.o"
   "CMakeFiles/SpaceInvaders.dir/Entity/Mortal.cpp.o"
+  "CMakeFiles/SpaceInvaders.dir/Entity/MoveObject.cpp.o"
   "CMakeFiles/SpaceInvaders.dir/Entity/Player.cpp.o"
   "CMakeFiles/SpaceInvaders.dir/Entity/Shield.cpp.o"
   "CMakeFiles/SpaceInvaders.dir/Game.cpp.o"

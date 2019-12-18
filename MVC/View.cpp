@@ -42,6 +42,17 @@ void si::mvc::View::initializerResources()
                 alienM = std::array<sf::Texture, 2>{loadFromFile("../resources/img/mothership-a.png"),
                                                     loadFromFile("../resources/img/mothership-b.png")};
 
+                // Bullets
+                bullets = std::array<sf::Texture, 3>{loadFromFile("../resources/img/laser.png"),
+                                                     loadFromFile("../resources/img/bullet-up.png"),
+                                                     loadFromFile("../resources/img/bullet-down.png")};
+
+                // Shields
+                shields = std::array<sf::Texture, 4>{loadFromFile("../resources/img/shield-100.png"),
+                                                     loadFromFile("../resources/img/shield-75.png"),
+                                                     loadFromFile("../resources/img/shield-50.png"),
+                                                     loadFromFile("../resources/img/shield-25.png")};
+
         } catch (const std::exception& e) {
                 std::cerr << "Failed to load resources need for SpaceInvders" << std::endl;
                 std::cerr << e.what() << std::endl;
@@ -89,7 +100,7 @@ void si::mvc::View::drawEntity(const std::shared_ptr<si::entity::Entity>& entity
                 drawPlayer(std::dynamic_pointer_cast<si::entity::Player>(entity), window);
                 break;
         case entity::entityType::shield:
-
+                // TODO: Add missing Draw functions
                 break;
         case entity::entityType::enemy:
                 drawEnemy(std::dynamic_pointer_cast<si::entity::Enemy>(entity), window);

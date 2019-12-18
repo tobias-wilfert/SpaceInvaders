@@ -170,6 +170,12 @@
 		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.h">
 			<Option target="SpaceInvaders"/>
 		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/MoveObject.cpp">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/MoveObject.h">
+			<Option target="SpaceInvaders"/>
+		</Unit>
 		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Player.cpp">
 			<Option target="SpaceInvaders"/>
 		</Unit>

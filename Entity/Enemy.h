@@ -7,7 +7,7 @@
 #ifndef SPACEINVADERS_ENEMY_H
 #define SPACEINVADERS_ENEMY_H
 
-#include "Mortal.h"
+#include "MoveObject.h"
 
 /// Namespace of SpaceInvaders
 namespace si {
@@ -29,11 +29,11 @@ enum enemyType
 /**
  * Class for all Enemies may serve as a base class for even more of them
  */
-class Enemy : public Mortal
+class Enemy : public MoveObject
 {
 public:
         Enemy(const Size& size, const Position& position, unsigned int attack_points, collideObjectType type,
-              int health_points, enemyType enemy_type, colourType colour);
+              int health_points, const MovePattern& move_pattern, enemyType enemy_type, colourType colour);
 
         /**
          * Override of getEntityType() from Entity
@@ -63,6 +63,7 @@ private:
 
         /// Color of the enemy
         colourType colour;
+
 };
 
 } // namespace entity

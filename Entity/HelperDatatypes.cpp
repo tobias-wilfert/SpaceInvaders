@@ -14,3 +14,8 @@ si::entity::Rectangle::Rectangle(const si::entity::Position& top_left, const si:
     : topLeft(top_left), bottomRight(bottom_right)
 {
 }
+
+si::entity::MovePattern::MovePattern(std::string  pattern, float step_size, float move_frequency)
+    : pattern(std::move(pattern)), stepSize(step_size), moveFrequency(move_frequency)
+{
+}

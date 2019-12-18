@@ -19,7 +19,7 @@ ADD_EXECUTABLE(SpaceInvaders main.cpp
         Entity/Shield.cpp Entity/Shield.h
         MVC/Controller.cpp MVC/Controller.h
         MVC/Model.cpp MVC/Model.h
-        MVC/View.cpp MVC/View.h)
+        MVC/View.cpp MVC/View.h Entity/MoveObject.cpp Entity/MoveObject.h)
 
 # Extend the CMake module path to find the FindSFML.cmake
 # file in {project root}/cmake/Modules

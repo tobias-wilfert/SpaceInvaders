@@ -385,6 +385,33 @@ Entity/Mortal.cpp.s:
 	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Entity/Mortal.cpp.s
 .PHONY : Entity/Mortal.cpp.s
 
+Entity/MoveObject.o: Entity/MoveObject.cpp.o
+
+.PHONY : Entity/MoveObject.o
+
+# target to build an object file
+Entity/MoveObject.cpp.o:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Entity/MoveObject.cpp.o
+.PHONY : Entity/MoveObject.cpp.o
+
+Entity/MoveObject.i: Entity/MoveObject.cpp.i
+
+.PHONY : Entity/MoveObject.i
+
+# target to preprocess a source file
+Entity/MoveObject.cpp.i:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Entity/MoveObject.cpp.i
+.PHONY : Entity/MoveObject.cpp.i
+
+Entity/MoveObject.s: Entity/MoveObject.cpp.s
+
+.PHONY : Entity/MoveObject.s
+
+# target to generate assembly for a file
+Entity/MoveObject.cpp.s:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Entity/MoveObject.cpp.s
+.PHONY : Entity/MoveObject.cpp.s
+
 Entity/Player.o: Entity/Player.cpp.o
 
 .PHONY : Entity/Player.o
@@ -692,6 +719,9 @@ help:
 	@echo "... Entity/Mortal.o"
 	@echo "... Entity/Mortal.i"
 	@echo "... Entity/Mortal.s"
+	@echo "... Entity/MoveObject.o"
+	@echo "... Entity/MoveObject.i"
+	@echo "... Entity/MoveObject.s"
 	@echo "... Entity/Player.o"
 	@echo "... Entity/Player.i"
 	@echo "... Entity/Player.s"
