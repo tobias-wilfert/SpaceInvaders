@@ -13,8 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0e5097d6-8f54-4856-a7d8-629138d3e85b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entity/CollideObject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/CollideObject.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entity/CollideObject.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/CollideObject.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC/View.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/View.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +102,7 @@
       <workItem from="1576663953826" duration="14647000" />
       <workItem from="1576690423056" duration="3704000" />
       <workItem from="1576701849922" duration="5155000" />
-      <workItem from="1576741464419" duration="4378000" />
+      <workItem from="1576741464419" duration="4539000" />
     </task>
     <servers />
   </component>
