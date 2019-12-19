@@ -20,8 +20,7 @@
 #include "Singleton/Stopwatch.h"
 #include "Singleton/Transformation.h"
 
-
-// TODO Match Types to reduce warnings in code inspect
+// TODO Fine tune the values to make the game smooth
 
 /// Namespace of SpaceInvaders
 namespace si {
@@ -32,20 +31,23 @@ namespace si {
 class Game
 {
 public:
-        explicit Game(float cycles_per_second);
+        Game(float cycles_per_second, const std::deque<std::string>& files);
 
         /**
          \n The main function of game
          */
         void execute();
 
-        /**
-         \n Gets the resolution of the screen and uses these values to initialize transformation.
-         \n Initializes stopwatch
-         */
-        void initialize();
-
 private:
+        /// Pointer to the model that the game will use
+        std::shared_ptr<mvc::Model> modelPtr;
+
+        /// The View that the game will use
+        mvc::View view;
+
+        /// The controller the game will use
+        mvc::Controller controller;
+
         /// The score of the player
         int score{0};
 

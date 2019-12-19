@@ -45,10 +45,16 @@ public:
         void set_level(const Level& level);
 
         /**
-         * Returns true if the game is over else false
-         * @return gameOver
+         \n Returns true if the game is over else false
+         \n @return gameOver
          */
         bool is_game_over() const;
+
+        /**
+         \n Returns true if the current level is defeated and there is no level left
+         \n @return gameWon
+         */
+        bool is_game_won() const;
 
 private:
         /// Make View friend of Model
@@ -60,7 +66,7 @@ private:
         bool interacted{false};
 
         /// The movement speed of the player in int/seconds
-        int playerMovementSpeed{3};
+        float playerMovementSpeed{3.f};
 
         // --- Entities that are level independent ---
         /**
@@ -94,6 +100,9 @@ private:
 
         /// Indicates if the game should be ended
         bool gameOver{false};
+
+        /// Indicates if the game is won
+        bool gameWon{false};
 };
 
 } // namespace mvc

@@ -16,7 +16,7 @@ si::entity::MoveObject::MoveObject(const si::entity::Size& size, const si::entit
 void si::entity::MoveObject::move()
 {
         // Check if it is time to move
-        if (move_pattern.cyclesSinceLastStep >= move_pattern.moveFrequency) {
+        if (static_cast<float>(move_pattern.cyclesSinceLastStep) >= move_pattern.moveFrequency) {
                 // Move
                 takeStep();
                 // Set the cycle count to 0

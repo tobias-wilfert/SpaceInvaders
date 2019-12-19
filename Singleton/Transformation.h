@@ -79,16 +79,16 @@ public:
         float convertYCoordinate(float yCoordinate) const;
 
         /**
-         * Scales the width to 2D game pixel
-         * @param width size relative to [-3,3]
-         * @return width scaled relative to [0,windowWidth]
+         \n Scales the width to 2D game pixel
+         \n @param width size relative to [-3,3]
+         \n @return width scaled relative to [0,windowWidth]
          */
         float convertWidth(float width) const;
 
         /**
-         * Scales the height to 2D game pixel
-         * @param height size relative to [-4,4]
-         * @return height scaled relative to [0,windowHeight]
+         \n Scales the height to 2D game pixel
+         \n @param height size relative to [-4,4]
+         \n @return height scaled relative to [0,windowHeight]
          */
         float convertHeight(float height) const;
 
@@ -103,9 +103,9 @@ private:
         static std::shared_ptr<Transformation> instance;
 
         /**
-         * Private constructor causing only 1 instance ot Transformation to be allowed
-         * @param window_width The width of the Application Window
-         * @param window_height The height of the Application Window
+         \n Private constructor causing only 1 instance ot Transformation to be allowed
+         \n @param window_width The width of the Application Window
+         \n @param window_height The height of the Application Window
          */
         Transformation(int window_width, int window_height);
 };

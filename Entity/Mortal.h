@@ -36,7 +36,7 @@ public:
          \n Subtracts damage from the hp
          \n @param damage The damaged caused
          */
-        void collide(unsigned int damage) override;
+        void collide(unsigned int input_damage) override;
 
         /**
          \n Returns an int representation of the healthPoints

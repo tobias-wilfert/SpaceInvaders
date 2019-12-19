@@ -16,7 +16,7 @@ si::entity::collideObjectType si::entity::CollideObject::get_type() const { retu
 
 bool si::entity::CollideObject::is_destroyed() const { return destroyed; }
 
-void si::entity::CollideObject::set_destroyed(bool destroyed) { CollideObject::destroyed = destroyed; }
+void si::entity::CollideObject::set_destroyed(bool input_destroyed) { CollideObject::destroyed = input_destroyed; }
 
 unsigned int si::entity::CollideObject::get_attack_points() const { return attackPoints; }
 
@@ -39,11 +39,9 @@ bool si::entity::collided(const si::entity::CollideObject& co1, const si::entity
 
         if (l1.x > r2.x || l2.x > r1.x) { // If one rectangle is on left side of other
                 return false;
-        } else if (l1.y < r2.y || l2.y < r1.y) { // If one rectangle is above other
-                return false;
-        } else {
-                return true;
         }
+        // Is one rectangle is above other or not
+        return !(l1.y < r2.y || l2.y < r1.y);
 }
 void si::entity::checkCollision(const std::shared_ptr<CollideObject>& co1, const std::shared_ptr<CollideObject>& co2)
 {

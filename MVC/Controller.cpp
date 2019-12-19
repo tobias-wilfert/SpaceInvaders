@@ -6,7 +6,7 @@
 
 #include "Controller.h"
 
-si::mvc::Controller::Controller(float cycles_per_second, std::shared_ptr<Model>  model)
+si::mvc::Controller::Controller(float cycles_per_second, std::shared_ptr<Model> model)
     : cyclesPerSecond(cycles_per_second), model(std::move(model))
 {
 }
@@ -29,35 +29,23 @@ void si::mvc::Controller::handleInput(sf::RenderWindow& window) const
 
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right)) {
                 // Check that move is legal -> The player doesn't move from the screen
-                if (model->player->position.x + playerMovement <= (3 - model->player->size.width)  and !model->player->is_respawning()) {
+                if (model->player->position.x + playerMovement <= (3 - model->player->size.width) and
+                    !model->player->is_respawning()) {
                         // Move the player right
                         model->player->position.x += playerMovement;
                 }
 
         } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up)) {
-                // Keep track of the time so that the player can't spam shoot
                 // Check if shooting is available
                 if (model->coolDownCounter->get_value() == 0) {
                         // Let the player shoot
-                        // Make the bullet
+                        playerShoot();
 
-                        // TODO intitialize this in the beging of the Controller
-                        entity::Position position = model->player->position;
-                        position.x += model->player->size.width / 2.F;
-                        int health = 1;
-                        unsigned int attack = 1;
-                        entity::MovePattern move_pattern{"P", 0.125, 15};
-                        entity::Size size{0.06, 0.12};
-
-                        shoot(position,size,attack,health,entity::bulletType::laser, move_pattern,entity::colourType::white,true);
-
-                        // TEST
-                        if (model->player->is_respawning()){
+                        if (model->player->is_respawning()) {
                                 model->player->set_respawning(false);
                         }
-
                         // Reset the counter
-                        model->coolDownCounter->set_value(100);
+                        model->coolDownCounter->set_value(shootFrequency);
                 }
         }
 }
@@ -80,87 +68,38 @@ void si::mvc::Controller::handleTitleScreenInput(sf::RenderWindow& window) const
 }
 void si::mvc::Controller::updateModel()
 {
+        // Check if there are any Enemies left in the level
+        if (model->level.is_level_complete()) {
+                // TODO Load the next level
+                model->gameWon = true;
+        }
+
         // Update the coolDown counter
         if (model->coolDownCounter->get_value() > 0) {
                 model->coolDownCounter->set_value(model->coolDownCounter->get_value() - 1);
-
         }
 
-        // Move all the MoveObjects
-        for (const auto& ptr : model->level.listOfCollideObjects) {
+        // Move all the MoveObjects and spawn enemy bullets
+        moveObjects();
 
-                if (ptr->getEntityType() == entity::entityType::enemy) {
-                        auto castPtr = std::dynamic_pointer_cast<si::entity::Enemy>(ptr);
-                        castPtr->move();
-
-                        // Check if an enemy now has a y value < -4 if yes gameOver is True
-                        if (castPtr->position.y <= -4 + castPtr->size.height ){
-                                model->gameOver = true;
-                        }
-
-                        if (updateCycles >= cyclesPerSecond) {
-                                castPtr->set_state(!castPtr->is_state());
-                        }
-
-                } else if (ptr->getEntityType() == entity::entityType::bullet) {
-                        auto castPtr = std::dynamic_pointer_cast<si::entity::Bullet>(ptr);
-                        castPtr->move();
-                }
-        }
-        // Reset the updateCycles count
-        if (updateCycles >= cyclesPerSecond) {
-                updateCycles = 0;
-        }
-
-        // TODO: Spawn bullets randomly for the aliens
-
-        // Check if an CollideObeject collided with another
-        // e.g Bullet with player/alien/shield/sky or ground or alien with shield/player
-        for (int i = 0; i < model->level.listOfCollideObjects.size(); ++i) {
-                auto entity = model->level.listOfCollideObjects.front();
-                model->level.listOfCollideObjects.pop_front();
-                for (const auto& obj : model->level.listOfCollideObjects) {
-                        entity::checkCollision(entity, obj);
-                }
-                model->level.listOfCollideObjects.push_back(entity);
-        }
+        // Check if an CollideObject collided with another
+        checkCollisions();
 
         // Check what the player is doing
         checkPlayer();
 
-        // Delete all dead CollideObjects from the list
-        for (int i = 0; i < model->level.listOfCollideObjects.size(); ++i) {
-                auto front = model->level.listOfCollideObjects.front();
-                model->level.listOfCollideObjects.pop_front();
+        // Delete all dead CollideObjects
+        cleanUpCollideObjects();
 
-                if (!front->is_destroyed()) {
-                        model->level.listOfCollideObjects.push_back(front);
-                }else{
-                        // If an enemy died
-                        if (front->getEntityType() == entity::entityType::enemy){
-                                auto castPtr = std::dynamic_pointer_cast<si::entity::Enemy>(front);
+        //  Delete all the dead bullets
+        cleanUpBullets();
 
-                                // TODO: Make more elegant Maybe to easy? should consider a
-                                int value = 10;
-                                model->scoreCounter->set_value(model->scoreCounter->get_value() + value);
-                        }
+        // Delete all dead entities
+        cleanUpEntities();
 
-                }
-        }
-
-        // Delete all dead entities from the list
-        for (int i = 0; i < model->level.listOfEntities.size(); ++i) {
-                auto entity = model->level.listOfEntities.front();
-                model->level.listOfEntities.pop_front();
-
-                // Check that it is a collide object
-                if (entity->getEntityType() != entity::entityType::counter) {
-                        if (!std::dynamic_pointer_cast<entity::CollideObject>(entity)->is_destroyed()) {
-                                model->level.listOfEntities.push_back(entity);
-                        }
-                } else {
-                        model->level.listOfEntities.push_back(entity);
-                }
+        // Reset the updateCycles count
+        if (updateCycles >= static_cast<int>(cyclesPerSecond)) {
+                updateCycles = 0;
         }
 
         // Increment the cycleCount
@@ -170,46 +109,24 @@ void si::mvc::Controller::updateModel()
 void si::mvc::Controller::checkPlayer() const
 {
         // Check if the player is currently respawning
-        if (model->player->is_respawning()){
+        if (model->player->is_respawning()) {
                 // If player got hit while respawning ignore
                 model->player->set_destroyed(false);
 
-        }else{
+        } else {
                 // Check if the player got hit
-                if (model->player->is_destroyed()){
+                if (model->player->is_destroyed()) {
                         // Check if we have a backup life
-                        if ( model->healthCounter->get_value() >= 1){
+                        if (model->healthCounter->get_value() >= 1) {
                                 model->player->set_destroyed(false);
                                 model->player->set_respawning(true);
-                                model->healthCounter->set_value(model->healthCounter->get_value()-1);
-                        }else{
+                                model->healthCounter->set_value(model->healthCounter->get_value() - 1);
+                        } else {
                                 // The player died for good
                                 model->gameOver = true;
                         }
                 }
         }
-
-}
-
-void si::mvc::Controller::shoot(si::entity::Position origin, si::entity::Size size, unsigned int attack, int health,
-    si::entity::bulletType bullet_type, si::entity::MovePattern move_pattern, entity::colourType colour_type,
-    bool fromPlayer) const
-{
-        entity::collideObjectType collide_object_type;
-        entity::Position position{origin.x - size.width / 2.f, origin.y};
-
-        if (fromPlayer) {
-                collide_object_type = entity::collideObjectType::friendly;
-                move_pattern.pattern = "U";
-                position.y += size.height;
-        } else {
-                collide_object_type = entity::collideObjectType::hostile;
-                move_pattern.pattern = "D";
-                position.y -= size.height;
-        }
-
-        addBulletToGame(entity::Bullet{
-            size, position, attack, collide_object_type, health, move_pattern, bullet_type, colour_type});
 }
 
 void si::mvc::Controller::addBulletToGame(si::entity::Bullet bullet) const
@@ -235,7 +152,8 @@ void si::mvc::Controller::handelEvent(sf::RenderWindow& window) const
                 }
         }
 }
-void si::mvc::Controller::handleGameOverScreenInput(sf::RenderWindow& window) const
+
+void si::mvc::Controller::handleGameEndScreenInput(sf::RenderWindow& window) const
 {
         sf::Event event{};
 
@@ -247,6 +165,155 @@ void si::mvc::Controller::handleGameOverScreenInput(sf::RenderWindow& window) co
                         // Place to add extra Handles if needed.
                 default:
                         break;
+                }
+        }
+}
+
+void si::mvc::Controller::playerShoot() const
+{
+        // Make the bullet
+        int health = 1;
+        unsigned int attack = 1;
+        entity::Size size{0.06, 0.12};
+        entity::MovePattern move_pattern{"U", 0.125, 15};
+        entity::Position position = model->player->position;
+        position.x += model->player->size.width / 2.f - size.width / 2.f;
+        position.y += size.height;
+
+        // Add the bullet
+        addBulletToGame(entity::Bullet{size, position, attack, entity::collideObjectType::friendly, health,
+                                       move_pattern, entity::bulletType::laser, entity::colourType::white});
+}
+
+void si::mvc::Controller::alienShoot(const std::shared_ptr<si::entity::Enemy>& enemy) const
+{
+        // Make the bullet
+        int health = 1;
+        unsigned int attack = 1;
+        entity::Size size{0.06, 0.12};
+        entity::MovePattern move_pattern{"D", 0.125, 15};
+        entity::Position position = enemy->position;
+        position.x += enemy->size.width / 2.f - size.width / 2.f;
+        position.y -= size.height;
+
+        // add the bullet
+        addBulletToGame(entity::Bullet{size, position, attack, entity::collideObjectType::hostile, health, move_pattern,
+                                       entity::bulletType::down, enemy->get_colour()});
+}
+void si::mvc::Controller::moveObjects()
+{
+        // Ruff amount of aliens
+        unsigned long amountOfAliens = model->level.listOfCollideObjects.size() - model->level.listOfBullets.size() - 3;
+        // Create a random number
+        int counter{0};
+        std::random_device rd;
+        std::mt19937 rng(rd());
+        std::uniform_int_distribution<int> uni(0, static_cast<int>(amountOfAliens));
+        auto random_integer = uni(rng);
+
+        // Loop over all the objects
+        for (const auto& objectPtr : model->level.listOfCollideObjects) {
+                // If the object is an enemy
+                if (objectPtr->getEntityType() == entity::entityType::enemy) {
+                        auto castPtr = std::dynamic_pointer_cast<si::entity::Enemy>(objectPtr);
+                        castPtr->move();
+
+                        // Check if an enemy now has a y value < -4 if yes gameOver is True
+                        if (castPtr->position.y <= -4 + castPtr->size.height) {
+                                model->gameOver = true;
+                        }
+                        // Check if the alien needs to change state/ shoot a bulet
+                        if (updateCycles >= static_cast<int>(cyclesPerSecond)) {
+                                castPtr->set_state(!castPtr->is_state());
+
+                                // If the enemy should shoot a bullet
+                                if (counter == random_integer) {
+                                        alienShoot(castPtr);
+                                }
+                        }
+                        // increment the counter
+                        ++counter;
+
+                } else if (objectPtr->getEntityType() == entity::entityType::bullet) {
+                        auto castPtr = std::dynamic_pointer_cast<si::entity::Bullet>(objectPtr);
+                        castPtr->move();
+                }
+        }
+}
+
+void si::mvc::Controller::checkCollisions() const
+{
+        for (const auto& objectPtr : model->level.listOfCollideObjects) {
+                for (const auto& objectPtr2 : model->level.listOfCollideObjects) {
+                        entity::checkCollision(objectPtr, objectPtr2);
+                }
+        }
+}
+
+void si::mvc::Controller::cleanUpBullets() const
+{
+        for (unsigned int i = 0; i < model->level.listOfBullets.size(); ++i) {
+                auto bullet = model->level.listOfBullets.front();
+                model->level.listOfBullets.pop_front();
+
+                if (!bullet->is_destroyed()) {
+                        model->level.listOfBullets.push_back(bullet);
+                }
+        }
+}
+
+void si::mvc::Controller::cleanUpCollideObjects() const
+{
+        for (unsigned int i = 0; i < model->level.listOfCollideObjects.size(); ++i) {
+                auto objectPtr = model->level.listOfCollideObjects.front();
+                model->level.listOfCollideObjects.pop_front();
+
+                if (!objectPtr->is_destroyed()) {
+                        model->level.listOfCollideObjects.push_back(objectPtr);
+                } else {
+                        // If an enemy died
+                        if (objectPtr->getEntityType() == entity::entityType::enemy) {
+                                updateScore(std::dynamic_pointer_cast<si::entity::Enemy>(objectPtr));
+                        }
+                }
+        }
+}
+
+void si::mvc::Controller::updateScore(const std::shared_ptr<entity::Enemy>& enemy) const
+{
+        int value{0};
+        switch (enemy->get_enemy_type()) {
+        case entity::enemyType::a:
+                value = 400;
+                break;
+        case entity::enemyType::b:
+                value = 200;
+                break;
+        case entity::enemyType::c:
+                value = 100;
+                break;
+        case entity::enemyType::m:
+                value = 10000;
+                break;
+        }
+
+        // Update the score
+        model->scoreCounter->set_value(model->scoreCounter->get_value() + value);
+}
+
+void si::mvc::Controller::cleanUpEntities() const
+{
+        for (unsigned int i = 0; i < model->level.listOfEntities.size(); ++i) {
+                auto entity = model->level.listOfEntities.front();
+                model->level.listOfEntities.pop_front();
+
+                // Check that it is a collide object
+                if (entity->getEntityType() != entity::entityType::counter) {
+                        if (!std::dynamic_pointer_cast<entity::CollideObject>(entity)->is_destroyed()) {
+                                model->level.listOfEntities.push_back(entity);
+                        }
+                } else {
+                        model->level.listOfEntities.push_back(entity);
                 }
         }
 }

@@ -59,7 +59,7 @@ public:
          \n Sets the value of destroyed indicating that an object should be deleted from the model asap
          \n @param destroyed True if it destroyed else false
          */
-        void set_destroyed(bool destroyed);
+        void set_destroyed(bool input_destroyed);
 
         /**
          \n Returns the attack points

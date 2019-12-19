@@ -9,22 +9,22 @@ si::mvc::Model::Model()
 {
         // Initialize all the level independent entities
         entity::Size size{0.26, 0.16};
-        entity::Position position{-0.26, -3.5};
+        entity::Position position{-0.26f, -3.5f};
         player = std::shared_ptr<si::entity::Player>(
             new entity::Player{size, position, 1, entity::collideObjectType::friendly, 1});
 
         entity::Size sizeSC{2.4, 0.25};
-        entity::Position positionSC{-2.85, 3.85};
+        entity::Position positionSC{-2.85f, 3.85f};
         scoreCounter = std::shared_ptr<si::entity::Counter>(
             new entity::Counter{sizeSC, positionSC, 0, entity::counterType::score});
 
         entity::Size sizeCC{2.4, 0.25};
-        entity::Position positionCC{-2.85, 3.5};
+        entity::Position positionCC{-2.85f, 3.5f};
         coolDownCounter = std::shared_ptr<si::entity::Counter>(
             new entity::Counter{sizeCC, positionCC, 0, entity::counterType::cooldown});
 
         entity::Size sizeLC{2, 0.25};
-        entity::Position positionLC{0.65, 3.85};
+        entity::Position positionLC{0.65f, 3.85f};
         healthCounter = std::shared_ptr<si::entity::Counter>(
             new entity::Counter{sizeLC, positionLC, 3, entity::counterType::health});
 
@@ -60,3 +60,5 @@ void si::mvc::Model::set_level(const Level& inputLevel)
 }
 
 bool si::mvc::Model::is_game_over() const { return gameOver; }
+
+bool si::mvc::Model::is_game_won() const { return gameWon; }

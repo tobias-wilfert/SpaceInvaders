@@ -13,6 +13,7 @@
 
 #include <SFML/Graphics.hpp> // To handle the inputs
 #include <memory>
+#include <random>
 #include <utility>
 
 /// Namespace of SpaceInvaders
@@ -49,10 +50,10 @@ public:
         void updateModel();
 
         /**
-         *
-         * @param window
+         \n Handles the input during the end screen (Win / GameOver)
+         \n @param window The sfml window the player sees and interacts with
          */
-        void handleGameOverScreenInput(sf::RenderWindow& window) const;
+        void handleGameEndScreenInput(sf::RenderWindow& window) const;
 
 private:
         /// The number of logic cycles per second the game should make
@@ -65,26 +66,69 @@ private:
         int updateCycles{0};
 
         /**
-         \n
-         \n @param origin
-         \n @param bullet_type
+         * An bullet is created for the player to shoot and addBulletToGame is called
          */
-        void shoot(entity::Position origin, entity::Size size, unsigned int attack, int health, entity::bulletType bullet_type,
-                   entity::MovePattern move_pattern, entity::colourType colour_type, bool fromPlayer) const;
+        void playerShoot() const;
 
         /**
-         \n
-         \n @param bullet
+         \n An bullet is created for the enemy to shoot and addBulletToGame is called
+         \n @param enemy The enemy that shoots the bullet
+         */
+        void alienShoot(const std::shared_ptr<si::entity::Enemy>& enemy) const;
+
+        /**
+         \n Adds bullet to the model
+         \n @param bullet The bullet to add to the model
          */
         void addBulletToGame(entity::Bullet bullet) const;
 
         /**
-         \n
-         \n @param window
+         \n Handles smlf Events like closing window
+         \n @param window The sfml window the users sees and interacts with
          */
         void handelEvent(sf::RenderWindow& window) const;
 
+        /**
+         \n Checks if the player is currently destroyed, if yes re-spawn the player
+         \n ( Decrement the health Counter, set player health to its initial health and set to re-spawning)
+         */
         void checkPlayer() const;
+
+        /**
+         \n Move all the objects in levels listOfCollideObjects
+         \n Check if an alien touches he ground, if yes GameOver
+         \n Let a random alien shoot a bullet
+         */
+        void moveObjects();
+
+        /**
+         * Checks if any objects in levels listOfCollideObjects collided with another
+         */
+        void checkCollisions() const;
+
+        /**
+         * Check if any bullet is destroyed if yes delete it
+         */
+        void cleanUpBullets() const;
+
+        /**
+         * Check if any collideObject is destroyed if yes delete it
+         */
+        void cleanUpCollideObjects() const;
+
+        /**
+         \n Update the Score of the level after an enemy is destroyed
+         \n @param enemy The enemy that just got destroyed
+         */
+        void updateScore(const std::shared_ptr<entity::Enemy>& enemy) const;
+
+        /**
+         * Check if any entity is destroyed if yes delete it
+         */
+        void cleanUpEntities() const;
+
+        /// The frequency the player is allowed to shoot at
+        int shootFrequency{100};
 };
 
 } // namespace mvc

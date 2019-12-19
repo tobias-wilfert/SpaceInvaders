@@ -33,6 +33,12 @@ class Level
 public:
         Level();
 
+        /**
+         \n Returns true if the level is completed (no more enemies are left)
+         \n @return True if all enemies are dead
+         */
+        bool is_level_complete() const;
+
 private:
         /// Make Model friend of Model
         friend class Model;

@@ -14,7 +14,6 @@ si::mvc::View::View(std::shared_ptr<Model> model, std::shared_ptr<singleton::Tra
 
 void si::mvc::View::initializerResources()
 {
-        
         try {
                 // Load the Font that will be used
                 if (!font.loadFromFile("../resources/fonts/KenPixel.ttf")) {
@@ -57,7 +56,6 @@ void si::mvc::View::initializerResources()
                 std::cerr << e.what() << std::endl;
                 exit(1);
         }
-
 }
 
 sf::Texture si::mvc::View::loadFromFile(const std::string& path) const
@@ -115,16 +113,10 @@ void si::mvc::View::drawCounter(const std::shared_ptr<si::entity::Counter>& coun
 {
         sf::Text title;
         title.setFont(font);
-        title.setCharacterSize(transformation->convertHeight(0.2));
+        title.setCharacterSize(static_cast<unsigned int>(transformation->convertHeight(0.2)));
         title.setFillColor(sf::Color::Cyan);
         title.setPosition(transformation->convertXCoordinate(counter->position.x),
                           transformation->convertYCoordinate(counter->position.y));
-
-        /* Debugging
-        sf::RectangleShape rect = entityToRectangle(counter);
-        rect.setFillColor(sf::Color::Black);
-        window.draw(rect);
-         */
 
         if (counter->get_counter_type() == si::entity::counterType::health) {
                 title.setString(" Life:");
@@ -138,7 +130,7 @@ void si::mvc::View::drawCounter(const std::shared_ptr<si::entity::Counter>& coun
                 for (int i = 0; i < counter->get_value(); ++i) {
 
                         lifeIndicator.setPosition(
-                            transformation->convertXCoordinate(counter->position.x + 0.8 + 0.4 * i),
+                            transformation->convertXCoordinate(static_cast<float>(counter->position.x + 0.8 + 0.4 * i)),
                             transformation->convertYCoordinate(counter->position.y));
                         window.draw(lifeIndicator);
                 }
@@ -243,8 +235,7 @@ sf::RectangleShape si::mvc::View::entityToRectangle(const std::shared_ptr<si::en
 
 void si::mvc::View::displayTitleScreen(sf::RenderWindow& window) const
 {
-        // TODO: Add extra info the title screen
-        sf::Text title("Space Invaders", font, transformation->convertHeight(0.3));
+        sf::Text title("Space Invaders", font, static_cast<unsigned int>(transformation->convertHeight(0.3)));
         sf::Rect<float> size = title.getGlobalBounds();
         title.setPosition(window.getSize().x / 2.f - size.width / 2.f, window.getSize().y / 2.f - size.height / 2.f);
 
@@ -283,14 +274,15 @@ sf::Color si::mvc::View::gameColourToSFMLColour(const si::entity::colourType col
 }
 void si::mvc::View::displayGameOverScreen(sf::RenderWindow& window) const
 {
-        // TODO: Add extra info the title screen
-        sf::Text title("Game Over", font, transformation->convertHeight(0.2));
+        sf::Text title("Game Over", font, static_cast<unsigned int>(transformation->convertHeight(0.4)));
+        title.setFillColor(sf::Color::Red);
         sf::Rect<float> size = title.getGlobalBounds();
         title.setPosition(window.getSize().x / 2.f - size.width / 2.f, window.getSize().y / 2.f - size.height / 2.f);
 
-        sf::Text score("Your Score: " + std::to_string(model->scoreCounter->get_value()), font, transformation->convertHeight(0.13));
+        sf::Text score("Your Score: " + std::to_string(model->scoreCounter->get_value()), font,
+                       static_cast<unsigned int>(transformation->convertHeight(0.2)));
         sf::Rect<float> size1 = score.getGlobalBounds();
-        score.setPosition(window.getSize().x / 2.f - size1.width / 2.f, window.getSize().y /2.f + 50);
+        score.setPosition(window.getSize().x / 2.f - size1.width / 2.f, window.getSize().y / 2.f + 50);
 
         window.clear();
         window.draw(title);
@@ -298,3 +290,28 @@ void si::mvc::View::displayGameOverScreen(sf::RenderWindow& window) const
         window.display();
 }
 
+void si::mvc::View::displayWonScreen(sf::RenderWindow& window) const
+{
+
+        sf::Text title("You Won", font, static_cast<unsigned int>(transformation->convertHeight(0.4)));
+        title.setFillColor(sf::Color::Green);
+        sf::Rect<float> size = title.getGlobalBounds();
+        title.setPosition(window.getSize().x / 2.f - size.width / 2.f, window.getSize().y / 2.f - size.height / 2.f);
+
+        sf::Text score("Your Score: " + std::to_string(model->scoreCounter->get_value()), font,
+                       static_cast<unsigned int>(transformation->convertHeight(0.2)));
+        sf::Rect<float> size1 = score.getGlobalBounds();
+        score.setPosition(window.getSize().x / 2.f - size1.width / 2.f, window.getSize().y / 2.f + 50);
+
+        sf::Text credit("Developed by Tobias Wilfert", font,
+                        static_cast<unsigned int>(transformation->convertHeight(0.2)));
+        sf::Rect<float> sizeC = credit.getGlobalBounds();
+        credit.setPosition(window.getSize().x / 2.f - sizeC.width / 2.f, window.getSize().y - 2 * sizeC.height);
+
+        window.clear();
+        window.draw(title);
+        window.draw(score);
+        window.draw(credit);
+        window.display();
+}
+si::mvc::View::View() = default;

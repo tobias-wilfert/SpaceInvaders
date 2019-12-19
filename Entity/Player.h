@@ -31,16 +31,16 @@ public:
         entityType getEntityType() const override;
 
         /**
-         * Get the value of respawning
-         * @return respawning
+         \n Get the value of respawning
+         \n @return respawning
          */
         bool is_respawning() const;
 
         /**
-         * Set the value of respawning
-         * @param respawning The value that respawning will be se to
+         \n Set the value of respawning
+         \n @param respawning The value that respawning will be se to
          */
-        void set_respawning(bool respawning);
+        void set_respawning(bool input_respawning);
 
 private:
         /// The type of the entity

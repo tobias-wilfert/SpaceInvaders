@@ -16,9 +16,9 @@ si::entity::entityType si::entity::Player::getEntityType() const { return entity
 
 bool si::entity::Player::is_respawning() const { return respawning; }
 
-void si::entity::Player::set_respawning(bool respawning)
+void si::entity::Player::set_respawning(bool input_respawning)
 {
 
         resetHealthPoints();
-        Player::respawning = respawning;
+        Player::respawning = input_respawning;
 }

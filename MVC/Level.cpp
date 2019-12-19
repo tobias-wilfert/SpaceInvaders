@@ -33,3 +33,13 @@ si::mvc::Level::Level()
         listOfEntities.push_back(s);
         listOfCollideObjects.push_back(s);
 }
+bool si::mvc::Level::is_level_complete() const
+{
+        for (const auto& ptr : listOfEntities) {
+                if (ptr->getEntityType() == entity::entityType::enemy) {
+                        return false;
+                }
+        }
+
+        return true;
+}

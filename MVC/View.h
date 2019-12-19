@@ -29,6 +29,8 @@ namespace mvc {
 class View
 {
 public:
+        View();
+
         View(std::shared_ptr<Model> model, std::shared_ptr<singleton::Transformation> transformation);
 
         /**
@@ -44,9 +46,16 @@ public:
         void displayTitleScreen(sf::RenderWindow& window) const;
 
         /**
-         *
+         \n Displays the Game Over Screen
+         \n @param window The sfml window the users sees and interacts with
          */
         void displayGameOverScreen(sf::RenderWindow& window) const;
+
+        /**
+         \n  Displays the Game Won Screen
+         \n @param window The sfml window the users sees and interacts with
+         */
+        void displayWonScreen(sf::RenderWindow& window) const;
 
 private:
         // --- Data members ---
