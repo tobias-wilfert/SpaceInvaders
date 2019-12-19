@@ -16,7 +16,7 @@ namespace si {
 namespace entity {
 
 /**
- * Class for the sky and the ground that should not die when hit by a bullet
+ * Class for the sky and the ground that should not die when hit by a bullet but still kill the bullet
  */
 class Immortal : public CollideObject
 {
@@ -37,8 +37,8 @@ public:
         void collide(unsigned int damage) override;
 
         /**
-         * Override of getEntityType() from Entity
-         * @return The entity type of this entity
+         \n Override of getEntityType() from Entity
+         \n @return The entity type of this entity
          */
         entityType getEntityType() const override;
 

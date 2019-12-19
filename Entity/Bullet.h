@@ -31,17 +31,19 @@ enum bulletType
 class Bullet : public MoveObject
 {
 public:
-        // TODO: Add features
         Bullet(const Size& size, const Position& position, unsigned int attack_points, collideObjectType type,
-               int health_points, const MovePattern& move_pattern, bulletType bullet_type);
+               int health_points, const MovePattern& move_pattern, bulletType bullet_type, colourType colour_type);
 
         /**
-         * Override of getEntityType() from Entity
-         * @return The entity type of this entity
+         \n Override of getEntityType() from Entity
+         \n @return The entity type of this entity
          */
         entityType getEntityType() const override;
 
-        // TODO: Document
+        /**
+         \n Returns the type of the bullet
+         \n @return bulletType representing the type of the bullet
+         */
         bulletType get_bullet_type() const;
 
 private:
@@ -50,6 +52,9 @@ private:
 
         /// The type of the bullet
         bulletType bullet_type;
+
+        /// The color of the bullet
+        colourType colour_type;
 };
 
 } // namespace entity

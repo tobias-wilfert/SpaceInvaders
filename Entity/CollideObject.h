@@ -16,9 +16,8 @@ namespace si {
 namespace entity {
 
 /**
- \n CollideObjects are either friendly or hostile
+ \n CollideObjects are either friendly, hostile or passive
  \n This allows that entity can ignore objects with the same type saving time when checking for collision
- \n As one Alien can't shoot another
  */
 enum collideObjectType
 {
@@ -96,7 +95,6 @@ private:
  */
 bool collided(const CollideObject& co1, const CollideObject& co2);
 
-// TODO: Replace with smart pointer
 /**
  \n Checks that:
  \n 1.) co1 and co2 are both not destroyed
@@ -109,7 +107,7 @@ bool collided(const CollideObject& co1, const CollideObject& co2);
  \n @param co1 pointer to the first collideObject
  \n @param co2 pointer to the second collideObject
  */
-void checkCollision(std::shared_ptr<CollideObject> co1, std::shared_ptr<CollideObject> co2);
+void checkCollision(const std::shared_ptr<CollideObject>& co1, const std::shared_ptr<CollideObject>& co2);
 
 } // namespace entity
 } // namespace si

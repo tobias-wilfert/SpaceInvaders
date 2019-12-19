@@ -16,8 +16,8 @@ namespace si {
 namespace entity {
 
 /**
- * All collide objects that have hp(can die / take damage on collision)
- * -> Player, Enemies, Shields
+ \n All collide objects that have hp(can die / take damage on collision)
+ \n -> Player, Enemies, Shields
  */
 class Mortal : public CollideObject
 {
@@ -44,9 +44,18 @@ public:
          */
         int get_health_points() const;
 
+        /**
+         * Returns the initial health of the entity (Important for % health remaining)
+         * @return initialHealthPoints
+         */
+        int get_initial_health_points() const;
+
 private:
         /// The HP of the Entity
         int healthPoints;
+
+        /// The HP the entity started of with
+        int initialHealthPoints;
 };
 
 } // namespace entity

@@ -25,19 +25,15 @@ public:
                int health_points);
 
         /**
-         * Override of getEntityType() from Entity
-         * @return The entity type of this entity
+         \n Override of getEntityType() from Entity
+         \n @return The entity type of this entity
          */
         entityType getEntityType() const override;
-
-        int get_initial_health() const;
 
 private:
         /// The type of the entity
         entityType entity_type{entityType::shield};
 
-        /// The initialHealth of the shield
-        int initialHealth;
 };
 
 } // namespace entity

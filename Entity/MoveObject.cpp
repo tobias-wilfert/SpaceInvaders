@@ -17,10 +17,9 @@ si::entity::MoveObject::MoveObject(const si::entity::Size& size, const si::entit
 void si::entity::MoveObject::move()
 {
         // Check if it is time to move
-        if (move_pattern.cyclesSinceLastStep >= move_pattern.moveFrequency){
+        if (move_pattern.cyclesSinceLastStep >= move_pattern.moveFrequency) {
                 // Move
                 takeStep();
-
                 // Set the cycle count to 0
                 move_pattern.cyclesSinceLastStep = 0;
         }
@@ -31,7 +30,7 @@ void si::entity::MoveObject::move()
 
 void si::entity::MoveObject::takeStep()
 {
-        switch(move_pattern.pattern[move_pattern.patternIndex]){
+        switch (move_pattern.pattern[move_pattern.patternIndex]) {
         case 'U':
                 position.y += move_pattern.stepSize;
                 break;
@@ -50,7 +49,7 @@ void si::entity::MoveObject::takeStep()
         ++move_pattern.patternIndex;
 
         // If there is no next step jump to the start
-        if (move_pattern.patternIndex >= move_pattern.pattern.size()){
+        if (move_pattern.patternIndex >= move_pattern.pattern.size()) {
                 move_pattern.patternIndex = 0;
         }
 }

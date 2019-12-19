@@ -14,9 +14,10 @@ namespace si {
 
 /// Namespace of the Entity hierarchy
 namespace entity {
+
 /**
- * Base class of all items in the game
- * As all have a Position and Size
+ \n Base class of all items in the game
+ \n As all have a Position and Size
  */
 class Entity
 {

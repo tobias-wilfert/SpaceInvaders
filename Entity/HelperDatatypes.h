@@ -15,8 +15,9 @@ namespace si {
 
 /// Namespace of the Entity hierarchy
 namespace entity {
+
 /**
- * Types of leaves in the Class hierarchy
+ * Types of leaves in the Class hierarchy (All types that are not abstract)
  */
 enum entityType
 {

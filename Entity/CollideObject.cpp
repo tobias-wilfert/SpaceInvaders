@@ -46,14 +46,12 @@ bool si::entity::collided(const si::entity::CollideObject& co1, const si::entity
                 return true;
         }
 }
-void si::entity::checkCollision(std::shared_ptr<CollideObject> co1, std::shared_ptr<CollideObject> co2)
+void si::entity::checkCollision(const std::shared_ptr<CollideObject>& co1, const std::shared_ptr<CollideObject>& co2)
 {
-        // TODO: Check different type
+        // Check that the types are not the same
         if (co1->get_type() == co2->get_type()){
                 return;
         }
-
-
 
         // Check that both objects are not jet destroyed
         if (co1->is_destroyed() or co2->is_destroyed()) {

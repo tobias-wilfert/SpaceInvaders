@@ -36,19 +36,33 @@ public:
               int health_points, const MovePattern& move_pattern, enemyType enemy_type, colourType colour);
 
         /**
-         * Override of getEntityType() from Entity
-         * @return The entity type of this entity
+         \n Override of getEntityType() from Entity
+         \n @return The entity type of this entity
          */
         entityType getEntityType() const override;
 
-        // TODO:: Document
-
+        /**
+         \n Get the type of the enemy
+         \n @return enemyType representing the type of the alien
+         */
         enemyType get_enemy_type() const;
 
+        /**
+         \n Get the colour of the player
+         \n @return colourType representing the color of the alien
+         */
         colourType get_colour() const;
 
+        /**
+         \n Get the state the enemy is in
+         \n @return bool representing state 1 or 0
+         */
         bool is_state() const;
 
+        /**
+         \n Set the state the enemy is in
+         \n @param inputState the stat th enemy should be set to
+         */
         void set_state(bool inputState);
 
 private:

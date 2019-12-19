@@ -24,10 +24,6 @@ stdexcept
 Entity.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.h
 
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Counter.cpp
-Counter.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Counter.h
-
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Counter.h
 Entity.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.h
@@ -40,15 +36,7 @@ Enemy.h
 MoveObject.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/MoveObject.h
 
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.cpp
-Entity.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.h
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.h
-HelperDatatypes.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.h
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.cpp
 HelperDatatypes.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.h
 
@@ -207,10 +195,6 @@ iostream
 -
 SFML/Graphics.hpp
 -
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Stopwatch.cpp
-Stopwatch.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Stopwatch.h
 
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Stopwatch.h
 chrono
