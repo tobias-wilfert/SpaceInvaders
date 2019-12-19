@@ -5,7 +5,6 @@
 //============================================================================
 
 #include "CollideObject.h"
-#include <stdexcept>
 
 si::entity::CollideObject::CollideObject(const si::entity::Size& size, const si::entity::Position& position,
                                          unsigned int attack_points, si::entity::collideObjectType type)

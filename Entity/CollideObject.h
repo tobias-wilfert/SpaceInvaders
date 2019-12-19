@@ -8,6 +8,8 @@
 #define SPACEINVADERS_COLLIDEOBJECT_H
 
 #include "Entity.h"
+#include <memory>
+#include <stdexcept>
 
 /// Namespace of SpaceInvaders
 namespace si {
