@@ -44,6 +44,12 @@ public:
          */
         void set_level(const Level& level);
 
+        /**
+         * Returns true if the game is over else false
+         * @return gameOver
+         */
+        bool is_game_over() const;
+
 private:
         /// Make View friend of Model
         friend class View;
@@ -85,6 +91,9 @@ private:
          \n Also all non level depend entities so that view only needs to look at one place
          */
         Level level;
+
+        /// Indicates if the game should be ended
+        bool gameOver{false};
 };
 
 } // namespace mvc

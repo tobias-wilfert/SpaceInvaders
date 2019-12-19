@@ -20,6 +20,9 @@
 #include "Singleton/Stopwatch.h"
 #include "Singleton/Transformation.h"
 
+
+// TODO Match Types to reduce warnings in code inspect
+
 /// Namespace of SpaceInvaders
 namespace si {
 

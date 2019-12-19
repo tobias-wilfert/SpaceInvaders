@@ -43,6 +43,11 @@ public:
          */
         void displayTitleScreen(sf::RenderWindow& window) const;
 
+        /**
+         *
+         */
+        void displayGameOverScreen(sf::RenderWindow& window) const;
+
 private:
         // --- Data members ---
 
@@ -59,7 +64,7 @@ private:
         sf::Font font;
 
         /// Texture of the Player
-        sf::Texture playerTexture;
+        std::array<sf::Texture, 2> playerTexture;
 
         /// Textures of the Aliens
         std::array<sf::Texture, 2> alienA;

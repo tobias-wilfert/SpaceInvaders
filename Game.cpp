@@ -50,6 +50,11 @@ void si::Game::execute()
 
                 // View should be updated every frame
                 view.display(window);
+
+                while (modelPointer->is_game_over()){
+                        view.displayGameOverScreen(window);
+                        controller.handleGameOverScreenInput(window);
+                }
         }
 }
 

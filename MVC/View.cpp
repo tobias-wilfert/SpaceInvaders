@@ -9,7 +9,6 @@
 si::mvc::View::View(std::shared_ptr<Model> model, std::shared_ptr<singleton::Transformation> transformation)
     : model(std::move(model)), transformation(std::move(transformation))
 {
-        // TODO: Push once without all the load from File to check that it works
         initializerResources();
 }
 
@@ -24,7 +23,8 @@ void si::mvc::View::initializerResources()
 
                 // Load the Textures that will be used
                 // PLayer
-                playerTexture = loadFromFile("../resources/img/player.png");
+                playerTexture = std::array<sf::Texture, 2>{loadFromFile("../resources/img/player.png"),
+                                                           loadFromFile("../resources/img/player-dead.png")};
 
                 // Alien A
                 alienA = std::array<sf::Texture, 2>{loadFromFile("../resources/img/alien-a1.png"),
@@ -132,7 +132,7 @@ void si::mvc::View::drawCounter(const std::shared_ptr<si::entity::Counter>& coun
 
                 // Draw the player icon to indicate life
                 sf::RectangleShape lifeIndicator;
-                lifeIndicator.setTexture(&playerTexture);
+                lifeIndicator.setTexture(&playerTexture[0]);
                 lifeIndicator.setSize(
                     sf::Vector2f(transformation->convertWidth(0.35), transformation->convertHeight(0.22)));
 
@@ -163,7 +163,7 @@ void si::mvc::View::drawCounter(const std::shared_ptr<si::entity::Counter>& coun
 void si::mvc::View::drawPlayer(const std::shared_ptr<si::entity::Player>& player, sf::RenderWindow& window) const
 {
         sf::RectangleShape playerRect = entityToRectangle(player);
-        playerRect.setTexture(&playerTexture);
+        playerRect.setTexture(&playerTexture[player->is_respawning()]);
         window.draw(playerRect);
 }
 
@@ -282,3 +282,20 @@ sf::Color si::mvc::View::gameColourToSFMLColour(const si::entity::colourType col
         }
         return c;
 }
+void si::mvc::View::displayGameOverScreen(sf::RenderWindow& window) const
+{
+        // TODO: Add extra info the title screen
+        sf::Text title("Game Over", font, 30);
+        sf::Rect<float> size = title.getGlobalBounds();
+        title.setPosition(window.getSize().x / 2.f - size.width / 2.f, window.getSize().y / 2.f - size.height / 2.f);
+
+        sf::Text score("Your Score: " + std::to_string(model->scoreCounter->get_value()), font, 20);
+        sf::Rect<float> size1 = score.getGlobalBounds();
+        score.setPosition(window.getSize().x / 2.f - size1.width / 2.f, window.getSize().y /2.f + 50);
+
+        window.clear();
+        window.draw(title);
+        window.draw(score);
+        window.display();
+}
+

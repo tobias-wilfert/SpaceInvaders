@@ -30,9 +30,24 @@ public:
          */
         entityType getEntityType() const override;
 
+        /**
+         * Get the value of respawning
+         * @return respawning
+         */
+        bool is_respawning() const;
+
+        /**
+         * Set the value of respawning
+         * @param respawning The value that respawning will be se to
+         */
+        void set_respawning(bool respawning);
+
 private:
         /// The type of the entity
         entityType entity_type{entityType::player};
+
+        /// True if the player is currently respawning (can't move or shoot)
+        bool respawning{false};
 };
 
 } // namespace entity

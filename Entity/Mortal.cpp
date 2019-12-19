@@ -20,3 +20,5 @@ bool si::entity::Mortal::isDead() const { return healthPoints <= 0; }
 void si::entity::Mortal::collide(unsigned int damage) { healthPoints -= damage; }
 
 int si::entity::Mortal::get_initial_health_points() const { return initialHealthPoints; }
+
+void si::entity::Mortal::resetHealthPoints() {healthPoints = initialHealthPoints; }

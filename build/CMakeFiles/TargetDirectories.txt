@@ -1,0 +1,7 @@
+/Users/tobiaswilfert/Desktop/SpaceInvaders/build/CMakeFiles/install/local.dir
+/Users/tobiaswilfert/Desktop/SpaceInvaders/build/CMakeFiles/install/strip.dir
+/Users/tobiaswilfert/Desktop/SpaceInvaders/build/CMakeFiles/install.dir
+/Users/tobiaswilfert/Desktop/SpaceInvaders/build/CMakeFiles/list_install_components.dir
+/Users/tobiaswilfert/Desktop/SpaceInvaders/build/CMakeFiles/rebuild_cache.dir
+/Users/tobiaswilfert/Desktop/SpaceInvaders/build/CMakeFiles/edit_cache.dir
+/Users/tobiaswilfert/Desktop/SpaceInvaders/build/CMakeFiles/SpaceInvaders.dir

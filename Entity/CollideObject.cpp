@@ -58,7 +58,7 @@ void si::entity::checkCollision(const std::shared_ptr<CollideObject>& co1, const
         }
 
         if (co1->isDead() or co2->isDead()) {
-                throw std::logic_error("Object should not be dead and not yet destroyed");
+                return;
         }
 
         // Check if they collide

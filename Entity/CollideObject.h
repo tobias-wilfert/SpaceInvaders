@@ -104,8 +104,6 @@ bool collided(const CollideObject& co1, const CollideObject& co2);
  \n 3.) co1 and co2 collided
  \n If yes, the 2 objects collided decreasing each others HealthPoint with there AttackPoints
  \n If one of the objects is now dead set it to destroyed
- \n @pre co1 and co2 need to be both dead and destroyed or neither
- \n @throws logic_error("Object should not be dead and not yet destroyed")
  \n @param co1 pointer to the first collideObject
  \n @param co2 pointer to the second collideObject
  */

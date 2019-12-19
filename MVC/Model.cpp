@@ -58,3 +58,5 @@ void si::mvc::Model::set_level(const Level& inputLevel)
         level.listOfCollideObjects.push_back(earth);
         level.listOfCollideObjects.push_back(player);
 }
+
+bool si::mvc::Model::is_game_over() const { return gameOver; }

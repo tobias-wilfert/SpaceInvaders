@@ -6,17 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Bullet.cpp
-Bullet.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Bullet.h
-
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Bullet.h
 MoveObject.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/MoveObject.h
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/CollideObject.cpp
-CollideObject.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/CollideObject.h
 
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/CollideObject.h
 Entity.h
@@ -26,31 +18,15 @@ memory
 stdexcept
 -
 
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Counter.cpp
-Counter.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Counter.h
-
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Counter.h
 Entity.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.h
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Enemy.cpp
-Enemy.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Enemy.h
 
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Enemy.h
 MoveObject.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/MoveObject.h
 
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.cpp
-Entity.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.h
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.h
-HelperDatatypes.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.h
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.cpp
 HelperDatatypes.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.h
 
@@ -60,69 +36,25 @@ string
 utility
 -
 
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Immortal.cpp
-Immortal.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Immortal.h
-
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Immortal.h
 CollideObject.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/CollideObject.h
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.cpp
-Mortal.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.h
 
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.h
 CollideObject.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/CollideObject.h
 
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/MoveObject.cpp
-MoveObject.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/MoveObject.h
-
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/MoveObject.h
 Mortal.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.h
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Player.cpp
-Player.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Player.h
 
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Player.h
 Mortal.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.h
 
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Shield.cpp
-Shield.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Shield.h
-
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Shield.h
 Mortal.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.h
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Game.cpp
-Game.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Game.h
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Game.h
-SFML/Graphics.hpp
--
-iostream
--
-memory
--
-MVC/Controller.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Controller.h
-MVC/Level.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Level.h
-MVC/Model.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.h
-MVC/View.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/View.h
-Singleton/Stopwatch.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Stopwatch.h
-Singleton/Transformation.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Transformation.h
 
 /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Controller.cpp
 Controller.h
@@ -142,10 +74,6 @@ memory
 utility
 -
 
-/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Level.cpp
-Level.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Level.h
-
 /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Level.h
 ../Entity/Bullet.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Bullet.h
@@ -163,10 +91,6 @@ memory
 -
 string
 -
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.cpp
-Model.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.h
 
 /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.h
 memory
@@ -186,47 +110,9 @@ memory
 Level.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Level.h
 
-/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/View.cpp
-View.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/View.h
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/View.h
-../Singleton/Transformation.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Transformation.h
-Model.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.h
-SFML/Graphics.hpp
--
-array
--
-iostream
--
-memory
--
-string
--
-utility
--
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Stopwatch.cpp
-Stopwatch.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Stopwatch.h
-
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Stopwatch.h
 chrono
 -
 memory
 -
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Transformation.cpp
-Transformation.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Transformation.h
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Transformation.h
-memory
--
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/main.cpp
-Game.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Game.h
 

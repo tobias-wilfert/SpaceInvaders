@@ -45,10 +45,15 @@ public:
         int get_health_points() const;
 
         /**
-         * Returns the initial health of the entity (Important for % health remaining)
-         * @return initialHealthPoints
+         \n Returns the initial health of the entity (Important for % health remaining)
+         \n @return initialHealthPoints
          */
         int get_initial_health_points() const;
+
+        /**
+         \n Set health points to initialHealth Points
+         */
+        void resetHealthPoints();
 
 private:
         /// The HP of the Entity

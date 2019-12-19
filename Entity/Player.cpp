@@ -13,3 +13,12 @@ si::entity::Player::Player(const si::entity::Size& size, const si::entity::Posit
 }
 
 si::entity::entityType si::entity::Player::getEntityType() const { return entity_type; }
+
+bool si::entity::Player::is_respawning() const { return respawning; }
+
+void si::entity::Player::set_respawning(bool respawning)
+{
+
+        resetHealthPoints();
+        Player::respawning = respawning;
+}

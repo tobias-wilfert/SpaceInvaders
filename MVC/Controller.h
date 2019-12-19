@@ -27,7 +27,7 @@ namespace mvc {
 class Controller
 {
 public:
-        Controller(float cycles_per_second, std::shared_ptr<Model>  model);
+        Controller(float cycles_per_second, std::shared_ptr<Model> model);
 
         /**
          \n Main Function of the controller
@@ -48,6 +48,12 @@ public:
          */
         void updateModel();
 
+        /**
+         *
+         * @param window
+         */
+        void handleGameOverScreenInput(sf::RenderWindow& window) const;
+
 private:
         /// The number of logic cycles per second the game should make
         float cyclesPerSecond;
@@ -59,12 +65,26 @@ private:
         int updateCycles{0};
 
         /**
-         *
-         * @param origin
-         * @param bullet_type
+         \n
+         \n @param origin
+         \n @param bullet_type
          */
-        // TODO:: Give extra parameteres
-        void shoot(entity::Position origin, entity::bulletType bullet_type, bool fromPlayer) const;
+        void shoot(entity::Position origin, entity::Size size, unsigned int attack, int health, entity::bulletType bullet_type,
+                   entity::MovePattern move_pattern, entity::colourType colour_type, bool fromPlayer) const;
+
+        /**
+         \n
+         \n @param bullet
+         */
+        void addBulletToGame(entity::Bullet bullet) const;
+
+        /**
+         \n
+         \n @param window
+         */
+        void handelEvent(sf::RenderWindow& window) const;
+
+        void checkPlayer() const;
 };
 
 } // namespace mvc
