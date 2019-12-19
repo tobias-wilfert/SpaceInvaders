@@ -86,7 +86,7 @@ struct Rectangle
 struct MovePattern
 {
 
-        MovePattern(std::string  pattern, float step_size, float move_frequency);
+        MovePattern(std::string pattern, float step_size, float move_frequency);
 
         /// The pattern with char: U,D,L,R,N representing up, down, left, right and None respectively
         std::string pattern;
@@ -98,7 +98,6 @@ struct MovePattern
         unsigned int patternIndex{0};
         /// Cycles since last step was taken
         unsigned int cyclesSinceLastStep{1};
-
 };
 
 } // namespace entity

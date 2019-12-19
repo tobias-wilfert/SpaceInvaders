@@ -33,7 +33,6 @@ public:
 private:
         /// The type of the entity
         entityType entity_type{entityType::shield};
-
 };
 
 } // namespace entity

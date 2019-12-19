@@ -14,13 +14,14 @@ void si::Game::execute()
         // Initialize the game
         initialize();
 
-        //Model View and Controller constructor
-        mvc::Level level{};
+        // Model View and Controller constructor
+        // TODO: Parse input file for Level with Parser
         mvc::Model model{};
+        mvc::Level level{};
         model.set_level(level);
         std::shared_ptr<mvc::Model> modelPointer = std::make_shared<mvc::Model>(model);
         mvc::View view{modelPointer, transformation};
-        mvc::Controller controller{cyclesPerSecond,modelPointer};
+        mvc::Controller controller{cyclesPerSecond, modelPointer};
 
         // Create the window
         sf::RenderWindow window(sf::VideoMode(transformation->get_width(), transformation->get_height()),
@@ -37,7 +38,7 @@ void si::Game::execute()
                 }
 
                 // Update every X Second
-                if (stopwatch->getElapsedTime() >= 1.f/cyclesPerSecond) {
+                if (stopwatch->getElapsedTime() >= 1.f / cyclesPerSecond) {
 
                         // Update the model and handle input
                         controller.updateModel();

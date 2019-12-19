@@ -46,6 +46,12 @@ public:
          */
         bulletType get_bullet_type() const;
 
+        /**
+         \n Returns the colour of the bullet
+         \n @return colour_type
+         */
+        colourType get_colour_type() const;
+
 private:
         /// The type of the entity
         entityType entity_type{entityType::bullet};

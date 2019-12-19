@@ -10,14 +10,13 @@
 // Sadly needed here to handle the window
 // Model should never know about this, view and control very much need this
 #include <SFML/Graphics.hpp>
-
 #include <iostream>
 #include <memory>
 
-#include "MVC/View.h"
+#include "MVC/Controller.h"
 #include "MVC/Level.h"
 #include "MVC/Model.h"
-#include "MVC/Controller.h"
+#include "MVC/View.h"
 #include "Singleton/Stopwatch.h"
 #include "Singleton/Transformation.h"
 

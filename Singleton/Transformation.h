@@ -93,13 +93,13 @@ public:
         float convertHeight(float height) const;
 
 private:
-        // The width of the Application Window
+        /// The width of the Application Window
         int windowWidth;
 
-        // The height of the Application Window
+        /// The height of the Application Window
         int windowHeight;
 
-        // Smart pointer to an instance of Transformation that is shared by all instances of Transformation
+        /// Smart pointer to an instance of Transformation that is shared by all instances of Transformation
         static std::shared_ptr<Transformation> instance;
 
         /**

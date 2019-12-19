@@ -9,13 +9,13 @@
 
 #include <memory>
 
-#include "Level.h"
-#include "../Entity/Enemy.h"
 #include "../Entity/Bullet.h"
-#include "../Entity/Shield.h"
-#include "../Entity/Player.h"
 #include "../Entity/Counter.h"
+#include "../Entity/Enemy.h"
 #include "../Entity/Immortal.h"
+#include "../Entity/Player.h"
+#include "../Entity/Shield.h"
+#include "Level.h"
 
 /// Namespace of SpaceInvaders
 namespace si {
@@ -58,9 +58,9 @@ private:
 
         // --- Entities that are level independent ---
         /**
-         * Pointer to the Player
-         * Fast and easy access for Controller
-         * Pointer so that it can all so be in the list of entities that can be hit
+         \n Pointer to the Player
+         \n Fast and easy access for Controller
+         \n Pointer so that it can all so be in the list of entities that can be hit
          */
         std::shared_ptr<si::entity::Player> player;
 
@@ -80,14 +80,12 @@ private:
         std::shared_ptr<si::entity::Counter> coolDownCounter;
 
         /**
-         * The level the Model is currently at
-         * Contains all the bullets, aliens and shields
-         * Also all non level depend entities so that view only needs to look at one place
+         \n The level the Model is currently at
+         \n Contains all the bullets, aliens and shields
+         \n Also all non level depend entities so that view only needs to look at one place
          */
         Level level;
-
 };
-
 
 } // namespace mvc
 } // namespace si

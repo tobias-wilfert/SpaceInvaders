@@ -7,15 +7,15 @@
 #ifndef SPACEINVADERS_VIEW_H
 #define SPACEINVADERS_VIEW_H
 
-#include "Model.h"
 #include "../Singleton/Transformation.h"
+#include "Model.h"
 
+#include <SFML/Graphics.hpp>
 #include <array>
+#include <iostream>
 #include <memory>
 #include <string>
 #include <utility>
-#include <iostream>
-#include <SFML/Graphics.hpp>
 
 /// Namespace of SpaceInvaders
 namespace si {
@@ -62,16 +62,16 @@ private:
         sf::Texture playerTexture;
 
         /// Textures of the Aliens
-        std::array<sf::Texture,2> alienA;
-        std::array<sf::Texture,2> alienB;
-        std::array<sf::Texture,2> alienC;
-        std::array<sf::Texture,2> alienM;
+        std::array<sf::Texture, 2> alienA;
+        std::array<sf::Texture, 2> alienB;
+        std::array<sf::Texture, 2> alienC;
+        std::array<sf::Texture, 2> alienM;
 
         /// Textures of the Bullets
-        std::array<sf::Texture,3> bullets;
+        std::array<sf::Texture, 3> bullets;
 
         /// Textures of the Shields
-        std::array<sf::Texture,4> shields;
+        std::array<sf::Texture, 4> shields;
 
         // --- Functions ---
 
@@ -87,7 +87,7 @@ private:
          \n @param path The path to the file that should contain the Texture
          \n @return The texture that file contained
          */
-        sf::Texture loadFromFile(std::string path) const;
+        sf::Texture loadFromFile(const std::string& path) const;
 
         /**
          \n Finds out what derived class entity is an entity of,
@@ -112,32 +112,32 @@ private:
         void drawPlayer(const std::shared_ptr<si::entity::Player>& player, sf::RenderWindow& window) const;
 
         /**
-         *
-         * @param player
-         * @param window
+         \n Draws an instance of Enemy to the Window
+         \n @param player The Enemy that should be drawn
+         \n @param window The window the users sees
          */
         void drawEnemy(const std::shared_ptr<si::entity::Enemy>& enemy, sf::RenderWindow& window) const;
 
         /**
-         *
-         * @param shield
-         * @param window
+         \n Draws an instance of Shield to the Window
+         \n @param shield The shield that should be drawn
+         \n @param window The window the users sees
          */
         void drawShield(const std::shared_ptr<si::entity::Shield>& shield, sf::RenderWindow& window) const;
 
         /**
-         *
-         * @param shield
-         * @param window
+         \n Draws an instance of Bullet to the Window
+         \n @param bullet The bullet that should be drawn
+         \n @param window The window the users sees
          */
         void drawBullet(const std::shared_ptr<si::entity::Bullet>& bullet, sf::RenderWindow& window) const;
 
         /**
-         *
-         * @param colour
-         * @return
+         \n Converts game colour to a colour sfml can work with
+         \n @param colour The game colour that should be converted
+         \n @return A sf::Color representation of colour
          */
-        sf::Color gameColourToSFMLColour(const entity::colourType colour) const;
+        sf::Color gameColourToSFMLColour(entity::colourType colour) const;
 
         /**
          \n Creates a RectangleShape representing entity

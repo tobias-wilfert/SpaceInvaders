@@ -8,9 +8,10 @@
 #define SPACEINVADERS_LEVEL_H
 
 #include "../Entity/Bullet.h"
-#include "../Entity/Enemy.h"
-#include "../Entity/Counter.h"
 #include "../Entity/CollideObject.h"
+#include "../Entity/Counter.h"
+#include "../Entity/Enemy.h"
+#include "../Entity/Shield.h"
 
 #include <deque>
 #include <memory>
@@ -29,7 +30,7 @@ namespace mvc {
  */
 class Level
 {
-public: // TODO: Before something can happen here I need a polymorphic class hierarchies for all the thing to add in
+public:
         Level();
 
 private:
@@ -48,7 +49,6 @@ private:
 
         /// List of all the bullets
         std::deque<std::shared_ptr<entity::Bullet>> listOfBullets;
-
 };
 } // namespace mvc
 } // namespace si

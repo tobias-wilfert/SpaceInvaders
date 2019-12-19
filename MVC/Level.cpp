@@ -5,10 +5,10 @@
 //============================================================================
 
 #include "Level.h"
-#include "../Entity/Shield.h"
 
 si::mvc::Level::Level()
 {
+        // TODO: Replace this when parser is ready
         entity::Size size{0.16, 0.16};
         entity::MovePattern move_pattern{"LLDRRD", 0.25, 120};
 
@@ -25,10 +25,11 @@ si::mvc::Level::Level()
                 }
         }
 
-        entity::Size size1{0.44,0.32};
-        entity::Position position1{-1,-3};
+        entity::Size size1{0.44, 0.32};
+        entity::Position position1{-1, -3};
 
-        std::shared_ptr<entity::Shield> s = std::make_shared<entity::Shield>(entity::Shield{size1,position1,1,entity::collideObjectType::passive,4});
+        std::shared_ptr<entity::Shield> s = std::make_shared<entity::Shield>(
+            entity::Shield{size1, position1, 1, entity::collideObjectType::passive, 4});
         listOfEntities.push_back(s);
         listOfCollideObjects.push_back(s);
 }

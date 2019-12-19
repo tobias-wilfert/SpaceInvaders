@@ -49,7 +49,7 @@ bool si::entity::collided(const si::entity::CollideObject& co1, const si::entity
 void si::entity::checkCollision(const std::shared_ptr<CollideObject>& co1, const std::shared_ptr<CollideObject>& co2)
 {
         // Check that the types are not the same
-        if (co1->get_type() == co2->get_type()){
+        if (co1->get_type() == co2->get_type()) {
                 return;
         }
 

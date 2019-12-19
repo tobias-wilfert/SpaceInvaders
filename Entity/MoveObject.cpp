@@ -7,12 +7,11 @@
 #include "MoveObject.h"
 
 si::entity::MoveObject::MoveObject(const si::entity::Size& size, const si::entity::Position& position,
-    unsigned int attack_points, si::entity::collideObjectType type, int health_points,
-    si::entity::MovePattern  move_pattern)
+                                   unsigned int attack_points, si::entity::collideObjectType type, int health_points,
+                                   si::entity::MovePattern move_pattern)
     : Mortal(size, position, attack_points, type, health_points), move_pattern(std::move(move_pattern))
 {
 }
-
 
 void si::entity::MoveObject::move()
 {
@@ -42,6 +41,8 @@ void si::entity::MoveObject::takeStep()
                 break;
         case 'R':
                 position.x += move_pattern.stepSize;
+                break;
+        default:
                 break;
         }
 

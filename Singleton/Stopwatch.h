@@ -48,13 +48,13 @@ public:
         float getElapsedTime() const;
 
 private:
-        // Smart pointer to an instance of Stopwatch that is shared by all instances of Stopwatch
+        /// Smart pointer to an instance of Stopwatch that is shared by all instances of Stopwatch
         static std::shared_ptr<Stopwatch> instance;
 
-        // The number of Clock ticks the program was at during the last restart/construction
+        /// The number of Clock ticks the program was at during the last restart/construction
         std::chrono::time_point<std::chrono::high_resolution_clock> start;
 
-        // Private constructor causing only 1 instance ot Stopwatch to be allowed
+        /// Private constructor causing only 1 instance ot Stopwatch to be allowed
         Stopwatch();
 };
 } // namespace singleton

@@ -77,7 +77,6 @@ private:
 
         /// Color of the enemy
         colourType colour;
-
 };
 
 } // namespace entity

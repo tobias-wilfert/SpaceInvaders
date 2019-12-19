@@ -40,7 +40,7 @@ private:
         MovePattern move_pattern;
 };
 
-}
-}
+} // namespace entity
+} // namespace si
 
 #endif // SPACEINVADERS_MOVEOBJECT_H

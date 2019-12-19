@@ -9,8 +9,8 @@
 si::mvc::View::View(std::shared_ptr<Model> model, std::shared_ptr<singleton::Transformation> transformation)
     : model(std::move(model)), transformation(std::move(transformation))
 {
-        // TODO Handel error and if needed Destruct View
-        initializerResources();
+        // TODO: Push once without all the load from File to check that it works
+        //initializerResources();
 }
 
 void si::mvc::View::initializerResources()
@@ -48,10 +48,9 @@ void si::mvc::View::initializerResources()
                                                      loadFromFile("../resources/img/bullet-down.png")};
 
                 // Shields
-                shields = std::array<sf::Texture, 4>{loadFromFile("../resources/img/shield-100.png"),
-                                                     loadFromFile("../resources/img/shield-75.png"),
-                                                     loadFromFile("../resources/img/shield-50.png"),
-                                                     loadFromFile("../resources/img/shield-25.png")};
+                shields = std::array<sf::Texture, 4>{
+                    loadFromFile("../resources/img/shield-100.png"), loadFromFile("../resources/img/shield-75.png"),
+                    loadFromFile("../resources/img/shield-50.png"), loadFromFile("../resources/img/shield-25.png")};
 
         } catch (const std::exception& e) {
                 std::cerr << "Failed to load resources need for SpaceInvders" << std::endl;
@@ -60,11 +59,11 @@ void si::mvc::View::initializerResources()
         }
 }
 
-sf::Texture si::mvc::View::loadFromFile(std::string path) const
+sf::Texture si::mvc::View::loadFromFile(const std::string& path) const
 {
         sf::Texture texture;
         if (!texture.loadFromFile(path)) {
-                throw std::runtime_error("Failed to allocate resources at: "+path);
+                throw std::runtime_error("Failed to allocate resources at: " + path);
         }
 
         return texture;
@@ -99,7 +98,7 @@ void si::mvc::View::drawEntity(const std::shared_ptr<si::entity::Entity>& entity
                 drawPlayer(std::dynamic_pointer_cast<si::entity::Player>(entity), window);
                 break;
         case entity::entityType::shield:
-                drawShield(std::dynamic_pointer_cast<si::entity::Shield>(entity),window);
+                drawShield(std::dynamic_pointer_cast<si::entity::Shield>(entity), window);
                 break;
         case entity::entityType::enemy:
                 drawEnemy(std::dynamic_pointer_cast<si::entity::Enemy>(entity), window);
@@ -170,18 +169,17 @@ void si::mvc::View::drawEnemy(const std::shared_ptr<si::entity::Enemy>& enemy, s
 {
         sf::RectangleShape enemyRect = entityToRectangle(enemy);
 
-
-        switch (enemy->get_enemy_type()){
-        case entity::enemyType::a :
+        switch (enemy->get_enemy_type()) {
+        case entity::enemyType::a:
                 enemyRect.setTexture(&alienA[enemy->is_state()]);
                 break;
-        case entity::enemyType::b :
+        case entity::enemyType::b:
                 enemyRect.setTexture(&alienB[enemy->is_state()]);
                 break;
-        case entity::enemyType::c :
+        case entity::enemyType::c:
                 enemyRect.setTexture(&alienC[enemy->is_state()]);
                 break;
-        case entity::enemyType::m :
+        case entity::enemyType::m:
                 enemyRect.setTexture(&alienM[enemy->is_state()]);
                 break;
         }
@@ -195,7 +193,7 @@ void si::mvc::View::drawShield(const std::shared_ptr<si::entity::Shield>& shield
         sf::RectangleShape shieldRect = entityToRectangle(shield);
 
         float relativeHealth =
-            static_cast<float>(shield->get_health_points()) / static_cast<float>(shield->get_initial_health());
+            static_cast<float>(shield->get_health_points()) / static_cast<float>(shield->get_initial_health_points());
 
         if (relativeHealth > 0.75) {
                 shieldRect.setTexture(&shields[0]);
@@ -214,19 +212,19 @@ void si::mvc::View::drawBullet(const std::shared_ptr<si::entity::Bullet>& bullet
 {
         sf::RectangleShape bulletRect = entityToRectangle(bullet);
 
-        switch (bullet->get_bullet_type()){
-        case entity::bulletType::laser :
+        switch (bullet->get_bullet_type()) {
+        case entity::bulletType::laser:
                 bulletRect.setTexture(&bullets[0]);
                 break;
-        case entity::bulletType::up :
+        case entity::bulletType::up:
                 bulletRect.setTexture(&bullets[1]);
                 break;
-        case entity::bulletType::down :
+        case entity::bulletType::down:
                 bulletRect.setTexture(&bullets[2]);
                 break;
         }
-        // TODO: Maybe add Color?
 
+        bulletRect.setFillColor(gameColourToSFMLColour(bullet->get_colour_type()));
         window.draw(bulletRect);
 }
 
@@ -253,6 +251,7 @@ void si::mvc::View::displayTitleScreen(sf::RenderWindow& window) const
         window.draw(title);
         window.display();
 }
+
 sf::Color si::mvc::View::gameColourToSFMLColour(const si::entity::colourType colour) const
 {
         sf::Color c;

@@ -65,7 +65,7 @@ float si::singleton::Transformation::convertXCoordinate(float xCoordinate) const
 
 float si::singleton::Transformation::convertYCoordinate(float yCoordinate) const
 {
-        return (4.f - yCoordinate ) / 8.f * static_cast<float>(windowHeight);
+        return (4.f - yCoordinate) / 8.f * static_cast<float>(windowHeight);
 }
 
 float si::singleton::Transformation::convertWidth(float width) const

@@ -6,8 +6,6 @@
 
 #include "Game.h"
 
-// TODO: Push once without all the load from File to check that it works
-
 int main()
 {
         // Construct SpaceInvaders

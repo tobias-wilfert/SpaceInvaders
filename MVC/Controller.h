@@ -7,14 +7,13 @@
 #ifndef SPACEINVADERS_CONTROLLER_H
 #define SPACEINVADERS_CONTROLLER_H
 
-#include "Model.h"
 #include "../Singleton/Stopwatch.h"
 #include "Level.h"
+#include "Model.h"
 
-
+#include <SFML/Graphics.hpp> // To handle the inputs
 #include <memory>
 #include <utility>
-#include <SFML/Graphics.hpp> // To handle the inputs
 
 /// Namespace of SpaceInvaders
 namespace si {
@@ -28,17 +27,17 @@ namespace mvc {
 class Controller
 {
 public:
-        Controller(float cycles_per_second, const std::shared_ptr<Model>& model);
+        Controller(float cycles_per_second, std::shared_ptr<Model>  model);
 
         /**
-         * Main Function of the controller
-         * @param window The sfml window the player sees and interacts with
+         \n Main Function of the controller
+         \n @param window The sfml window the player sees and interacts with
          */
         void handleInput(sf::RenderWindow& window) const; // Could be const as we deal with pointers anyway???
 
         /**
-         * Handles the input during the titleScreen
-         * @param window The sfml window the player sees and interacts with
+         \n Handles the input during the titleScreen
+         \n @param window The sfml window the player sees and interacts with
          */
         void handleTitleScreenInput(sf::RenderWindow& window) const;
 
@@ -50,7 +49,6 @@ public:
         void updateModel();
 
 private:
-
         /// The number of logic cycles per second the game should make
         float cyclesPerSecond;
 
@@ -65,11 +63,9 @@ private:
          * @param origin
          * @param bullet_type
          */
-         // TODO:: Give extra parameteres
+        // TODO:: Give extra parameteres
         void shoot(entity::Position origin, entity::bulletType bullet_type, bool fromPlayer) const;
-
 };
-
 
 } // namespace mvc
 } // namespace si
