@@ -116,7 +116,7 @@ void si::mvc::View::drawCounter(const std::shared_ptr<si::entity::Counter>& coun
         // TODO: Adjust font to the Screen resolution
         sf::Text title;
         title.setFont(font);
-        title.setCharacterSize(30);
+        title.setCharacterSize(transformation->convertHeight(0.2));
         title.setFillColor(sf::Color::Cyan);
         title.setPosition(transformation->convertXCoordinate(counter->position.x),
                           transformation->convertYCoordinate(counter->position.y));
@@ -245,7 +245,7 @@ sf::RectangleShape si::mvc::View::entityToRectangle(const std::shared_ptr<si::en
 void si::mvc::View::displayTitleScreen(sf::RenderWindow& window) const
 {
         // TODO: Add extra info the title screen
-        sf::Text title("Space Invaders", font, 50);
+        sf::Text title("Space Invaders", font, transformation->convertHeight(0.3));
         sf::Rect<float> size = title.getGlobalBounds();
         title.setPosition(window.getSize().x / 2.f - size.width / 2.f, window.getSize().y / 2.f - size.height / 2.f);
 
@@ -285,11 +285,11 @@ sf::Color si::mvc::View::gameColourToSFMLColour(const si::entity::colourType col
 void si::mvc::View::displayGameOverScreen(sf::RenderWindow& window) const
 {
         // TODO: Add extra info the title screen
-        sf::Text title("Game Over", font, 30);
+        sf::Text title("Game Over", font, transformation->convertHeight(0.2));
         sf::Rect<float> size = title.getGlobalBounds();
         title.setPosition(window.getSize().x / 2.f - size.width / 2.f, window.getSize().y / 2.f - size.height / 2.f);
 
-        sf::Text score("Your Score: " + std::to_string(model->scoreCounter->get_value()), font, 20);
+        sf::Text score("Your Score: " + std::to_string(model->scoreCounter->get_value()), font, transformation->convertHeight(0.13));
         sf::Rect<float> size1 = score.getGlobalBounds();
         score.setPosition(window.getSize().x / 2.f - size1.width / 2.f, window.getSize().y /2.f + 50);
 

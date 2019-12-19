@@ -17,20 +17,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0e5097d6-8f54-4856-a7d8-629138d3e85b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entity/CollideObject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/CollideObject.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entity/CollideObject.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/CollideObject.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entity/Mortal.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Mortal.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entity/Mortal.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Mortal.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entity/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Player.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entity/Player.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Player.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC/Controller.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/Controller.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC/Controller.h" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/Controller.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC/Model.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/Model.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC/Model.h" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/Model.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MVC/View.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/View.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC/View.h" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/View.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/SpaceInvaders" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SpaceInvaders" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -122,7 +110,7 @@
       <workItem from="1576701849922" duration="5155000" />
       <workItem from="1576741464419" duration="4710000" />
       <workItem from="1576746802667" duration="243000" />
-      <workItem from="1576750211844" duration="10148000" />
+      <workItem from="1576750211844" duration="11050000" />
     </task>
     <servers />
   </component>
@@ -141,5 +129,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/MVC/View.cpp</url>
+          <line>247</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -65,6 +65,7 @@ void si::Game::initialize()
         height = sf::VideoMode::getDesktopMode().height * 0.75;
         width = height / 8.f * 6.f;
 
+
         // Initialize transformation and stopwatch
         stopwatch = si::singleton::Stopwatch::getInstance();
         transformation = si::singleton::Transformation::initialize(width, height);
