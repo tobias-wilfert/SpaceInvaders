@@ -15,7 +15,7 @@ si::mvc::View::View(std::shared_ptr<Model> model, std::shared_ptr<singleton::Tra
 
 void si::mvc::View::initializerResources()
 {
-        /*
+        
         try {
                 // Load the Font that will be used
                 if (!font.loadFromFile("../resources/fonts/KenPixel.ttf")) {
@@ -57,17 +57,17 @@ void si::mvc::View::initializerResources()
                 std::cerr << e.what() << std::endl;
                 exit(1);
         }
-         */
+
 }
 
 sf::Texture si::mvc::View::loadFromFile(const std::string& path) const
 {
         sf::Texture texture;
-        /*
+
         if (!texture.loadFromFile(path)) {
                 throw std::runtime_error("Failed to allocate resources at: " + path);
         }
-        */
+
         return texture;
 }
 

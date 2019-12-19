@@ -98,6 +98,10 @@ void si::mvc::Controller::updateModel()
                         castPtr->move();
                 }
         }
+        // Reset the updateCycles count
+        if (updateCycles >= cyclesPerSecond) {
+                updateCycles = 0;
+        }
 
         // TODO: Spawn bullets randomly for the aliens
 
