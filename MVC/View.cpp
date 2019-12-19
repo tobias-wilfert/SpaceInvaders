@@ -113,7 +113,6 @@ void si::mvc::View::drawEntity(const std::shared_ptr<si::entity::Entity>& entity
 
 void si::mvc::View::drawCounter(const std::shared_ptr<si::entity::Counter>& counter, sf::RenderWindow& window) const
 {
-        // TODO: Adjust font to the Screen resolution
         sf::Text title;
         title.setFont(font);
         title.setCharacterSize(transformation->convertHeight(0.2));

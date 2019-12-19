@@ -49,7 +49,7 @@ void si::mvc::Controller::handleInput(sf::RenderWindow& window) const
                         entity::MovePattern move_pattern{"P", 0.125, 15};
                         entity::Size size{0.06, 0.12};
 
-                        shoot(position,size,attack,health,entity::bulletType::up, move_pattern,entity::colourType::red,true);
+                        shoot(position,size,attack,health,entity::bulletType::laser, move_pattern,entity::colourType::white,true);
 
                         // TEST
                         if (model->player->is_respawning()){

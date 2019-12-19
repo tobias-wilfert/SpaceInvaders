@@ -56,6 +56,24 @@ Mortal.h
 Mortal.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.h
 
+/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Controller.cpp
+Controller.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Controller.h
+
+/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Controller.h
+../Singleton/Stopwatch.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Stopwatch.h
+Level.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Level.h
+Model.h
+/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.h
+SFML/Graphics.hpp
+-
+memory
+-
+utility
+-
+
 /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Level.h
 ../Entity/Bullet.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Bullet.h
@@ -92,29 +110,9 @@ memory
 Level.h
 /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Level.h
 
-/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/View.cpp
-View.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/View.h
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/View.h
-../Singleton/Transformation.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Transformation.h
-Model.h
-/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.h
-SFML/Graphics.hpp
+/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Stopwatch.h
+chrono
 -
-array
--
-iostream
--
-memory
--
-string
--
-utility
--
-
-/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Transformation.h
 memory
 -
 
