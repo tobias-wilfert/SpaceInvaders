@@ -218,6 +218,30 @@
 		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/View.h">
 			<Option target="SpaceInvaders"/>
 		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/Parser.cpp">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/Parser.h">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinystr.cpp">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinystr.h">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinyxml.cpp">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinyxml.h">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinyxmlerror.cpp">
+			<Option target="SpaceInvaders"/>
+		</Unit>
+		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinyxmlparser.cpp">
+			<Option target="SpaceInvaders"/>
+		</Unit>
 		<Unit filename="/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Stopwatch.cpp">
 			<Option target="SpaceInvaders"/>
 		</Unit>

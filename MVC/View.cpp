@@ -76,7 +76,7 @@ void si::mvc::View::display(sf::RenderWindow& window) const
         window.clear();
 
         // Draw all the entities
-        for (const auto& ptr : model->level.listOfEntities) {
+        for (const auto& ptr : model->currentLevel->listOfEntities) {
                 drawEntity(ptr, window);
         }
 

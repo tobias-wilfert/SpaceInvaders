@@ -31,13 +31,17 @@ namespace mvc {
 class Level
 {
 public:
-        Level();
-
         /**
          \n Returns true if the level is completed (no more enemies are left)
          \n @return True if all enemies are dead
          */
         bool is_level_complete() const;
+
+        /**
+         \n Adds an object to the level
+         \n @param objPtr pointer to the object that should be added
+         */
+        void addObject(std::shared_ptr<entity::CollideObject> objPtr);
 
 private:
         /// Make Model friend of Model

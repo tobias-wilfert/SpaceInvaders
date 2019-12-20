@@ -64,6 +64,11 @@ si::Game::Game(float cycles_per_second, const std::deque<std::string>& files)
 
         view = mvc::View{modelPtr, transformation};
 
-        // TODO Insert Parser with path being files
-        modelPtr->set_level(mvc::Level{});
+        // Parse the input files
+        Parser parser{};
+        std::deque<std::shared_ptr<mvc::Level>> levels;
+        for (const std::string & file: files){
+                levels.push_back(parser.parseFile(file));
+        }
+        modelPtr->set_levels(levels);
 }

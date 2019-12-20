@@ -10,7 +10,7 @@ int main(int argc, const char* argv[])
 {
         // Get the input files
         std::deque<std::string> files;
-        for (int i = 0; i < argc; ++i) {
+        for (int i = 1; i < argc; ++i) {
                 files.emplace_back(argv[i]);
         }
 

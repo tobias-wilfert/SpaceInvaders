@@ -41,24 +41,41 @@ si::mvc::Model::Model()
 
 bool si::mvc::Model::is_interacted() const { return interacted; }
 
-void si::mvc::Model::set_level(const Level& inputLevel)
+void si::mvc::Model::set_level(const std::shared_ptr<Level> & inputLevel)
 {
         // Assign inputLevel to level
-        Model::level = inputLevel;
+        Model::currentLevel = inputLevel;
 
         // Add all the entities from Model to level
-        level.listOfEntities.push_front(sky);
-        level.listOfEntities.push_front(earth);
-        level.listOfEntities.push_front(player);
-        level.listOfEntities.push_front(scoreCounter);
-        level.listOfEntities.push_front(healthCounter);
-        level.listOfEntities.push_front(coolDownCounter);
+        currentLevel->listOfEntities.push_front(sky);
+        currentLevel->listOfEntities.push_front(earth);
+        currentLevel->listOfEntities.push_front(player);
+        currentLevel->listOfEntities.push_front(scoreCounter);
+        currentLevel->listOfEntities.push_front(healthCounter);
+        currentLevel->listOfEntities.push_front(coolDownCounter);
 
-        level.listOfCollideObjects.push_back(sky);
-        level.listOfCollideObjects.push_back(earth);
-        level.listOfCollideObjects.push_back(player);
+        currentLevel->listOfCollideObjects.push_back(sky);
+        currentLevel->listOfCollideObjects.push_back(earth);
+        currentLevel->listOfCollideObjects.push_back(player);
 }
 
 bool si::mvc::Model::is_game_over() const { return gameOver; }
 
 bool si::mvc::Model::is_game_won() const { return gameWon; }
+
+void si::mvc::Model::set_levels(const std::deque<std::shared_ptr<Level>>& level)
+{
+        levels = level;
+        nextLevel();
+}
+
+void si::mvc::Model::nextLevel()
+{
+        if (!levels.empty()){
+                auto nextLevel = levels.front();
+                set_level(nextLevel);
+                levels.pop_front();
+        }else{
+                gameWon = true;
+        }
+}

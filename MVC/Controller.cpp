@@ -69,9 +69,8 @@ void si::mvc::Controller::handleTitleScreenInput(sf::RenderWindow& window) const
 void si::mvc::Controller::updateModel()
 {
         // Check if there are any Enemies left in the level
-        if (model->level.is_level_complete()) {
-                // TODO Load the next level
-                model->gameWon = true;
+        if (model->currentLevel->is_level_complete()) {
+                model->nextLevel();
         }
 
         // Update the coolDown counter
@@ -132,9 +131,9 @@ void si::mvc::Controller::checkPlayer() const
 void si::mvc::Controller::addBulletToGame(si::entity::Bullet bullet) const
 {
         std::shared_ptr<entity::Bullet> bulletPrt = std::make_shared<entity::Bullet>(bullet);
-        model->level.listOfCollideObjects.push_back(bulletPrt);
-        model->level.listOfEntities.push_back(bulletPrt);
-        model->level.listOfBullets.push_back(bulletPrt);
+        model->currentLevel->listOfCollideObjects.push_back(bulletPrt);
+        model->currentLevel->listOfEntities.push_back(bulletPrt);
+        model->currentLevel->listOfBullets.push_back(bulletPrt);
 }
 
 void si::mvc::Controller::handelEvent(sf::RenderWindow& window) const
@@ -203,7 +202,7 @@ void si::mvc::Controller::alienShoot(const std::shared_ptr<si::entity::Enemy>& e
 void si::mvc::Controller::moveObjects()
 {
         // Ruff amount of aliens
-        unsigned long amountOfAliens = model->level.listOfCollideObjects.size() - model->level.listOfBullets.size() - 3;
+        unsigned long amountOfAliens = model->currentLevel->listOfCollideObjects.size() - model->currentLevel->listOfBullets.size() - 3;
         // Create a random number
         int counter{0};
         std::random_device rd;
@@ -212,7 +211,7 @@ void si::mvc::Controller::moveObjects()
         auto random_integer = uni(rng);
 
         // Loop over all the objects
-        for (const auto& objectPtr : model->level.listOfCollideObjects) {
+        for (const auto& objectPtr : model->currentLevel->listOfCollideObjects) {
                 // If the object is an enemy
                 if (objectPtr->getEntityType() == entity::entityType::enemy) {
                         auto castPtr = std::dynamic_pointer_cast<si::entity::Enemy>(objectPtr);
@@ -243,8 +242,8 @@ void si::mvc::Controller::moveObjects()
 
 void si::mvc::Controller::checkCollisions() const
 {
-        for (const auto& objectPtr : model->level.listOfCollideObjects) {
-                for (const auto& objectPtr2 : model->level.listOfCollideObjects) {
+        for (const auto& objectPtr : model->currentLevel->listOfCollideObjects) {
+                for (const auto& objectPtr2 : model->currentLevel->listOfCollideObjects) {
                         entity::checkCollision(objectPtr, objectPtr2);
                 }
         }
@@ -252,24 +251,24 @@ void si::mvc::Controller::checkCollisions() const
 
 void si::mvc::Controller::cleanUpBullets() const
 {
-        for (unsigned int i = 0; i < model->level.listOfBullets.size(); ++i) {
-                auto bullet = model->level.listOfBullets.front();
-                model->level.listOfBullets.pop_front();
+        for (unsigned int i = 0; i < model->currentLevel->listOfBullets.size(); ++i) {
+                auto bullet = model->currentLevel->listOfBullets.front();
+                model->currentLevel->listOfBullets.pop_front();
 
                 if (!bullet->is_destroyed()) {
-                        model->level.listOfBullets.push_back(bullet);
+                        model->currentLevel->listOfBullets.push_back(bullet);
                 }
         }
 }
 
 void si::mvc::Controller::cleanUpCollideObjects() const
 {
-        for (unsigned int i = 0; i < model->level.listOfCollideObjects.size(); ++i) {
-                auto objectPtr = model->level.listOfCollideObjects.front();
-                model->level.listOfCollideObjects.pop_front();
+        for (unsigned int i = 0; i < model->currentLevel->listOfCollideObjects.size(); ++i) {
+                auto objectPtr = model->currentLevel->listOfCollideObjects.front();
+                model->currentLevel->listOfCollideObjects.pop_front();
 
                 if (!objectPtr->is_destroyed()) {
-                        model->level.listOfCollideObjects.push_back(objectPtr);
+                        model->currentLevel->listOfCollideObjects.push_back(objectPtr);
                 } else {
                         // If an enemy died
                         if (objectPtr->getEntityType() == entity::entityType::enemy) {
@@ -303,17 +302,17 @@ void si::mvc::Controller::updateScore(const std::shared_ptr<entity::Enemy>& enem
 
 void si::mvc::Controller::cleanUpEntities() const
 {
-        for (unsigned int i = 0; i < model->level.listOfEntities.size(); ++i) {
-                auto entity = model->level.listOfEntities.front();
-                model->level.listOfEntities.pop_front();
+        for (unsigned int i = 0; i < model->currentLevel->listOfEntities.size(); ++i) {
+                auto entity = model->currentLevel->listOfEntities.front();
+                model->currentLevel->listOfEntities.pop_front();
 
                 // Check that it is a collide object
                 if (entity->getEntityType() != entity::entityType::counter) {
                         if (!std::dynamic_pointer_cast<entity::CollideObject>(entity)->is_destroyed()) {
-                                model->level.listOfEntities.push_back(entity);
+                                model->currentLevel->listOfEntities.push_back(entity);
                         }
                 } else {
-                        model->level.listOfEntities.push_back(entity);
+                        model->currentLevel->listOfEntities.push_back(entity);
                 }
         }
 }

@@ -84,6 +84,9 @@ CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../MVC/Controller.h
 CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../MVC/Level.h
 CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../MVC/Model.h
 CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../MVC/View.h
+CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Parser/Parser.h
+CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Parser/tinystr.h
+CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Parser/tinyxml.h
 CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Singleton/Stopwatch.h
 CMakeFiles/SpaceInvaders.dir/Game.cpp.o: ../Singleton/Transformation.h
 
@@ -148,6 +151,36 @@ CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../MVC/View.cpp
 CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../MVC/View.h
 CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o: ../Singleton/Transformation.h
 
+CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.o: ../Entity/Bullet.h
+CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.o: ../Entity/CollideObject.h
+CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.o: ../Entity/Counter.h
+CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.o: ../Entity/Enemy.h
+CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.o: ../Entity/Entity.h
+CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.o: ../Entity/HelperDatatypes.h
+CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.o: ../Entity/Mortal.h
+CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.o: ../Entity/MoveObject.h
+CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.o: ../Entity/Shield.h
+CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.o: ../MVC/Level.h
+CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.o: ../Parser/Parser.cpp
+CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.o: ../Parser/Parser.h
+CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.o: ../Parser/tinystr.h
+CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.o: ../Parser/tinyxml.h
+
+CMakeFiles/SpaceInvaders.dir/Parser/tinystr.cpp.o: ../Parser/tinystr.cpp
+CMakeFiles/SpaceInvaders.dir/Parser/tinystr.cpp.o: ../Parser/tinystr.h
+
+CMakeFiles/SpaceInvaders.dir/Parser/tinyxml.cpp.o: ../Parser/tinystr.h
+CMakeFiles/SpaceInvaders.dir/Parser/tinyxml.cpp.o: ../Parser/tinyxml.cpp
+CMakeFiles/SpaceInvaders.dir/Parser/tinyxml.cpp.o: ../Parser/tinyxml.h
+
+CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlerror.cpp.o: ../Parser/tinystr.h
+CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlerror.cpp.o: ../Parser/tinyxml.h
+CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlerror.cpp.o: ../Parser/tinyxmlerror.cpp
+
+CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlparser.cpp.o: ../Parser/tinystr.h
+CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlparser.cpp.o: ../Parser/tinyxml.h
+CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlparser.cpp.o: ../Parser/tinyxmlparser.cpp
+
 CMakeFiles/SpaceInvaders.dir/Singleton/Stopwatch.cpp.o: ../Singleton/Stopwatch.cpp
 CMakeFiles/SpaceInvaders.dir/Singleton/Stopwatch.cpp.o: ../Singleton/Stopwatch.h
 
@@ -170,6 +203,9 @@ CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../MVC/Controller.h
 CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../MVC/Level.h
 CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../MVC/Model.h
 CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../MVC/View.h
+CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../Parser/Parser.h
+CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../Parser/tinystr.h
+CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../Parser/tinyxml.h
 CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../Singleton/Stopwatch.h
 CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../Singleton/Transformation.h
 CMakeFiles/SpaceInvaders.dir/main.cpp.o: ../main.cpp

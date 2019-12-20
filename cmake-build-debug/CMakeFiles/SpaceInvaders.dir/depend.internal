@@ -85,6 +85,9 @@ CMakeFiles/SpaceInvaders.dir/Game.cpp.o
  /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Level.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/View.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/Parser.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinystr.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinyxml.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Stopwatch.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Transformation.h
 CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o
@@ -148,6 +151,36 @@ CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o
  /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/View.cpp
  /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/View.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Transformation.h
+CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.o
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Bullet.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/CollideObject.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Counter.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Enemy.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/MoveObject.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Shield.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Level.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/Parser.cpp
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/Parser.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinystr.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinyxml.h
+CMakeFiles/SpaceInvaders.dir/Parser/tinystr.cpp.o
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinystr.cpp
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinystr.h
+CMakeFiles/SpaceInvaders.dir/Parser/tinyxml.cpp.o
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinystr.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinyxml.cpp
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinyxml.h
+CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlerror.cpp.o
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinystr.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinyxml.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinyxmlerror.cpp
+CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlparser.cpp.o
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinystr.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinyxml.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinyxmlparser.cpp
 CMakeFiles/SpaceInvaders.dir/Singleton/Stopwatch.cpp.o
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Stopwatch.cpp
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Stopwatch.h
@@ -171,6 +204,9 @@ CMakeFiles/SpaceInvaders.dir/main.cpp.o
  /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Level.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/View.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/Parser.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinystr.h
+ /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinyxml.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Stopwatch.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Transformation.h
  /Users/tobiaswilfert/Desktop/SpaceInvaders/main.cpp

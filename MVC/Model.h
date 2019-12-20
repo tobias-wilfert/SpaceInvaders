@@ -38,11 +38,10 @@ public:
         bool is_interacted() const;
 
         /**
-         \n Sets the level the model is currently operating on
-         \n Adds all the level independent items to the level so that the View only needs to look at one place
-         \n @param level The level the model should operate on
+         *
+         * @param level
          */
-        void set_level(const Level& level);
+        void set_levels(const std::deque<std::shared_ptr<Level>>& level);
 
         /**
          \n Returns true if the game is over else false
@@ -96,13 +95,28 @@ private:
          \n Contains all the bullets, aliens and shields
          \n Also all non level depend entities so that view only needs to look at one place
          */
-        Level level;
+        std::shared_ptr<Level> currentLevel;
+
+        /// List of all the levels
+        std::deque<std::shared_ptr<Level>> levels;
 
         /// Indicates if the game should be ended
         bool gameOver{false};
 
         /// Indicates if the game is won
         bool gameWon{false};
+
+        /**
+         \n Sets the level the model is currently operating on
+         \n Adds all the level independent items to the level so that the View only needs to look at one place
+         \n @param level The level the model should operate on
+         */
+        void set_level(const std::shared_ptr<Level>& level);
+
+        /**
+         * Makes current level the next level in levels if there are none set gameWon true
+         */
+        void nextLevel();
 };
 
 } // namespace mvc

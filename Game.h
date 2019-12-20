@@ -19,6 +19,7 @@
 #include "MVC/View.h"
 #include "Singleton/Stopwatch.h"
 #include "Singleton/Transformation.h"
+#include "Parser/Parser.h"
 
 // TODO Fine tune the values to make the game smooth
 
@@ -48,12 +49,6 @@ private:
         /// The controller the game will use
         mvc::Controller controller;
 
-        /// The score of the player
-        int score{0};
-
-        /// The number of level the Player is currently at
-        int levelNr{1};
-
         /// The number of logic cycles per second the game should make
         float cyclesPerSecond;
 
@@ -65,6 +60,7 @@ private:
          \n to the [0,windowHeight]x[0,windowWidth] logic of the view
          */
         std::shared_ptr<singleton::Transformation> transformation;
+
 };
 } // namespace si
 

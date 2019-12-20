@@ -304,6 +304,71 @@ CMakeFiles/SpaceInvaders.dir/Entity/MoveObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Entity/MoveObject.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/MoveObject.cpp -o CMakeFiles/SpaceInvaders.dir/Entity/MoveObject.cpp.s
 
+CMakeFiles/SpaceInvaders.dir/Parser/tinyxml.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
+CMakeFiles/SpaceInvaders.dir/Parser/tinyxml.cpp.o: ../Parser/tinyxml.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/SpaceInvaders.dir/Parser/tinyxml.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Parser/tinyxml.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinyxml.cpp
+
+CMakeFiles/SpaceInvaders.dir/Parser/tinyxml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Parser/tinyxml.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinyxml.cpp > CMakeFiles/SpaceInvaders.dir/Parser/tinyxml.cpp.i
+
+CMakeFiles/SpaceInvaders.dir/Parser/tinyxml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Parser/tinyxml.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinyxml.cpp -o CMakeFiles/SpaceInvaders.dir/Parser/tinyxml.cpp.s
+
+CMakeFiles/SpaceInvaders.dir/Parser/tinystr.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
+CMakeFiles/SpaceInvaders.dir/Parser/tinystr.cpp.o: ../Parser/tinystr.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/SpaceInvaders.dir/Parser/tinystr.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Parser/tinystr.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinystr.cpp
+
+CMakeFiles/SpaceInvaders.dir/Parser/tinystr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Parser/tinystr.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinystr.cpp > CMakeFiles/SpaceInvaders.dir/Parser/tinystr.cpp.i
+
+CMakeFiles/SpaceInvaders.dir/Parser/tinystr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Parser/tinystr.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinystr.cpp -o CMakeFiles/SpaceInvaders.dir/Parser/tinystr.cpp.s
+
+CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlparser.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
+CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlparser.cpp.o: ../Parser/tinyxmlparser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlparser.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlparser.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinyxmlparser.cpp
+
+CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlparser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlparser.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinyxmlparser.cpp > CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlparser.cpp.i
+
+CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlparser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlparser.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinyxmlparser.cpp -o CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlparser.cpp.s
+
+CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlerror.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
+CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlerror.cpp.o: ../Parser/tinyxmlerror.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlerror.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlerror.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinyxmlerror.cpp
+
+CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlerror.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlerror.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinyxmlerror.cpp > CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlerror.cpp.i
+
+CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlerror.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlerror.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinyxmlerror.cpp -o CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlerror.cpp.s
+
+CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.o: CMakeFiles/SpaceInvaders.dir/flags.make
+CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.o: ../Parser/Parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.o -c /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/Parser.cpp
+
+CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/Parser.cpp > CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.i
+
+CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/Parser.cpp -o CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.s
+
 # Object files for target SpaceInvaders
 SpaceInvaders_OBJECTS = \
 "CMakeFiles/SpaceInvaders.dir/main.cpp.o" \
@@ -324,7 +389,12 @@ SpaceInvaders_OBJECTS = \
 "CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o" \
 "CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o" \
 "CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o" \
-"CMakeFiles/SpaceInvaders.dir/Entity/MoveObject.cpp.o"
+"CMakeFiles/SpaceInvaders.dir/Entity/MoveObject.cpp.o" \
+"CMakeFiles/SpaceInvaders.dir/Parser/tinyxml.cpp.o" \
+"CMakeFiles/SpaceInvaders.dir/Parser/tinystr.cpp.o" \
+"CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlparser.cpp.o" \
+"CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlerror.cpp.o" \
+"CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.o"
 
 # External object files for target SpaceInvaders
 SpaceInvaders_EXTERNAL_OBJECTS =
@@ -348,9 +418,14 @@ SpaceInvaders: CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o
 SpaceInvaders: CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o
 SpaceInvaders: CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o
 SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Entity/MoveObject.cpp.o
+SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Parser/tinyxml.cpp.o
+SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Parser/tinystr.cpp.o
+SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlparser.cpp.o
+SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlerror.cpp.o
+SpaceInvaders: CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.o
 SpaceInvaders: CMakeFiles/SpaceInvaders.dir/build.make
 SpaceInvaders: CMakeFiles/SpaceInvaders.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable SpaceInvaders"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable SpaceInvaders"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SpaceInvaders.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -601,6 +601,141 @@ MVC/View.cpp.s:
 	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.s
 .PHONY : MVC/View.cpp.s
 
+Parser/Parser.o: Parser/Parser.cpp.o
+
+.PHONY : Parser/Parser.o
+
+# target to build an object file
+Parser/Parser.cpp.o:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.o
+.PHONY : Parser/Parser.cpp.o
+
+Parser/Parser.i: Parser/Parser.cpp.i
+
+.PHONY : Parser/Parser.i
+
+# target to preprocess a source file
+Parser/Parser.cpp.i:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.i
+.PHONY : Parser/Parser.cpp.i
+
+Parser/Parser.s: Parser/Parser.cpp.s
+
+.PHONY : Parser/Parser.s
+
+# target to generate assembly for a file
+Parser/Parser.cpp.s:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.s
+.PHONY : Parser/Parser.cpp.s
+
+Parser/tinystr.o: Parser/tinystr.cpp.o
+
+.PHONY : Parser/tinystr.o
+
+# target to build an object file
+Parser/tinystr.cpp.o:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Parser/tinystr.cpp.o
+.PHONY : Parser/tinystr.cpp.o
+
+Parser/tinystr.i: Parser/tinystr.cpp.i
+
+.PHONY : Parser/tinystr.i
+
+# target to preprocess a source file
+Parser/tinystr.cpp.i:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Parser/tinystr.cpp.i
+.PHONY : Parser/tinystr.cpp.i
+
+Parser/tinystr.s: Parser/tinystr.cpp.s
+
+.PHONY : Parser/tinystr.s
+
+# target to generate assembly for a file
+Parser/tinystr.cpp.s:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Parser/tinystr.cpp.s
+.PHONY : Parser/tinystr.cpp.s
+
+Parser/tinyxml.o: Parser/tinyxml.cpp.o
+
+.PHONY : Parser/tinyxml.o
+
+# target to build an object file
+Parser/tinyxml.cpp.o:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Parser/tinyxml.cpp.o
+.PHONY : Parser/tinyxml.cpp.o
+
+Parser/tinyxml.i: Parser/tinyxml.cpp.i
+
+.PHONY : Parser/tinyxml.i
+
+# target to preprocess a source file
+Parser/tinyxml.cpp.i:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Parser/tinyxml.cpp.i
+.PHONY : Parser/tinyxml.cpp.i
+
+Parser/tinyxml.s: Parser/tinyxml.cpp.s
+
+.PHONY : Parser/tinyxml.s
+
+# target to generate assembly for a file
+Parser/tinyxml.cpp.s:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Parser/tinyxml.cpp.s
+.PHONY : Parser/tinyxml.cpp.s
+
+Parser/tinyxmlerror.o: Parser/tinyxmlerror.cpp.o
+
+.PHONY : Parser/tinyxmlerror.o
+
+# target to build an object file
+Parser/tinyxmlerror.cpp.o:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlerror.cpp.o
+.PHONY : Parser/tinyxmlerror.cpp.o
+
+Parser/tinyxmlerror.i: Parser/tinyxmlerror.cpp.i
+
+.PHONY : Parser/tinyxmlerror.i
+
+# target to preprocess a source file
+Parser/tinyxmlerror.cpp.i:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlerror.cpp.i
+.PHONY : Parser/tinyxmlerror.cpp.i
+
+Parser/tinyxmlerror.s: Parser/tinyxmlerror.cpp.s
+
+.PHONY : Parser/tinyxmlerror.s
+
+# target to generate assembly for a file
+Parser/tinyxmlerror.cpp.s:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlerror.cpp.s
+.PHONY : Parser/tinyxmlerror.cpp.s
+
+Parser/tinyxmlparser.o: Parser/tinyxmlparser.cpp.o
+
+.PHONY : Parser/tinyxmlparser.o
+
+# target to build an object file
+Parser/tinyxmlparser.cpp.o:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlparser.cpp.o
+.PHONY : Parser/tinyxmlparser.cpp.o
+
+Parser/tinyxmlparser.i: Parser/tinyxmlparser.cpp.i
+
+.PHONY : Parser/tinyxmlparser.i
+
+# target to preprocess a source file
+Parser/tinyxmlparser.cpp.i:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlparser.cpp.i
+.PHONY : Parser/tinyxmlparser.cpp.i
+
+Parser/tinyxmlparser.s: Parser/tinyxmlparser.cpp.s
+
+.PHONY : Parser/tinyxmlparser.s
+
+# target to generate assembly for a file
+Parser/tinyxmlparser.cpp.s:
+	$(MAKE) -f CMakeFiles/SpaceInvaders.dir/build.make CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlparser.cpp.s
+.PHONY : Parser/tinyxmlparser.cpp.s
+
 Singleton/Stopwatch.o: Singleton/Stopwatch.cpp.o
 
 .PHONY : Singleton/Stopwatch.o
@@ -743,6 +878,21 @@ help:
 	@echo "... MVC/View.o"
 	@echo "... MVC/View.i"
 	@echo "... MVC/View.s"
+	@echo "... Parser/Parser.o"
+	@echo "... Parser/Parser.i"
+	@echo "... Parser/Parser.s"
+	@echo "... Parser/tinystr.o"
+	@echo "... Parser/tinystr.i"
+	@echo "... Parser/tinystr.s"
+	@echo "... Parser/tinyxml.o"
+	@echo "... Parser/tinyxml.i"
+	@echo "... Parser/tinyxml.s"
+	@echo "... Parser/tinyxmlerror.o"
+	@echo "... Parser/tinyxmlerror.i"
+	@echo "... Parser/tinyxmlerror.s"
+	@echo "... Parser/tinyxmlparser.o"
+	@echo "... Parser/tinyxmlparser.i"
+	@echo "... Parser/tinyxmlparser.s"
 	@echo "... Singleton/Stopwatch.o"
 	@echo "... Singleton/Stopwatch.i"
 	@echo "... Singleton/Stopwatch.s"
