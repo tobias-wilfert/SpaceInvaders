@@ -5,6 +5,11 @@
             <stepSize>0.25</stepSize>
             <moveFrequency>120</moveFrequency>
         </MovePattern>
+        <MovePattern>
+            <pattern>RRDLLD</pattern>
+            <stepSize>0.25</stepSize>
+            <moveFrequency>120</moveFrequency>
+        </MovePattern>
     </MovePatterns>
     <Enemies>
         <Enemy>
@@ -51,6 +56,51 @@
             <movePattern>0</movePattern>
             <enemyType>a</enemyType>
             <colour>magenta</colour>
+        </Enemy>
+        <Enemy>
+            <size>
+                <width>0.22</width>
+                <height>0.16</height>
+            </size>
+            <position>
+                <x>0</x>
+                <y>1</y>
+            </position>
+            <attackPoints>1</attackPoints>
+            <healthPoints>1</healthPoints>
+            <movePattern>0</movePattern>
+            <enemyType>b</enemyType>
+            <colour>red</colour>
+        </Enemy>
+        <Enemy>
+            <size>
+                <width>0.22</width>
+                <height>0.16</height>
+            </size>
+            <position>
+                <x>-0.32</x>
+                <y>1</y>
+            </position>
+            <attackPoints>1</attackPoints>
+            <healthPoints>1</healthPoints>
+            <movePattern>0</movePattern>
+            <enemyType>b</enemyType>
+            <colour>yellow</colour>
+        </Enemy>
+        <Enemy>
+            <size>
+                <width>0.22</width>
+                <height>0.16</height>
+            </size>
+            <position>
+                <x>0.32</x>
+                <y>1</y>
+            </position>
+            <attackPoints>1</attackPoints>
+            <healthPoints>1</healthPoints>
+            <movePattern>0</movePattern>
+            <enemyType>b</enemyType>
+            <colour>green</colour>
         </Enemy>
     </Enemies>
     <Shields>

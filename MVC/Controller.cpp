@@ -174,7 +174,7 @@ void si::mvc::Controller::playerShoot() const
         int health = 1;
         unsigned int attack = 1;
         entity::Size size{0.06, 0.12};
-        entity::MovePattern move_pattern{"U", 0.125, 15};
+        entity::MovePattern move_pattern{"U", 0.1, 10};
         entity::Position position = model->player->position;
         position.x += model->player->size.width / 2.f - size.width / 2.f;
         position.y += size.height;
@@ -190,7 +190,7 @@ void si::mvc::Controller::alienShoot(const std::shared_ptr<si::entity::Enemy>& e
         int health = 1;
         unsigned int attack = 1;
         entity::Size size{0.06, 0.12};
-        entity::MovePattern move_pattern{"D", 0.125, 15};
+        entity::MovePattern move_pattern{"D", 0.1, 10};
         entity::Position position = enemy->position;
         position.x += enemy->size.width / 2.f - size.width / 2.f;
         position.y -= size.height;
