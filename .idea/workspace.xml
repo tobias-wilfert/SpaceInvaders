@@ -16,10 +16,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0e5097d6-8f54-4856-a7d8-629138d3e85b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MVC/Controller.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/Controller.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SpaceInvaders" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SpaceInvaders" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/Parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/Parser.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/levelTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/levelTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -116,6 +115,7 @@
       <workItem from="1576750211844" duration="12699000" />
       <workItem from="1576772534469" duration="12186000" />
       <workItem from="1576841702760" duration="10432000" />
+      <workItem from="1576853325168" duration="129000" />
     </task>
     <servers />
   </component>

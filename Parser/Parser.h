@@ -7,6 +7,7 @@
 #ifndef SPACEINVADERS_PARSER_H
 #define SPACEINVADERS_PARSER_H
 
+#include <cstring>
 #include <memory>
 #include <iostream>
 

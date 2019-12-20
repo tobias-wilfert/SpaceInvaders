@@ -3,4 +3,4 @@ cd build
 cmake ..
 make
 chmod a+x SpaceInvaders
-./SpaceInvaders
+./SpaceInvaders ../levelTest.xml
