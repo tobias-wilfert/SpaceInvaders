@@ -16,7 +16,7 @@ std::shared_ptr<si::mvc::Level> si::Parser::parseFile(const std::string& pathToF
                 exit(0);
         }
 
-        // TODO Catch errors here for stoi and stof
+        // TODO Catch errors here for stoi and stof and getText
         // Parse the level information from the file
         parseLevel(document, levelPtr);
 

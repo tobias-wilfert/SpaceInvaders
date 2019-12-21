@@ -21,8 +21,6 @@
 #include "Singleton/Stopwatch.h"
 #include "Singleton/Transformation.h"
 
-// TODO Fine tune the values to make the game smooth
-
 /// Namespace of SpaceInvaders
 namespace si {
 
