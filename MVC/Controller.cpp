@@ -19,7 +19,7 @@ void si::mvc::Controller::handleInput(sf::RenderWindow& window) const
         // Handle game input
         float playerMovement = model->playerMovementSpeed / cyclesPerSecond;
 
-        // Moving is only allowed when player is not respawning
+        // Moving is only allowed when player is not re-spawning
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left)) {
                 // Check that move is legal -> The player doesn't move from the screen
                 if (model->player->position.x - playerMovement >= -3 and !model->player->is_respawning()) {
@@ -107,9 +107,9 @@ void si::mvc::Controller::updateModel()
 
 void si::mvc::Controller::checkPlayer() const
 {
-        // Check if the player is currently respawning
+        // Check if the player is currently re-spawning
         if (model->player->is_respawning()) {
-                // If player got hit while respawning ignore
+                // If player got hit while re-spawning ignore
                 model->player->set_destroyed(false);
 
         } else {
@@ -222,7 +222,7 @@ void si::mvc::Controller::moveObjects()
                         if (castPtr->position.y <= -4 + castPtr->size.height) {
                                 model->gameOver = true;
                         }
-                        // Check if the alien needs to change state/ shoot a bulet
+                        // Check if the alien needs to change state/ shoot a bullet
                         if (updateCycles >= static_cast<int>(cyclesPerSecond)) {
                                 castPtr->set_state(!castPtr->is_state());
 
@@ -252,7 +252,8 @@ void si::mvc::Controller::checkCollisions() const
 
 void si::mvc::Controller::cleanUpBullets() const
 {
-        for (unsigned int i = 0; i < model->currentLevel->listOfBullets.size(); ++i) {
+        for (std::deque<std::shared_ptr<entity::Bullet>>::size_type i = 0;
+             i < model->currentLevel->listOfBullets.size(); ++i) {
                 auto bullet = model->currentLevel->listOfBullets.front();
                 model->currentLevel->listOfBullets.pop_front();
 
@@ -264,7 +265,8 @@ void si::mvc::Controller::cleanUpBullets() const
 
 void si::mvc::Controller::cleanUpCollideObjects() const
 {
-        for (unsigned int i = 0; i < model->currentLevel->listOfCollideObjects.size(); ++i) {
+        for (std::deque<std::shared_ptr<entity::CollideObject>>::size_type i = 0;
+             i < model->currentLevel->listOfCollideObjects.size(); ++i) {
                 auto objectPtr = model->currentLevel->listOfCollideObjects.front();
                 model->currentLevel->listOfCollideObjects.pop_front();
 
@@ -303,7 +305,8 @@ void si::mvc::Controller::updateScore(const std::shared_ptr<entity::Enemy>& enem
 
 void si::mvc::Controller::cleanUpEntities() const
 {
-        for (unsigned int i = 0; i < model->currentLevel->listOfEntities.size(); ++i) {
+        for (std::deque<std::shared_ptr<entity::Entity>>::size_type i = 0;
+             i < model->currentLevel->listOfEntities.size(); ++i) {
                 auto entity = model->currentLevel->listOfEntities.front();
                 model->currentLevel->listOfEntities.pop_front();
 

@@ -1,5 +1,5 @@
 //============================================================================
-// Name        : Paser.h
+// Name        : Parser.h
 // Author      : Tobias Wilfert
 // Copyright   : Tobias Wilfert - University of Antwerp
 //============================================================================
@@ -23,16 +23,14 @@ namespace si {
 class Parser
 {
 public:
-
         /**
-         \n Make a level from the specifications provided in the file ar pathTofile
+         \n Make a level from the specifications provided in the file ar pathToFile
          \n @param pathToFile Path to the xml file that contains the level specifications for the Level
          \n @return A pointer to an Level object
          */
         std::shared_ptr<mvc::Level> parseFile(const std::string& pathToFile);
 
 private:
-
         /// List of all the movePatterns parsed from the xml file for enemies in xml to reference
         std::deque<si::entity::MovePattern> move_patterns;
 

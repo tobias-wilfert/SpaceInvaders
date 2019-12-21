@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AnalysisUIOptions">
-    <option name="CUSTOM_SCOPE_NAME" value="Project Source Files" />
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="ProjectWithOutParser" />
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
@@ -15,10 +16,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e5097d6-8f54-4856-a7d8-629138d3e85b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/scopes/ProjectWithOutParser.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entity/Immortal.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entity/Immortal.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC/Controller.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/Controller.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC/Level.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/Level.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC/Level.h" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/Level.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MVC/View.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MVC/View.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Parser/Parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/Parser.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Parser/Parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/Parser.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/tinyxml.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/tinyxml.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/tinyxml.h" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/tinyxml.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser/tinyxmlparser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/tinyxmlparser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SpaceInvaders" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SpaceInvaders" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opgave-space-invader-en.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/opgave-space-invader-en.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,15 +43,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+  <component name="NamedScopeManager">
+    <order>
+      <scope name="ProjectWithOutParser" />
+    </order>
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectId" id="1UklEt3qg5LUQTIwY7Zv29dMfkC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.advertisement.text.overridden" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Parser" />
@@ -72,7 +87,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="../levelTest.xml" WORKING_DIR="file://$PROJECT_DIR$/cmake-build-debug" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SpaceInvaders" TARGET_NAME="SpaceInvaders" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="SpaceInvaders" RUN_TARGET_NAME="SpaceInvaders">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="../resources/levels/levelTest.xml" WORKING_DIR="file://$PROJECT_DIR$/cmake-build-debug" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SpaceInvaders" TARGET_NAME="SpaceInvaders" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="SpaceInvaders" RUN_TARGET_NAME="SpaceInvaders">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -122,6 +137,9 @@
       <workItem from="1576853325168" duration="129000" />
       <workItem from="1576923715951" duration="2802000" />
       <workItem from="1576932327671" duration="1779000" />
+      <workItem from="1576934247324" duration="1703000" />
+      <workItem from="1576940322777" duration="2818000" />
+      <workItem from="1576943575092" duration="1390000" />
     </task>
     <servers />
   </component>

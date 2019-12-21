@@ -43,9 +43,9 @@ distribution.
 #endif
 
 #ifdef TIXML_USE_STL
-#include <string>
 #include <iostream>
 #include <sstream>
+#include <string>
 #define TIXML_STRING std::string
 #else
 #include "tinystr.h"

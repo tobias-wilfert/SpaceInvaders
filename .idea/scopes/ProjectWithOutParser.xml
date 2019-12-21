@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="ProjectWithOutParser" pattern="file[SpaceInvaders]:Entity/*||file[SpaceInvaders]:MVC/*||file:Parser/Parser.cpp||file:Parser/Parser.h||file[SpaceInvaders]:Singleton/*||file:Game.cpp||file:main.cpp||file:Game.h" />
+</component>

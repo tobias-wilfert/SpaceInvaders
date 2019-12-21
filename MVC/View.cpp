@@ -52,7 +52,7 @@ void si::mvc::View::initializerResources()
                     loadFromFile("../resources/img/shield-50.png"), loadFromFile("../resources/img/shield-25.png")};
 
         } catch (const std::exception& e) {
-                std::cerr << "Failed to load resources need for SpaceInvders" << std::endl;
+                std::cerr << "Failed to load resources need for SpaceInvaders" << std::endl;
                 std::cerr << e.what() << std::endl;
                 exit(1);
         }

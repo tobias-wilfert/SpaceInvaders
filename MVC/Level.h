@@ -41,7 +41,7 @@ public:
          \n Adds an object to the level
          \n @param objPtr pointer to the object that should be added
          */
-        void addObject(std::shared_ptr<entity::CollideObject> objPtr);
+        void addObject(const std::shared_ptr<entity::CollideObject>& objPtr);
 
 private:
         /// Make Model friend of Model

@@ -16,7 +16,7 @@ bool si::mvc::Level::is_level_complete() const
 
         return true;
 }
-void si::mvc::Level::addObject(std::shared_ptr<entity::CollideObject> objPtr)
+void si::mvc::Level::addObject(const std::shared_ptr<entity::CollideObject>& objPtr)
 {
         listOfEntities.push_back(objPtr);
         listOfCollideObjects.push_back(objPtr);
