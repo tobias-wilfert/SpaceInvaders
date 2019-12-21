@@ -41,7 +41,7 @@ si::mvc::Model::Model()
 
 bool si::mvc::Model::is_interacted() const { return interacted; }
 
-void si::mvc::Model::set_level(const std::shared_ptr<Level> & inputLevel)
+void si::mvc::Model::set_level(const std::shared_ptr<Level>& inputLevel)
 {
         // Assign inputLevel to level
         Model::currentLevel = inputLevel;
@@ -71,11 +71,11 @@ void si::mvc::Model::set_levels(const std::deque<std::shared_ptr<Level>>& level)
 
 void si::mvc::Model::nextLevel()
 {
-        if (!levels.empty()){
+        if (!levels.empty()) {
                 auto nextLevel = levels.front();
                 set_level(nextLevel);
                 levels.pop_front();
-        }else{
+        } else {
                 gameWon = true;
         }
 }

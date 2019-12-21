@@ -17,9 +17,9 @@
 #include "MVC/Level.h"
 #include "MVC/Model.h"
 #include "MVC/View.h"
+#include "Parser/Parser.h"
 #include "Singleton/Stopwatch.h"
 #include "Singleton/Transformation.h"
-#include "Parser/Parser.h"
 
 // TODO Fine tune the values to make the game smooth
 
@@ -60,7 +60,6 @@ private:
          \n to the [0,windowHeight]x[0,windowWidth] logic of the view
          */
         std::shared_ptr<singleton::Transformation> transformation;
-
 };
 } // namespace si
 

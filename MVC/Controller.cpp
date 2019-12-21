@@ -202,7 +202,8 @@ void si::mvc::Controller::alienShoot(const std::shared_ptr<si::entity::Enemy>& e
 void si::mvc::Controller::moveObjects()
 {
         // Ruff amount of aliens
-        unsigned long amountOfAliens = model->currentLevel->listOfCollideObjects.size() - model->currentLevel->listOfBullets.size() - 3;
+        unsigned long amountOfAliens =
+            model->currentLevel->listOfCollideObjects.size() - model->currentLevel->listOfBullets.size() - 3;
         // Create a random number
         int counter{0};
         std::random_device rd;

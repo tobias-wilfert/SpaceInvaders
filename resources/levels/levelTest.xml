@@ -10,6 +10,11 @@
             <stepSize>0.25</stepSize>
             <moveFrequency>120</moveFrequency>
         </MovePattern>
+        <MovePattern>
+            <pattern>RRRRRRRRRRRRRRRRLLLLLLLLLLLLLLLL</pattern>
+            <stepSize>0.25</stepSize>
+            <moveFrequency>60</moveFrequency>
+        </MovePattern>
     </MovePatterns>
     <Enemies>
         <Enemy>
@@ -101,6 +106,21 @@
             <movePattern>1</movePattern>
             <enemyType>b</enemyType>
             <colour>green</colour>
+        </Enemy>
+        <Enemy>
+            <size>
+                <width>0.48</width>
+                <height>0.21</height>
+            </size>
+            <position>
+                <x>-2</x>
+                <y>2</y>
+            </position>
+            <attackPoints>1</attackPoints>
+            <healthPoints>1</healthPoints>
+            <movePattern>2</movePattern>
+            <enemyType>m</enemyType>
+            <colour>red</colour>
         </Enemy>
     </Enemies>
     <Shields>

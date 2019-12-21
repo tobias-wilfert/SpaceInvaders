@@ -8,11 +8,11 @@
 #define SPACEINVADERS_PARSER_H
 
 #include <cstring>
-#include <memory>
 #include <iostream>
+#include <memory>
 
-#include "tinyxml.h"
 #include "../MVC/Level.h"
+#include "tinyxml.h"
 
 /// Namespace of SpaceInvaders
 namespace si {
@@ -20,12 +20,10 @@ namespace si {
 class Parser
 {
 public:
-
         // TODO Comment
         std::shared_ptr<mvc::Level> parseFile(const std::string& pathToFile);
 
 private:
-
         bool isValidFile(TiXmlDocument& file, const std::string& pathToFile) const;
 
         void parseLevel(TiXmlDocument& file, const std::shared_ptr<mvc::Level>& levelPtr);

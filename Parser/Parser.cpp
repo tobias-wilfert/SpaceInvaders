@@ -12,32 +12,32 @@ std::shared_ptr<si::mvc::Level> si::Parser::parseFile(const std::string& pathToF
         TiXmlDocument document;
 
         // Check if the file is valid -> van be parsed
-        if (!isValidFile(document, pathToFile)){
+        if (!isValidFile(document, pathToFile)) {
                 exit(0);
         }
 
         // TODO Catch errors here for stoi and stof
         // Parse the level information from the file
-        parseLevel(document,levelPtr);
+        parseLevel(document, levelPtr);
 
         // Return the pointer to the level
         document.Clear();
-        return  levelPtr;
+        return levelPtr;
 }
 
 bool si::Parser::isValidFile(TiXmlDocument& file, const std::string& pathToFile) const
 {
         // Load the file
-        if(!file.LoadFile(pathToFile.c_str())) {
+        if (!file.LoadFile(pathToFile.c_str())) {
                 std::cerr << file.ErrorDesc() << std::endl;
-                std::cerr << "Error in document row: "<< file.ErrorRow() << std::endl;
-                std::cerr << "Could not load file at: "<< pathToFile << std::endl;
+                std::cerr << "Error in document row: " << file.ErrorRow() << std::endl;
+                std::cerr << "Could not load file at: " << pathToFile << std::endl;
                 return false;
         }
 
         // Check if we can get an root element
         TiXmlElement* root = file.FirstChildElement();
-        if(root == nullptr) {
+        if (root == nullptr) {
                 std::cerr << "Failed to load file: No root element." << std::endl;
                 file.Clear();
                 return false;
@@ -86,56 +86,56 @@ si::entity::MovePattern si::Parser::parseMovePattern(TiXmlElement* movePattern) 
         std::string pattern = "N";
         float stepSize{0}, moveFrequency{0};
 
-        for(TiXmlElement* attr = movePattern->FirstChildElement(); attr != nullptr; attr = attr->NextSiblingElement())
-        {
-                if (std::strcmp(attr->Value(), "pattern") == 0){
+        for (TiXmlElement* attr = movePattern->FirstChildElement(); attr != nullptr;
+             attr = attr->NextSiblingElement()) {
+                if (std::strcmp(attr->Value(), "pattern") == 0) {
                         pattern = attr->GetText();
                 }
-                if (std::strcmp(attr->Value(), "stepSize") == 0){
+                if (std::strcmp(attr->Value(), "stepSize") == 0) {
                         stepSize = std::stof(attr->GetText());
                 }
-                if (std::strcmp(attr->Value(), "moveFrequency") == 0){
+                if (std::strcmp(attr->Value(), "moveFrequency") == 0) {
                         moveFrequency = std::stof(attr->GetText());
                 }
         }
 
-        return si::entity::MovePattern{pattern,stepSize,moveFrequency};;
+        return si::entity::MovePattern{pattern, stepSize, moveFrequency};
+        ;
 }
-
 
 si::entity::Position si::Parser::parsePosition(TiXmlElement* positionPtr) const
 {
         float x{0}, y{0};
 
-        for (TiXmlElement* attr = positionPtr->FirstChildElement(); attr != nullptr; attr = attr->NextSiblingElement())
-        {
-                if (std::strcmp(attr->Value(), "x") == 0){
+        for (TiXmlElement* attr = positionPtr->FirstChildElement(); attr != nullptr;
+             attr = attr->NextSiblingElement()) {
+                if (std::strcmp(attr->Value(), "x") == 0) {
                         x = std::stof(attr->GetText());
                 }
 
-                if (std::strcmp(attr->Value(), "y") == 0){
+                if (std::strcmp(attr->Value(), "y") == 0) {
                         y = std::stof(attr->GetText());
                 }
         }
-        return si::entity::Position{x, y};;
+        return si::entity::Position{x, y};
+        ;
 }
 
 si::entity::Size si::Parser::parseSize(TiXmlElement* sizePtr) const
 {
         float width{0}, height{0};
 
-        for (TiXmlElement* attr = sizePtr->FirstChildElement(); attr != nullptr; attr = attr->NextSiblingElement())
-        {
-                if (std::strcmp(attr->Value(), "width") == 0){
+        for (TiXmlElement* attr = sizePtr->FirstChildElement(); attr != nullptr; attr = attr->NextSiblingElement()) {
+                if (std::strcmp(attr->Value(), "width") == 0) {
                         width = std::stof(attr->GetText());
                 }
 
-                if (std::strcmp(attr->Value(), "height") == 0){
+                if (std::strcmp(attr->Value(), "height") == 0) {
                         height = std::stof(attr->GetText());
                 }
         }
 
-        return  si::entity::Size{width, height};
+        return si::entity::Size{width, height};
 }
 
 si::entity::Enemy si::Parser::parseEnemy(TiXmlElement* enemyPtr) const
@@ -229,5 +229,5 @@ si::entity::Shield si::Parser::parseShield(TiXmlElement* shieldPtr) const
                 }
         }
 
-        return si::entity::Shield{size,position,attack_points,collide_object_type,health_points};
+        return si::entity::Shield{size, position, attack_points, collide_object_type, health_points};
 }
