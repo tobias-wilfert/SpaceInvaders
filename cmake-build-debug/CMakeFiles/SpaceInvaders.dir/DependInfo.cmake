@@ -4,36 +4,35 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Bullet.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Entity/Bullet.cpp.o"
-  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/CollideObject.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Entity/CollideObject.cpp.o"
-  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Counter.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Entity/Counter.cpp.o"
-  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Enemy.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Entity/Enemy.cpp.o"
-  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Entity.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Entity/Entity.cpp.o"
-  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/HelperDatatypes.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Entity/HelperDatatypes.cpp.o"
-  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Immortal.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Entity/Immortal.cpp.o"
-  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Mortal.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Entity/Mortal.cpp.o"
-  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/MoveObject.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Entity/MoveObject.cpp.o"
-  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Player.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Entity/Player.cpp.o"
-  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Entity/Shield.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Entity/Shield.cpp.o"
-  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Game.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Game.cpp.o"
-  "/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Controller.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o"
-  "/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Level.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.o"
-  "/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/Model.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o"
-  "/Users/tobiaswilfert/Desktop/SpaceInvaders/MVC/View.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o"
-  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/Parser.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.o"
-  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinystr.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Parser/tinystr.cpp.o"
-  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinyxml.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Parser/tinyxml.cpp.o"
-  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinyxmlerror.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlerror.cpp.o"
-  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Parser/tinyxmlparser.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlparser.cpp.o"
-  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Stopwatch.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Singleton/Stopwatch.cpp.o"
-  "/Users/tobiaswilfert/Desktop/SpaceInvaders/Singleton/Transformation.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.o"
-  "/Users/tobiaswilfert/Desktop/SpaceInvaders/main.cpp" "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/main.cpp.o"
+  "/home/student/SpaceInvaders/Entity/Bullet.cpp" "/home/student/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Entity/Bullet.cpp.o"
+  "/home/student/SpaceInvaders/Entity/CollideObject.cpp" "/home/student/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Entity/CollideObject.cpp.o"
+  "/home/student/SpaceInvaders/Entity/Counter.cpp" "/home/student/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Entity/Counter.cpp.o"
+  "/home/student/SpaceInvaders/Entity/Enemy.cpp" "/home/student/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Entity/Enemy.cpp.o"
+  "/home/student/SpaceInvaders/Entity/Entity.cpp" "/home/student/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Entity/Entity.cpp.o"
+  "/home/student/SpaceInvaders/Entity/HelperDatatypes.cpp" "/home/student/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Entity/HelperDatatypes.cpp.o"
+  "/home/student/SpaceInvaders/Entity/Immortal.cpp" "/home/student/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Entity/Immortal.cpp.o"
+  "/home/student/SpaceInvaders/Entity/Mortal.cpp" "/home/student/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Entity/Mortal.cpp.o"
+  "/home/student/SpaceInvaders/Entity/MoveObject.cpp" "/home/student/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Entity/MoveObject.cpp.o"
+  "/home/student/SpaceInvaders/Entity/Player.cpp" "/home/student/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Entity/Player.cpp.o"
+  "/home/student/SpaceInvaders/Entity/Shield.cpp" "/home/student/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Entity/Shield.cpp.o"
+  "/home/student/SpaceInvaders/Game.cpp" "/home/student/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Game.cpp.o"
+  "/home/student/SpaceInvaders/MVC/Controller.cpp" "/home/student/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/MVC/Controller.cpp.o"
+  "/home/student/SpaceInvaders/MVC/Level.cpp" "/home/student/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/MVC/Level.cpp.o"
+  "/home/student/SpaceInvaders/MVC/Model.cpp" "/home/student/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/MVC/Model.cpp.o"
+  "/home/student/SpaceInvaders/MVC/View.cpp" "/home/student/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/MVC/View.cpp.o"
+  "/home/student/SpaceInvaders/Parser/Parser.cpp" "/home/student/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Parser/Parser.cpp.o"
+  "/home/student/SpaceInvaders/Parser/tinystr.cpp" "/home/student/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Parser/tinystr.cpp.o"
+  "/home/student/SpaceInvaders/Parser/tinyxml.cpp" "/home/student/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Parser/tinyxml.cpp.o"
+  "/home/student/SpaceInvaders/Parser/tinyxmlerror.cpp" "/home/student/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlerror.cpp.o"
+  "/home/student/SpaceInvaders/Parser/tinyxmlparser.cpp" "/home/student/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Parser/tinyxmlparser.cpp.o"
+  "/home/student/SpaceInvaders/Singleton/Stopwatch.cpp" "/home/student/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Singleton/Stopwatch.cpp.o"
+  "/home/student/SpaceInvaders/Singleton/Transformation.cpp" "/home/student/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/Singleton/Transformation.cpp.o"
+  "/home/student/SpaceInvaders/main.cpp" "/home/student/SpaceInvaders/cmake-build-debug/CMakeFiles/SpaceInvaders.dir/main.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/Library/Frameworks/SFML.framework"
   )
 
 # Targets to which this target links.

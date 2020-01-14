@@ -1,4 +1,4 @@
-# Install script for directory: /Users/tobiaswilfert/Desktop/SpaceInvaders
+# Install script for directory: /home/student/SpaceInvaders
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,28 +27,36 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}/home/student/SpaceInvaders/bin/SpaceInvaders" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/student/SpaceInvaders/bin/SpaceInvaders")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}/home/student/SpaceInvaders/bin/SpaceInvaders"
+         RPATH "")
+  endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/Users/tobiaswilfert/Desktop/SpaceInvaders/bin/SpaceInvaders")
+   "/home/student/SpaceInvaders/bin/SpaceInvaders")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/Users/tobiaswilfert/Desktop/SpaceInvaders/bin" TYPE EXECUTABLE FILES "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/SpaceInvaders")
-  if(EXISTS "$ENV{DESTDIR}/Users/tobiaswilfert/Desktop/SpaceInvaders/bin/SpaceInvaders" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/Users/tobiaswilfert/Desktop/SpaceInvaders/bin/SpaceInvaders")
-    execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Library/Frameworks"
-      "$ENV{DESTDIR}/Users/tobiaswilfert/Desktop/SpaceInvaders/bin/SpaceInvaders")
+file(INSTALL DESTINATION "/home/student/SpaceInvaders/bin" TYPE EXECUTABLE FILES "/home/student/SpaceInvaders/cmake-build-debug/SpaceInvaders")
+  if(EXISTS "$ENV{DESTDIR}/home/student/SpaceInvaders/bin/SpaceInvaders" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/student/SpaceInvaders/bin/SpaceInvaders")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -u -r "$ENV{DESTDIR}/Users/tobiaswilfert/Desktop/SpaceInvaders/bin/SpaceInvaders")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/student/SpaceInvaders/bin/SpaceInvaders")
     endif()
   endif()
 endif()
@@ -61,5 +69,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/tobiaswilfert/Desktop/SpaceInvaders/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/student/SpaceInvaders/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
