@@ -809,7 +809,7 @@
         </Enemy>
 
         <!-- Fifth row aliens -->
-
+    
         <Enemy>
             <size>
                 <width>0.24</width>
@@ -821,7 +821,7 @@
             </position>
             <attackPoints>1</attackPoints>
             <healthPoints>1</healthPoints>
-            <movePattern>1</movePattern>
+            <movePattern>0</movePattern>
             <enemyType>c</enemyType>
             <colour>yellow</colour>
         </Enemy>
@@ -836,7 +836,7 @@
             </position>
             <attackPoints>1</attackPoints>
             <healthPoints>1</healthPoints>
-            <movePattern>1</movePattern>
+            <movePattern>0</movePattern>
             <enemyType>c</enemyType>
             <colour>yellow</colour>
         </Enemy>
@@ -851,7 +851,7 @@
             </position>
             <attackPoints>1</attackPoints>
             <healthPoints>1</healthPoints>
-            <movePattern>1</movePattern>
+            <movePattern>0</movePattern>
             <enemyType>c</enemyType>
             <colour>yellow</colour>
         </Enemy>
@@ -866,7 +866,7 @@
             </position>
             <attackPoints>1</attackPoints>
             <healthPoints>1</healthPoints>
-            <movePattern>1</movePattern>
+            <movePattern>0</movePattern>
             <enemyType>c</enemyType>
             <colour>yellow</colour>
         </Enemy>
@@ -881,7 +881,7 @@
             </position>
             <attackPoints>1</attackPoints>
             <healthPoints>1</healthPoints>
-            <movePattern>1</movePattern>
+            <movePattern>0</movePattern>
             <enemyType>c</enemyType>
             <colour>yellow</colour>
         </Enemy>
@@ -896,7 +896,7 @@
             </position>
             <attackPoints>1</attackPoints>
             <healthPoints>1</healthPoints>
-            <movePattern>1</movePattern>
+            <movePattern>0</movePattern>
             <enemyType>c</enemyType>
             <colour>yellow</colour>
         </Enemy>
@@ -911,7 +911,7 @@
             </position>
             <attackPoints>1</attackPoints>
             <healthPoints>1</healthPoints>
-            <movePattern>1</movePattern>
+            <movePattern>0</movePattern>
             <enemyType>c</enemyType>
             <colour>yellow</colour>
         </Enemy>
@@ -926,7 +926,7 @@
             </position>
             <attackPoints>1</attackPoints>
             <healthPoints>1</healthPoints>
-            <movePattern>1</movePattern>
+            <movePattern>0</movePattern>
             <enemyType>c</enemyType>
             <colour>yellow</colour>
         </Enemy>
@@ -941,7 +941,7 @@
             </position>
             <attackPoints>1</attackPoints>
             <healthPoints>1</healthPoints>
-            <movePattern>1</movePattern>
+            <movePattern>0</movePattern>
             <enemyType>c</enemyType>
             <colour>yellow</colour>
         </Enemy>
@@ -956,7 +956,7 @@
             </position>
             <attackPoints>1</attackPoints>
             <healthPoints>1</healthPoints>
-            <movePattern>1</movePattern>
+            <movePattern>0</movePattern>
             <enemyType>c</enemyType>
             <colour>yellow</colour>
         </Enemy>
@@ -971,7 +971,7 @@
             </position>
             <attackPoints>1</attackPoints>
             <healthPoints>1</healthPoints>
-            <movePattern>1</movePattern>
+            <movePattern>0</movePattern>
             <enemyType>c</enemyType>
             <colour>yellow</colour>
         </Enemy>
@@ -986,7 +986,7 @@
             </position>
             <attackPoints>1</attackPoints>
             <healthPoints>1</healthPoints>
-            <movePattern>1</movePattern>
+            <movePattern>0</movePattern>
             <enemyType>c</enemyType>
             <colour>yellow</colour>
         </Enemy>
@@ -1001,7 +1001,7 @@
             </position>
             <attackPoints>1</attackPoints>
             <healthPoints>1</healthPoints>
-            <movePattern>1</movePattern>
+            <movePattern>0</movePattern>
             <enemyType>c</enemyType>
             <colour>yellow</colour>
         </Enemy>
