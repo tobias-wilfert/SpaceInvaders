@@ -5,7 +5,7 @@
 //============================================================================
 
 #include "Model.h"
-#include <memory> si::mvc::Model::Model()
+si::mvc::Model::Model()
 {
         // Initialize all the level independent entities
         entity::Size size{0.26, 0.16};
