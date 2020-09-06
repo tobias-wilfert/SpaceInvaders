@@ -1,7 +1,5 @@
-[![Build Status](https://travis-ci.com/tobias-wilfert/SpaceInvaders.svg?token=irYFiqMwd2M7MNycsGsq&branch=master)](https://travis-ci.com/tobias-wilfert/SpaceInvaders)
-
 # SpaceInvaders
-Project Gevorderd Programmeren 2019 - 2020 by Tobias Wifert 20181439
+Programming Project 2019 - 2020 by Tobias Wifert
 
 ## Installation
 The project comes with a run.sh file that will build the project in a build directory and subsequently will run SpaceInvaders with 3 xml files (representing levels) as input the levels are sorted in increasing difficulty.
