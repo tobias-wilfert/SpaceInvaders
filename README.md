@@ -1,3 +1,5 @@
+![C/C++ CI](https://github.com/tobias-wilfert/SpaceInvaders/workflows/C/C++%20CI/badge.svg)
+
 # SpaceInvaders
 Programming Project 2019 - 2020 by Tobias Wifert
 
